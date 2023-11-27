@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>ADMINISTRACIÓN - CMS by Grupo5.com</title>
+	<meta name="description" content="Panel de control privado de aplicaciones y páginas web, potente y conceptual creada y pensada para los clientes de Grupo5.com." />
+	<meta name="keywords" content="admin, cms, panel, privado, administración, gestión, control, webs, tiendas, online, nube, virtual, aplicaciones" />
+    <meta name="author" content="Grupo5.com" />
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+   	   	
+   	<!-- Chrome, Firefox OS y Opera -->
+	<meta name="theme-color" content="#15171f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#15171f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+	
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="dark_style" disabled="">
+
+	<!--círculos con porcentaje - clase adicional-->
+	<link rel="stylesheet" media="screen" type="text/css" href="css/progress-circle.css" />
+
+	<!--cambio de color en barra
+	<link rel="stylesheet" media="screen" type="text/css" href="css/color-barra.css" />-->
+	
+	<!-- Fav y touch icons-->
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png" />
+   	
+</head>
+
+<body class="wide">
+
+	<!--cargando-->
+	<div class="fullscreen-wrap position-fixed" style="z-index:30000; width: 100vw; height: 100vh; background:rgba(0,0,0,0.6)">
+		<div class="fullscreen-content">
+			<div class="fullscreen-block center">
+				<div class="spinner-border verde spinner xl-size enlinea"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--Zona oculta derecha-->
+	<div class="zona-oculta-derecha">
+	
+		<div class="header-zona-oculta-derecha fondo morado">
+			Notificaciones (<strong>3</strong>)
+			<div class="close_menu cerrar-zona-oculta blanco">
+				<span class="blanco"></span>
+				<span class="blanco"></span>
+			</div>
+		</div>
+		
+		<div class="contenido-zona-oculta-derecha nopadding">
+			<a href="" class="notificaciones-item">
+				<div class="media active">
+					<div class="posicion-top-right"><div class="badge xs-size rojo">Sin leer</div></div>
+					<div class="avatar xs-size mr">
+	                   	<span class="zona-avatar fondo verde img-rounded"><i class="flaticon-carrito"></i></span>
+	                </div>
+					<div class="media-body">
+						<strong>Título del módulo</strong>
+						<p class="txtmin gris-oscuro mb-s-size">Pequeña descripción de lo que está en esta zona</p>
+						<p class="txtmin s-size gris"><i class="flaticon-reloj"></i> 12:35:00</p>
+                	</div>
+				</div>
+			</a>
+			<a href="" class="text-reset notificaciones-item">
+				<div class="media">
+					<div class="avatar xs-size mr">
+	                   <img src="images/foto4.jpg" class="img-rounded" alt="">
+	                </div>
+					<div class="media-body">
+						<strong>Título del módulo</strong>
+						<p class="txtmin gris-oscuro mb-s-size">Pequeña descripción de lo que está en esta zona</p>
+						<p class="txtmin s-size gris"><i class="flaticon-calendario"></i> 18/09/2021</p>
+                	</div>
+				</div>
+			</a>
+			<a href="" class="text-reset notificaciones-item">
+				<div class="media">
+					<div class="avatar xs-size mr">
+	                   	<span class="zona-avatar fondo azul img-rounded"><i class="flaticon-tarjeta"></i></span>
+	                </div>
+					<div class="media-body">
+						<strong>Título del módulo</strong>
+						<p class="txtmin gris-oscuro mb-s-size">Pequeña descripción de lo que está en esta zona</p>
+						<p class="txtmin s-size gris"><i class="flaticon-reloj-arena"></i> Hace 2 min</p>
+                	</div>
+				</div>
+			</a>
+		</div>
+	
+	</div>
+	<div id="capaoscura" class="capaoscura autohide"></div>
+	<!--Find zona oculta derecha-->
+
+
+<!--MENÚ LATERAL IZQUIERDA-->
+<div class="zona-izquierda mini-scrollbar">
+	<aside>
+		<div class="zona-logotipo">
+			<div class="elipsis">
+				<!--GRUPO 5-->
+				<img src="images/logotipo.svg" class="img-responsive" alt="Nombre" />
+			</div>
+		</div>
+		
+		<!--menu-->
+		<div class="right-menu">
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li class="active"><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ HORIZONTAL TOP</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-cuadrados"></i><span class="textomenu">Desplegables</span></a>
+					<ul>
+			    	    <li><a href="menu-top-usuarios.htm"><span class="textomenu">Menú usuarios</span></a></li>
+			    	    <li><a href="menu-top-idiomas.htm"><span class="textomenu">Menú idiomas</span></a></li>
+			    	    <li><a href="menu-top-opciones.htm"><span class="textomenu">Menú opciones</span></a></li>
+			    	    <li class="has-sub"><a href="#"><span class="textomenu">Tercera produndidad</span></a>
+			    	    	<ul>
+			    	    		<li><a href="#">Opción número 1 con un texto largo</a></li>
+			    	    		<li><a href="#">Opción número 2</a></li>
+			    	    		<li><a href="#">Opción número 3</a></li>
+			    	    	</ul>
+			    	    </li>
+					</ul>
+				</li>
+				<li class="cabecera">SECCIONES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-monitor"></i><span class="textomenu">Páginas</span></a>
+					<ul>
+			    	    <li><a href="listado1.htm"><span class="textomenu">Listado 1</span></a></li>
+			    	    <li><a href="listado2.htm"><span class="textomenu">Listado 2</span></a></li>
+			    	    <li><a href="listado3.htm"><span class="textomenu">Listado 3</span></a></li>
+						<li><a href="detalle.htm"><span class="textomenu">Detalle</span></a></li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="detalle-nuevo.htm"><span class="textomenu">Detalle nuevo</span></a>
+						</li>
+						<li><a href="detalle-full.htm"><span class="textomenu">Detalle full</span></a></li>
+						<li class="has-sub"><a href="#"><span class="textomenu">Ecommerce</span></a>
+			    	    	<ul>
+			    	    		<li><a href="tienda-listado.htm">Tienda</a></li>
+			    	    		<li><a href="tienda-pedidos.htm">Pedidos</a></li>
+			    	    		<li><a href="tienda-detalle.htm">Detalle producto</a></li>
+			    	    		<li><a href="tienda-anadir.htm">Añadir producto</a></li>
+			    	    		<li><a href="tienda-carro.htm">Carro</a></li>
+			    	    		<li><a href="tienda-checkout.htm">Checkout</a></li>
+			    	    	</ul>
+			    	    </li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="alta.htm"><span class="textomenu">Alta</span></a>
+						</li>
+						<li><a href="agenda.htm"><span class="textomenu">Agenda</span></a></li>
+						<li><a href="seo.htm"><span class="textomenu">Seo</span></a></li>
+						<li><a href="comentarios.htm"><span class="textomenu">Comentarios</span></a></li>
+						<li><a href="email.htm"><span class="textomenu">Email</span></a></li>
+						<li><a href="factura.htm"><span class="textomenu">Factura</span></a></li>
+						<li><a href="reserva.htm"><span class="textomenu">Reserva</span></a></li>
+						<li>
+							<div class="posicion-top-right" style="padding-top:5px"><i class="flaticon-circulo-menos rojo" title="Módulo NO disponible"></i></div>
+							<a href="estadisticas.htm"><span class="textomenu rojo" title="Módulo NO disponible">Estadísticas</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-candado"></i><span class="textomenu">Autentificación</span></a>
+					<ul>
+			    	    <li><a href="login.htm" target="_blank"><span class="textomenu">Login</span></a></li>
+			    	    <li><a href="recordar.htm" target="_blank"><span class="textomenu">Recordar contraseña</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">COMPONENTES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-capas"></i><span class="textomenu">UI Elements</span></a>
+					<ul>
+			    	    <li><a href="mensajes.htm"><span class="textomenu">Mensajes</span></a></li>
+						<li><a href="botones.htm"><span class="textomenu">Botones</span></a></li>
+						<li><a href="modals.htm"><span class="textomenu">Modals</span></a></li>
+						<li><a href="paginacion.htm"><span class="textomenu">Paginación</span></a></li>
+						<li><a href="tabs.htm"><span class="textomenu">Tabs</span></a></li>
+						<li><a href="slider.htm"><span class="textomenu">Slider</span></a></li>
+						<li><a href="acordeon.htm"><span class="textomenu">Acordeón</span></a></li>
+						<li><a href="progress-bars.htm"><span class="textomenu">Progress bars</span></a></li>
+						<li><a href="flex.htm"><span class="textomenu">Flex</span></a></li>
+						<li><a href="calendarios.htm"><span class="textomenu">Calendarios</span></a></li>
+						<li><a href="tipografia.htm"><span class="textomenu">Tipografía</span></a></li>
+						<li><a href="clases.htm"><span class="textomenu">Clases</span></a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estructura"></i><span class="textomenu">Tablas</span></a>
+					<ul>
+			    	    <li><a href="tablas-basicas.htm"><span class="textomenu">Tablas básicas</span></a></li>
+						<li><a href="tablas-especiales.htm"><span class="textomenu">Tablas especiales</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="posicion-top-right"><div class="badge xs-size verde ani-izqder">Nuevo</div></div>
+					<a href="formularios.htm"><i class="flaticon-lista"></i><span class="textomenu">Formularios</span></a>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estrella"></i><span class="textomenu">Iconos / Svg</span></a>
+					<ul>
+			    	    <li><a href="flaticons.htm"><span class="textomenu">Flaticons</span></a></li>
+						<li><a href="svg.htm"><span class="textomenu">Imágenes SVG</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">Pre-Built Pages</li>
+				<li class="has-sub "><a href="#"><i class="flaticon-llave-inglesa"></i><span class="textomenu">Error</span></a>
+					<ul>
+			    	    <li class="">
+			    	    	<div class="posicion-top-right"><div class="badge xs-size rojo">2</div></div>
+			    	    	<a href="404.htm"><span class="textomenu">404</span></a>
+			    	    </li>
+						<li class=""><a href="500.htm"><span class="textomenu">500</span></a></li>
+					</ul>
+				</li>
+				<li><a href="usuarios.htm"><i class="flaticon-ajuste"></i><span class="textomenu">Gestión usuarios</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</aside>
+</div>
+<!--FIN MENÚ LATERAL IZQUIERDA-->
+
+<!--CONTENIDOS DERECHA-->
+<div class="zona-derecha">
+	
+	<!--Header menú-->
+	<header class="fixed">
+		<div class="menu-top-fixed"><!--poner: "color-barra menu-top-fixed" para cambiar color de menú-->
+			<ul class="top-menu">
+				<li><a href=""><i class="flaticon-menu icon"></i></a></li>
+			</ul>
+			<ul class="top-menu dere">
+				
+				<li><a href=""><i class="flaticon-configuracion icon ani-rotar-der"></i></a></li>
+				<li class="desktop tablet"><a href=""><i class="flaticon-circulo-check icon verde"></i></a></li>
+				<li>
+					<label id="switch_dia_noche" for="dia_noche" class="switch-checkbox nomargin" title="Modo día/noche">
+						<input id="dia_noche" type="checkbox" checked="">
+						<img src="images/luna.svg" class="checked" alt="Noche">
+						<img src="images/sol.svg" class="unchecked" alt="Día">
+					</label>
+				</li>
+				<li class="desktop tablet">
+					<div class="posicion-top-left">
+						<div class="mini-cuadrado naranja"></div>
+					</div>
+					<a href=""><i class="flaticon-chat icon"></i></a>
+				</li>
+				<li><a href=""><i class="flaticon-full-screen icon"></i></a></li>
+				<li>
+					<div class="posicion-top-right">
+						<div class="mini-circulo rojo blink"></div>
+					</div>
+					<a href="" class="aside-right"><i class="flaticon-campana icon ani-tada"></i></a>
+				</li>
+				<!--<li class="active">
+					<div class="posicion-top-right">
+						<span class="badge amarillo">2</span>
+					</div>
+					<a href=""><i class="flaticon-usuarios icon"></i></a>
+					<div class="submenu-top s-size mini-scrollbar">
+						<a class="menu-vertical-top" href="#"><i class="flaticon-usuario s-size"></i> Lostrego </a>
+						<a class="menu-vertical-top active" href="#">
+							<div class="posicion-top-right">
+								<i class="flaticon-check verde xs-size"></i>
+							</div>
+							<img src="images/yo.jpg" style="" class="img-rounded">Neo
+						</a>
+					</div>
+				</li>-->
+				<!--<li class="active">
+					<a href=""><img src="images/es.svg" class="" alt="Español" /></a>
+					<div class="submenu-top s-size mini-scrollbar">
+						<a class="menu-vertical-top" href="#"><img src="images/gl.svg" class="" alt="Galego" /> Galego</a>
+						<a class="menu-vertical-top" href="#"><img src="images/pt.svg" class="" alt="Português" /> Português</a>
+						<a class="menu-vertical-top" href="#"><img src="images/en.svg" class="" alt="English" /> English</a>
+						<a class="menu-vertical-top" href="#"><img src="images/fr.svg" class="" alt="Français" /> Français</a>
+						<a class="menu-vertical-top" href="#"><img src="images/de.svg" class="" alt="Deutsche" /> Deutsche</a>
+
+					</div>
+				</li>-->
+				<!--<li class="active">
+					<div class="badge-top-menu"><span class="badge verde">3</span></div>
+					
+					<a href="">Mariano <i class="flaticon-usuario icon"></i></a>
+					<a href="">Mariano
+						<div class="avatar xxs-size sepizq">
+							<span class="zona-avatar img-rounded">
+								<img src="images/yo.jpg" style="" class="img-rounded">
+							</span>
+						</div>
+					</a>
+
+					<div class="submenu-top mini-scrollbar">
+						<a class="menu-vertical-top active" href="#"><i class="flaticon-usuarios"></i>Profile</a>
+						<a class="menu-vertical-top" href="#">
+							<div class="posicion-top-right"><div class="badge rojo">2</div></div>
+							<i class="flaticon-estrella"></i> Tareas automáticas
+						</a>
+						<a class="menu-vertical-top" href="#"><i class="flaticon-movil"></i> Nombre opción</a>
+						<a class="menu-vertical-top" href="#"><i class="flaticon-ajuste"></i> Nombre opción</a>
+						<a class="menu-vertical-top" href="#"><i class="flaticon-carpeta"></i> Nombre opción</a>
+						<a class="menu-vertical-top" href="#"><i class="flaticon-estadisticas-1"></i> Nombre opción</a>
+						<a class="menu-vertical-top" href="#"><i class="flaticon-sobre"></i> Nombre opción</a>
+					</div>
+				</li>-->
+				<li><a href=""><i class="flaticon-puntos-vertical icon"></i></a></li>
+			</ul>
+			
+		</div>
+	</header>
+
+	<!--CONTENIDOS-->
+	<div class="contenedor-fluid septopbot">
+		<div class="fila">
+
+			<!--Encabezado sección-->
+			<div class="col12">
+				<div class="centradovertical aling-between mb"><!--mb (margin bottom 1rem)-->
+					<div class="zona-title center-flex izq">
+						<i class="icon flaticon-casa"></i>
+						<div>
+							<h1 class="title mayusculas">Inicio</h1>
+							<p class="txtmin s-size"><em>Acceso a los contenidos principales</em></p>
+						</div>
+					</div>
+					<div class="push">
+						<ul class="page-breadcrumb desktop der mayusculas">
+							<li><a href="index.htm">Inicio</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--Contenido SECCIONES-->
+			<div class="col08-xl col07">
+				
+				<div class="zona-id title-section redondo">
+					<i class="flaticon-ajuste der"></i> <strong>Contenidos</strong>
+				</div>
+				<!--<h2 class="subtitle xs-size mayusculas"><i class="flaticon-carpeta der"></i> Contenidos</h2>-->
+
+				<!--Listado con fila / conlumna en lista: contenedores del mismo tamaño-->
+				<ul class="fila sin-estilo mb">
+					<li class="col02-xxl col03-xl col04 col04-s col06-xs">
+						<a href="">
+							<div class="zona-icon-box s-size bg-default redondo elipsis">
+								<div class="zona-icon-img"><img src="images/fotos.svg" class="img-responsive icono-img s-size" alt="Slider"></div>
+								<span class="zona-icon-name center">Slider portada</span>
+							</div>
+						</a>
+					</li>
+					<li class="col02-xxl col03-xl col04 col04-s col06-xs">
+						<a href="">
+							<div class="zona-icon-box s-size bg-default redondo elipsis">
+								<div class="zona-icon-img"><img src="images/paquetes.svg" class="img-responsive icono-img s-size" alt="Productos"></div>
+								<span class="zona-icon-name center">Productos</span>
+							</div>
+						</a>
+					</li>
+					<li class="col02-xxl col03-xl col04 col04-s col06-xs">
+						<a href="">
+							<div class="zona-icon-box s-size bg-default redondo elipsis">
+								<div class="zona-icon-img"><img src="images/usuarios.svg" class="icono-img s-size" alt="Clientes"></div>
+								<span class="zona-icon-name">Clientes</span>
+							</div>
+						</a>
+					</li>
+					<li class="col02-xxl col03-xl col04 col04-s col06-xs">
+						<a href="">
+							<div class="zona-icon-box s-size bg-default redondo elipsis">
+								<div class="zona-icon-img"><img src="images/noticias.svg" class="icono-img s-size" alt="Noticias"></div>
+								<span class="zona-icon-name">Noticias</span>
+							</div>
+						</a>
+					</li>
+					<li class="col02-xxl col03-xl col04 col04-s col06-xs">
+						<a href="">
+							<div class="zona-icon-box s-size bg-default redondo elipsis">
+								<div class="posicion-top-right" style="top:0px;"><div class="badge xs-size rojo mayusculas">Revisar</div></div>
+								<div class="zona-icon-img"><img src="images/tienda.svg" class="icono-img s-size" alt="Configuración tienda"></div>
+								<span class="zona-icon-name">Tienda configuración</span>
+							</div>
+						</a>
+					</li>
+					<li class="col02-xxl col03-xl col04 col04-s col06-xs">
+						<div class="zona-icon-box s-size bg-default redondo elipsis cursor-prohibido">
+							<div class="posicion-top-right" style="top:0px;"><i class="flaticon-circulo-prohibido rojo"></i></div>
+							<div class="zona-icon-img"><img src="images/paquete.svg" class="img-responsive icono-img s-size" alt="Pedidos"></div>
+							<span class="zona-icon-name center">Pedidos</span>
+						</div>
+					</li>
+					<li class="col02-xxl col03-xl col04 col04-s col06-xs">
+						<a href="">
+							<div class="zona-icon-box s-size bg-default redondo elipsis">
+								<div class="zona-icon-img"><img src="images/dominios.svg" class="img-responsive icono-img s-size" alt="Dominios"></div>
+								<span class="zona-icon-name center">Dominios</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<div class="zona-id title-section redondo">
+					<i class="flaticon-settings der"></i> <strong>Gestión</strong>
+				</div>
+				
+				<!--listado en línea: contenedores se ajustan al contenido-->
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/estructura.svg" class="icono-img s-size" alt=""></div>
+						<span class="zona-icon-name">Familias</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/tamano.svg" class="icono-img s-size" alt=""></div>
+						<span class="zona-icon-name">Tamaños</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/color.svg" class="icono-img s-size" alt=""></div>
+						<span class="zona-icon-name">Colores</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/configurar.svg" class="icono-img s-size" alt=""></div>
+						<span class="zona-icon-name">Editor de secciones</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/tarjetas.svg" class="icono-img s-size" alt=""></div>
+						<span class="zona-icon-name">Formas de pago</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/camion.svg" class="icono-img s-size" alt=""></div>
+						<span class="zona-icon-name">Formas de envío</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/seo.svg" class="icono-img s-size" alt=""></div>
+						<span class="zona-icon-name">SEO</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/404-error.svg" class="icono-img s-size" alt=""></div>
+						<span class="zona-icon-name">Gestión 404</span>
+					</div>
+				</a>
+
+				<div class="zona-id title-section redondo">
+					<i class="flaticon-megafono der"></i> <strong>Promoción</strong>
+				</div>
+				
+				<!--listado en línea: contenedores se ajustan al contenido-->
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/boletin.svg" class="img-responsive icono-img s-size" alt=""></div>
+						<span class="zona-icon-name center">Boletín</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/lista-usuario.svg" class="img-responsive icono-img s-size" alt=""></div>
+						<span class="zona-icon-name center">Boletín suscriptores</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/herramientas.svg" class="img-responsive icono-img s-size" alt=""></div>
+						<span class="zona-icon-name center">Generador códigos descuento</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/descuento.svg" class="img-responsive icono-img s-size" alt=""></div>
+						<span class="zona-icon-name center">Códigos descuento</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="zona-icon-box s-size bg-default redondo enlinea">
+						<div class="zona-icon-img"><img src="images/popups.svg" class="img-responsive icono-img s-size" alt=""></div>
+						<span class="zona-icon-name center">Banners</span>
+					</div>
+				</a>
+
+			</div>
+
+			<!--Zona de la derecha: información desarrolladores y usuario-->
+			<div class="col04-xl col05">
+				<div class="zona-id title-section redondo">
+					<i class="flaticon-circulo-candado der"></i> <strong>Información súper usuario</strong>
+				</div>
+				<div class="fila">
+					<div class="col12">
+						<a href="">
+							<div class="card info rojo redondo mtb">
+								<div class="card-content">
+									<div class="card-texto">
+										<i class="flaticon-llave-inglesa ani-agrandar"></i>
+										<div>
+											<p class="card-title"><strong>ERRORES</strong></p>
+											Se han encontrado errores en ejecución.
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col06-xxl">
+						<a href="">
+							<div class="card info amarillo redondo mtb">
+								<div class="card-content">
+									<div class="card-texto">
+										<i class="flaticon-prohibido"></i>
+										<div>
+											<p class="card-title"><strong>BLACKLIST</strong></p>
+											Revisar periódicamente.
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col06-xxl">
+						<a href="">
+							<div class="card info amarillo redondo mtb">
+								<div class="card-content">
+									<div class="card-texto">
+										<i class="flaticon-circulo-admiracion"></i>
+										<div>
+											<p class="card-title"><strong>404</strong></p>
+											Revisar logs 404.
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>				
+
+				<div class="zona-id title-section redondo">
+					<i class="flaticon-circulo-usuario der"></i> <strong>Información</strong>
+				</div>
+				<div class="fila">
+					<div class="col06-xxl">
+						<div class="card info rojo redondo cursor-pointer mtb" onclick="javascript:">
+							<div class="card-content overflow-hidden">
+								<div class="card-texto">
+									<i class="flaticon-mundo ani-rotar-izq"></i>
+									<div>
+										<p class="card-title"><strong>SEO</strong></p>
+										Incompleta
+									</div>
+								</div>
+							</div>                        
+						</div>
+					</div>
+					<div class="col06-xxl">
+						<div class="card info naranja redondo mtb">
+							<div class="card-content overflow-hidden">
+								<div class="card-texto">
+									<i class="flaticon-nota"></i>
+									<div>
+										<p class="card-title"><strong>NOTICIAS</strong></p>
+										120 días sin noticias
+									</div>
+								</div>
+							</div>                        
+						</div>
+					</div>
+					<div class="col06-xxl">
+						<div class="card info verde redondo mtb">
+							<div class="card-content overflow-hidden">
+								<div class="card-texto">
+									<i class="flaticon-paquetes"></i>
+									<div>
+										<p class="card-title"><strong>STOCK</strong></p>
+										12.343 artículos
+									</div>
+								</div>
+							</div>                        
+						</div>
+					</div>
+					<div class="col06-xxl">
+						<div class="card info verde redondo mtb">
+							<div class="card-content overflow-hidden">
+								<div class="card-texto">
+									<i class="flaticon-usuario-mas"></i>
+									<div>
+										<p class="card-title"><strong>ALTAS HOY</strong></p>
+										2 nuevo/s usuario/s
+									</div>
+								</div>
+							</div>                        
+						</div>
+					</div>
+					<div class="col06-xxl">
+						<div class="card info verde redondo mtb">
+							<div class="card-content overflow-hidden">
+								<div class="card-texto">
+									<i class="flaticon-carrito" style="font-weight: normal"></i>
+									<div>
+										<p class="card-title"><strong>VENTAS HOY</strong></p>
+										12 venta/s nueva/s
+									</div>
+								</div>
+							</div>                        
+						</div>
+					</div>
+					<div class="col06-xxl">
+						<div class="card info verde redondo mtb">
+							<div class="card-content overflow-hidden">
+								<div class="card-texto">
+									<i class="flaticon-monedas"></i>
+									<div>
+										<p class="card-title"><strong>GANANCIAS HOY</strong></p>
+										1.234 Euros
+									</div>
+								</div>
+							</div>                        
+						</div>
+					</div>
+				</div>
+				<div class="zona-id title-section redondo">
+					<i class="flaticon-circulo-estadisticas der"></i> <strong>Estadísticas</strong>
+				</div>
+			</div>
+
+			<!--info usuario sobre la tienda-->
+			<div class="col12">
+				<div class="zona-id title-section redondo">
+					<i class="flaticon-carrito der"></i> <strong>Tienda</strong>
+				</div>
+			</div>
+			<div class="col04">
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<div class="card-texto">
+							<div class="post-imagen">
+								<div class="avatar s-size enlinea">
+									<span class="zona-avatar img-rounded colordest"><i class="flaticon-paquetes"></i></span>
+								</div>
+							</div>
+							<div class="post-texto">
+								<p class="card-title"><strong>28 productos</strong></p>
+								Vendidos los últimos 7 días.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<p class="card-title"><strong>Productos</strong></p>
+						<p class="">Últimos productos vendidos.</p>
+						<div class="separa s-size"></div>
+						<div class="table-responsive">
+							<table class="table table-borderless table-striped">
+								<thead>
+							    	<tr>
+							    		<th scope="col"></th>
+										<th scope="col">Producto</th>
+										<th scope="col">Precio</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="images/producto01.jpg" class="icono-img l-size" alt=""></td>
+										<td>Nombre del producto</td>
+										<td><span class="txt-nowrap">25,30 €</span></td>
+									</tr>
+									<tr>
+										<td><img src="images/producto02.jpg" class="icono-img l-size" alt=""></td>
+										<td>Otro producto vendido</td>
+										<td><span class="txt-nowrap">104,90 €</span></td>
+									</tr>
+									<tr>
+										<td><img src="images/producto04.jpg" class="icono-img l-size" alt=""></td>
+										<td>Producto vendido recientemente</td>
+										<td><span class="txt-nowrap">18,50 €</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col04">
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<div class="card-texto">
+							<div class="post-imagen">
+								<div class="avatar s-size enlinea">
+									<span class="zona-avatar img-rounded verde"><i class="flaticon-grupo"></i></span>
+								</div>
+							</div>
+							<div class="post-texto">
+								<p class="card-title"><strong>290 clientes</strong></p>
+								Registrados.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<p class="card-title"><strong>Clientes</strong></p>
+						<p class="">Provincias con mas altas.</p>
+						<div class="separa s-size"></div>
+						<div class="flex-start-end">
+							<p class="txtmin s-size">Madrid</p>
+							<p class="txtmin">55%</p>
+						</div>
+						<div class="limpiar"></div>
+						<div class="progress xs-size mb" title="60%">
+							<div class="progress-bar xs-size cian" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%"></div>
+						</div>
+
+						<div class="flex-start-end">
+							<p class="txtmin s-size">Barcelona</p>
+							<p class="txtmin">20%</p>
+						</div>
+						<div class="limpiar"></div>
+						<div class="progress xs-size mb" title="20%">
+							<div class="progress-bar xs-size colordest" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%"></div>
+						</div>
+						
+						<div class="flex-start-end">
+							<p class="txtmin s-size">Sevilla</p>
+							<p class="txtmin">15%</p>
+						</div>
+						<div class="limpiar"></div>
+						<div class="progress xs-size mb" title="15%">
+							<div class="progress-bar xs-size naranja" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%"></div>
+						</div>
+
+						<div class="flex-start-end">
+							<p class="txtmin s-size">Valencia</p>
+							<p class="txtmin">5%</p>
+						</div>
+						<div class="limpiar"></div>
+						<div class="progress xs-size mb" title="5%">
+							<div class="progress-bar xs-size amarillo" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width:5%"></div>
+						</div>
+
+						<div class="flex-start-end">
+							<p class="txtmin s-size">A Coruña</p>
+							<p class="txtmin">3%</p>
+						</div>
+						<div class="limpiar"></div>
+						<div class="progress xs-size mb" title="3%">
+							<div class="progress-bar xs-size rojo" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width:3%"></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col04">
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<div class="card-texto">
+							<div class="post-imagen">
+								<div class="avatar s-size enlinea">
+									<span class="zona-avatar img-rounded naranja"><i class="flaticon-monedas"></i></span>
+								</div>
+							</div>
+							<div class="post-texto">
+								<p class="card-title"><strong>1.250 €</strong></p>
+								En los últimos 7 días.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<p class="card-title"><strong>Ganancias</strong></p>
+						<p class="">En los últimos 30 días.</p>
+						<div class="separa s-size"></div>
+						<div class="c100 p75 colordest l-size centrado">
+							<span>75%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<p class="txtmin mt center">Un 75% más de ganancias que el mes pasado.</p>
+					</div>
+				</div>
+
+			</div>
+
+			<!--otro módulo-->
+			<div class="col12">
+				<div class="zona-id title-section redondo">
+					<i class="flaticon-estadisticas-1 der"></i> <strong>Rendimiento</strong>
+				</div>
+			</div>
+			<div class="col04">
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<div class="card-texto">
+							<div class="post-imagen">
+								<div class="avatar s-size enlinea">
+									<span class="zona-avatar img-rounded azul"><i class="flaticon-paquete"></i></span>
+								</div>
+							</div>
+							<div class="post-texto">
+								<p class="card-title"><strong>28 productos</strong></p>
+								Vendidos los últimos 7 días.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<div class="card-texto">
+							<div class="post-imagen">
+								<div class="avatar s-size enlinea">
+									<span class="zona-avatar img-rounded cian"><i class="flaticon-usuarios"></i></span>
+								</div>
+							</div>
+							<div class="post-texto">
+								<p class="card-title"><strong>290 clientes</strong></p>
+								Registrados.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<div class="card-texto">
+							<div class="post-imagen">
+								<div class="avatar s-size enlinea">
+									<span class="zona-avatar img-rounded rojo"><i class="flaticon-euro"></i></span>
+								</div>
+							</div>
+							<div class="post-texto">
+								<p class="card-title"><strong>1.250 €</strong></p>
+								En los últimos 7 días.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col04">
+				<div class="card info card-borde default redondo mb">
+					<div class="card-content">
+						<p class="card-title"><strong>Productos</strong></p>
+						<p class="">Últimos productos vendidos.</p>
+						<div class="separa s-size"></div>
+						
+						<div class="table-responsive full mini-scrollbar">
+							<table class="table table-borderless table-striped">
+								<thead>
+							    	<tr>
+							    		<th scope="col"></th>
+										<th scope="col">Producto</th>
+										<th scope="col">Precio</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="images/producto06.jpg" class="icono-img l-size" alt=""></td>
+										<td><span class="colordest">Nombre del producto</span></td>
+										<td><span class="txt-nowrap">25,30 €</span></td>
+									</tr>
+									<tr>
+										<td><img src="images/producto04.jpg" class="icono-img l-size" alt=""></td>
+										<td><span class="colordest">Otro producto vendido</span></td>
+										<td><span class="txt-nowrap">104,90 €</span></td>
+									</tr>
+									<tr>
+										<td><img src="images/producto08.jpg" class="icono-img l-size" alt=""></td>
+										<td><span class="colordest">Producto vendido recientemente en la tienda online</span></td>
+										<td><span class="txt-nowrap">18,50 €</span></td>
+									</tr>
+									<tr>
+										<td><img src="images/producto05.jpg" class="icono-img l-size" alt=""></td>
+										<td><span class="colordest">Este es otro producto con su precio</span></td>
+										<td><span class="txt-nowrap">45,50 €</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+				</div>				
+			</div>
+			<div class="col04">
+				<div class="card info card-borde default redondo mb">
+					<div class="card-header">
+						<div class="full">
+							<p class="card-title"><strong>Clientes</strong></p>
+							<p>Últimas altas en 7 días.</p>
+						</div>
+					</div>
+					<div class="card-content max-height mini-scrollbar " style="max-height: 274px;">
+						
+						<table class="table table-borderless table-striped">
+							<tbody>
+								<tr>
+									<td><img src="images/yo.jpg" class="icono-img s-size img-rounded" alt=""></td>
+									<td>
+										<span class="bold ">José Antonio López Crespo</span>
+										<p class="txtmin">Administrador</p>
+									</td>
+									<td><span class="txt-nowrap der">18/09/2021</span></td>
+								</tr>
+								<tr>
+									<td><img src="images/nofoto.jpg" class="icono-img s-size img-rounded" alt=""></td>
+									<td>
+										<span class="bold">Eduardo Fernández Martínez</span>
+										<p class="txtmin">Súper usuario</p>
+									</td>
+									<td><span class="txt-nowrap der">18/09/2021</span></td>
+								</tr>
+								<tr>
+									<td><img src="images/fran.jpg" class="icono-img s-size img-rounded" alt=""></td>
+									<td>
+										<span class="bold">Francisco José López López</span>
+										<p class="txtmin">Administrador</p>
+									</td>
+									<td><span class="txt-nowrap der">17/09/2021</span></td>
+								</tr>
+								<tr>
+									<td><img src="images/rafa.jpg" class="icono-img s-size img-rounded" alt=""></td>
+									<td>
+										<span class="bold">Rafael Carlos Gawenda Guerrero</span>
+										<p class="txtmin">Súper usuario</p>
+									</td>
+									<td><span class="txt-nowrap der">17/09/2021</span></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="avatar xxs-size">
+											<span class="zona-avatar img-rounded naranja">Da</span>
+										</div>
+									</td>
+									<td>
+										<span class="bold">David Guillermo Rodríguez</span>
+										<p class="txtmin">Súper usuario</p>
+									</td>
+									<td><span class="txt-nowrap der">17/09/2021</span></td>
+								</tr>
+								<tr>
+									<td><img src="images/angel.jpg" class="icono-img s-size img-rounded" alt=""></td>
+									<td>
+										<span class="bold">Ángel Fernández Martínez</span>
+										<p class="txtmin">Administrador</p>
+									</td>
+									<td><span class="txt-nowrap der">16/09/2021</span></td>
+								</tr>
+								<tr>
+									<td><img src="images/nofoto.jpg" class="icono-img s-size img-rounded" alt=""></td>
+									<td>
+										<span class="bold">Mariano José de Larra</span>
+										<p class="txtmin">Administrador</p>
+									</td>
+									<td><span class="txt-nowrap der">16/09/2021</span></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="avatar xxs-size">
+											<span class="zona-avatar img-rounded cian">Ma</span>
+										</div>
+									</td>
+									<td>
+										<span class="bold">María Eugenia González Flores</span>
+										<p class="txtmin">Administrador</p>
+									</td>
+									<td><span class="txt-nowrap der">15/09/2021</span></td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</div>
+					<div class="card-footer">
+						<div class="full">
+							<p class="txtmin center"><strong>8</strong> usuario/s nuevo/s</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--otro módulo-->
+			<div class="col12">
+				<div class="zona-id title-section redondo">
+					<i class="flaticon-estadisticas-2 der"></i> <strong>Accesos rápidos</strong>
+				</div>
+			</div>
+			<div class="col03 col06-s">
+				<div class="card card-borde redondo mb">
+					<div class="card-inner">
+						<div class="posicion-top-right"><div class="badge xs-size rojo mayusculas">3</div></div>
+						<div class="flex-center">
+							<img src="images/mensajes.svg" class="img-responsive icono-img l-size" alt="">
+						</div>
+						<div class="project-details">
+							<p class="title xxs-size mb-s-size center elipsis">Notificaciones</p>
+							<p class="txtmin center"><a href="" class="colordest">Pulsar para ver</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col03 col06-s">
+				<div class="card card-borde redondo mb">
+					<div class="card-inner">
+						<div class="flex-center">
+							<img src="images/factura.svg" class="img-responsive icono-img l-size" alt="">
+						</div>
+						<div class="project-details">
+							<p class="title xxs-size mb-s-size center elipsis">Facturación</p>
+							<p class="txtmin center"><a href="" class="colordest">Pulsar para ver</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col03 col06-s">
+				<div class="card card-borde redondo mb">
+					<div class="card-inner">
+						<div class="flex-center">
+							<img src="images/boletin.svg" class="img-responsive icono-img l-size" alt="">
+						</div>
+						<div class="project-details">
+							<p class="title xxs-size mb-s-size center elipsis">Newsletter</p>
+							<p class="txtmin center"><a href="" class="colordest">Pulsar para ver</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col03 col06-s">
+				<div class="card card-borde redondo mb">
+					<div class="card-inner">
+						<div class="flex-center">
+							<img src="images/tarjeta.svg" class="img-responsive icono-img l-size" alt="">
+						</div>
+						<div class="project-details">
+							<p class="title xxs-size mb-s-size center elipsis">Plataformas</p>
+							<p class="txtmin center"><a href="" class="colordest">Pulsar para ver</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--FIN CONTENIDOS-->
+
+	
+		
+</div>
+<!--FIN CONTENIDO DERECHA-->
+	
+	<!--Tamaño pantalla-->
+	<div id="dimensions">
+		Resolución: <span class="width"></span>
+	</div>
+
+	<!--Jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--Grupo5.com - scrolltop y dimensions-->
+	<script src="js/general.js"></script>
+	
+	<!--Scripts de la web al final-->
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

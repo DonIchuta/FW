@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 60.005347 50.02937"
+   width="75.006683"
+   height="62.536713"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="carpeta-candado.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="9.5555556"
+     inkscape:cx="37.503343"
+     inkscape:cy="31.25"
+     inkscape:window-x="1272"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <g
+     id="g10"
+     transform="translate(-5.9973256,-11)">
+    <rect
+       x="32"
+       y="16"
+       width="28"
+       height="15"
+       rx="2.5"
+       ry="2.5"
+       fill="#f29611"
+       id="rect2" />
+    <path
+       d="M 59.7778,61 H 12.2222 A 6.4215,6.4215 0 0 1 6,54.3962 V 17.6038 A 6.4215,6.4215 0 0 1 12.2222,11 h 18.4755 a 4.6714,4.6714 0 0 1 4.1128,2.5644 L 38,24 H 59.7778 A 5.91,5.91 0 0 1 66,30 V 54.3962 A 6.4215,6.4215 0 0 1 59.7778,61 Z"
+       fill="#ffb32c"
+       id="path4" />
+    <path
+       d="m 8.015,59 c 2.169,2.3827 4.6976,2.0161 6.195,2 h 44.5706 a 6.2768,6.2768 0 0 0 5.2061,-2 z"
+       fill="#f2a222"
+       id="path6" />
+    <path
+       d="M 42.2227,40 H 41.5 v -2.5557 a 5.5,5.5 0 0 0 -11,0 V 40 H 29.7773 A 2.8013,2.8013 0 0 0 27,42.8184 v 6.3633 A 2.8013,2.8013 0 0 0 29.7773,52 H 42.2227 A 2.8013,2.8013 0 0 0 45,49.1816 V 42.8184 A 2.8013,2.8013 0 0 0 42.2227,40 Z M 36,48 a 2,2 0 1 1 2,-2 2.0023,2.0023 0 0 1 -2,2 z m 3.5,-8 h -7 v -2.5557 a 3.5,3.5 0 0 1 7,0 z"
+       fill="#c67424"
+       id="path8" />
+  </g>
+</svg>

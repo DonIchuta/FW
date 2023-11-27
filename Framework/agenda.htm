@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>PÁGINAS - Agenda | www.grupo5.com</title>
+	<meta name="description" content="Panel de control privado de aplicaciones y páginas web, potente y conceptual creada y pensada para los clientes de Grupo5.com." />
+	<meta name="keywords" content="admin, cms, panel, privado, administración, gestión, control, webs, tiendas, online, nube, virtual, aplicaciones" />
+    <meta name="author" content="Grupo5.com" />
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+   	   	
+   	<!-- Chrome, Firefox OS y Opera -->
+	<meta name="theme-color" content="#15171f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#15171f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estadisticas.css" />
+	
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="dark_style" disabled="">
+	
+	<!-- Fav y touch icons-->
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png" />
+   	
+</head>
+
+<body class="wide">
+
+	<!--Buscador oculto derecha-->
+	<div class="zona-oculta-derecha">
+		<div class="header-zona-oculta-derecha fondo morado">
+			Búsqueda
+			<div class="close_menu cerrar-zona-oculta blanco">
+				<span class="blanco"></span>
+				<span class="blanco"></span>
+			</div>
+		</div>
+		<div class="contenido-zona-oculta-derecha">
+			<p class="txtmin gris der mb"><i class="flaticon-papelera va-middle"></i> <a href="" class="gris underline">Borrar filtros</a></p>
+			<input name="buscar" class="formulario redondo" type="text" placeholder="Buscar" value="">
+			<select class="formulario redondo" name="filtrado">		
+				<option value="">Sin filtrar</option>								
+				<option value="">Estado</option>
+				<option value="">Nuevo</option>
+				<option value="">Familia</option>
+			</select>
+			<select class="formulario redondo" name="filtro">		
+				<option value="">Seleccionar:</option>								
+				<option value="">Activo</option>
+				<option value="">Agotado</option>
+				<option value="">Dormido</option>
+			</select>
+			<input name="buscar" class="boton verde full redondo" id="buscar" onclick="javascript:busqueda_formulario('formulario_busqueda')" type="button" value="BUSCAR">
+		</div>
+	</div>
+	<div id="capaoscura" class="capaoscura autohide"></div>
+	<!--Find buscador oculto derecha-->
+
+	<!--Eliminar registro-->
+	<div id="borrar" class="zona-modal">
+	    <div class="modal-centrada redondo">
+			<div class="contenido-modal">
+				<div class="header-modal noborde">
+					<div class="cerrar-modal"><a href="javascript:oculta_quickview('borrar')">×</a></div>
+				</div>
+				<div class="body-modal center">
+					
+					<i class="flaticon-error icono-fon xxl-size rojo"></i>
+	                
+	                <p class="title s-size mt">¿Seguro que lo quieres borrar?</p>
+	                <div class="separa s-size"></div>
+	                <p>El registro se va a elmininar definitivamente.</p>
+					<div class="separa"></div>
+					<a href="javascript:oculta_quickview('borrar')" class="boton light redondo centrado mr-s-size">Cancelar</a>
+					<a href="javascript:oculta_quickview('borrar')" class="boton rojo redondo centrado">Borrar</a>
+					<div class="separa s-size"></div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay-modal" onclick="oculta_quickview('borrar')"></div>
+	</div>
+
+	<!--añadir-->
+	<div id="tabs" class="zona-modal">
+	    <div class="modal-centrada l-size">
+			<div class="contenido-modal redondo">
+				<div class="header-modal colordest">
+					<div class="cerrar-modal"><a href="javascript:oculta_quickview('tabs')" class="blanco">×</a></div>
+					<p class="title s-size nomargin blanco">Añadir registro</p>
+				</div>
+				<div class="body-modal" style="padding-top:0px">
+					<div class="tabs-responsive mini-scrollbar">
+						<ul class="tabs nomargin tab-estilo-2">
+					    	<li><a href="" class="active">Evento</a></li>
+					    	<li><a href="">Tarea</a></li>
+					    	<li><a href="">Recordatorio</a></li>
+						</ul>
+					</div>
+					<div class="mt">
+						
+						
+						<!--Forms-->
+						
+						<!--selects-->
+						<div class="input-group d-inline-flex full-movil">
+						 	<input name="fecha_inicio" type="text" class="form-control formulario xs-size flex-center redondo-left" size="15" placeholder="Fecha inicio">
+							<button class="boton colordest flex-der icono-input xs-size redondo-right" type="button"><i class="flaticon-calendario"></i></button>
+						</div>
+						<div class="input-group d-inline-flex full-movil">
+						 	<input name="fecha_fin" type="text" class="form-control formulario xs-size flex-center redondo-left" size="15" placeholder="Fecha fin">
+							<button class="boton colordest flex-der icono-input xs-size redondo-right" type="button"><i class="flaticon-calendario"></i></button>
+						</div>
+						<select name="hinicio" class="formulario xs-size redondo full-movil" style="" size="1">
+							<option selected="selected">Hora inicio:</option>
+							<option>00:00</option>
+							<option>00:15</option>
+						</select>
+						<select name="hfin" class="formulario xs-size redondo full-movil" style="" size="1">
+							<option selected="selected">Hora fin:</option>
+							<option>00:00</option>
+							<option>00:15</option>
+						</select>
+						<label class="container-check mini">Todo el día<input type="checkbox" value="true"><span class="checkmark-check"></span></label>
+						
+
+						<!--ubicación-->
+						<div class="separa s-size"></div>
+						<div class="input-group redondo mb">
+							<span class="input-group-addico flex-izq icono-input redondo-left xs-size"><i class="flaticon-ubica"></i></span>
+							<input type="text" class="form-control formulario flex-der redondo-right xs-size" placeholder="Dirección del evento" value="">
+						</div>
+
+						<div class="linea s-size"></div>
+						<!--Forms-->
+						
+						<!--Texto enriquecido-->
+						<p class="title xs-size mb-s-size">Descripción</p>
+						<textarea name="mensaje" class="formulario redondo" placeholder="Texto enriquecido" rows="6"></textarea>
+
+					</div>
+					<div class="separa s-size"></div>			
+				</div>
+				<div class="footer-modal right">
+					<a href="javascript:oculta_quickview('tabs')" class="boton s-size light redondo"><i class="flaticon-prohibido"></i> Cancelar</a>
+					<a href="" class="boton s-size verde redondo"><i class="flaticon-disquete"></i> Guardar</a>
+				</div>
+			</div>
+		</div>
+		<div class="overlay-modal" onclick="oculta_quickview('tabs')"></div>
+	</div>
+	
+<!--MENÚ LATERAL IZQUIERDA-->
+<div class="zona-izquierda mini-scrollbar">
+	<aside>
+		<div class="zona-logotipo">
+			<div class="elipsis">
+				<!--GRUPO 5-->
+				<img src="images/logotipo.svg" class="img-responsive" alt="Nombre" />
+			</div>
+		</div>
+		
+		<!--menu-->
+		<div class="right-menu">
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ HORIZONTAL TOP</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-cuadrados"></i><span class="textomenu">Desplegables</span></a>
+					<ul>
+			    	    <li><a href="menu-top-usuarios.htm"><span class="textomenu">Menú usuarios</span></a></li>
+			    	    <li><a href="menu-top-idiomas.htm"><span class="textomenu">Menú idiomas</span></a></li>
+			    	    <li><a href="menu-top-opciones.htm"><span class="textomenu">Menú opciones</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">SECCIONES</li>
+				<li class="has-sub active"><a href="#"><i class="flaticon-monitor"></i><span class="textomenu">Páginas</span></a>
+					<ul>
+			    	    <li><a href="listado1.htm"><span class="textomenu">Listado 1</span></a></li>
+			    	    <li><a href="listado2.htm"><span class="textomenu">Listado 2</span></a></li>
+			    	    <li><a href="listado3.htm"><span class="textomenu">Listado 3</span></a></li>
+			    	    
+						<li><a href="detalle.htm"><span class="textomenu">Detalle</span></a></li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="detalle-nuevo.htm"><span class="textomenu">Detalle nuevo</span></a>
+						</li>
+						<li><a href="detalle-full.htm"><span class="textomenu">Detalle full</span></a></li>
+						<li class="has-sub"><a href="#"><span class="textomenu">Ecommerce</span></a>
+			    	    	<ul>
+			    	    		<li><a href="tienda-listado.htm">Tienda</a></li>
+			    	    		<li><a href="tienda-pedidos.htm">Pedidos</a></li>
+			    	    		<li><a href="tienda-detalle.htm">Detalle producto</a></li>
+			    	    		<li><a href="tienda-anadir.htm">Añadir producto</a></li>
+			    	    		<li><a href="tienda-carro.htm">Carro</a></li>
+			    	    		<li><a href="tienda-checkout.htm">Checkout</a></li>
+			    	    	</ul>
+			    	    </li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="alta.htm"><span class="textomenu">Alta</span></a>
+						</li>
+						<li class="active"><a href="agenda.htm"><span class="textomenu">Agenda</span></a></li>
+						<li><a href="seo.htm"><span class="textomenu">Seo</span></a></li>
+						<li><a href="comentarios.htm"><span class="textomenu">Comentarios</span></a></li>
+						<li><a href="email.htm"><span class="textomenu">Email</span></a></li>
+						<li><a href="factura.htm"><span class="textomenu">Factura</span></a></li>
+						<li><a href="reserva.htm"><span class="textomenu">Reserva</span></a></li>
+						<li>
+							<div class="posicion-top-right" style="padding-top:5px"><i class="flaticon-circulo-menos rojo" title="Módulo NO disponible"></i></div>
+							<a href="estadisticas.htm"><span class="textomenu rojo" title="Módulo NO disponible">Estadísticas</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-candado"></i><span class="textomenu">Autentificación</span></a>
+					<ul>
+			    	    <li><a href="login.htm" target="_blank"><span class="textomenu">Login</span></a></li>
+			    	    <li><a href="recordar.htm" target="_blank"><span class="textomenu">Recordar contraseña</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">COMPONENTES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-capas"></i><span class="textomenu">UI Elements</span></a>
+					<ul>
+			    	    <li><a href="mensajes.htm"><span class="textomenu">Mensajes</span></a></li>
+						<li><a href="botones.htm"><span class="textomenu">Botones</span></a></li>
+						<li><a href="modals.htm"><span class="textomenu">Modals</span></a></li>
+						<li><a href="paginacion.htm"><span class="textomenu">Paginación</span></a></li>
+						<li><a href="tabs.htm"><span class="textomenu">Tabs</span></a></li>
+						<li><a href="slider.htm"><span class="textomenu">Slider</span></a></li>
+						<li><a href="acordeon.htm"><span class="textomenu">Acordeón</span></a></li>
+						<li><a href="progress-bars.htm"><span class="textomenu">Progress bars</span></a></li>
+						<li><a href="flex.htm"><span class="textomenu">Flex</span></a></li>
+						<li><a href="calendarios.htm"><span class="textomenu">Calendarios</span></a></li>
+						<li><a href="tipografia.htm"><span class="textomenu">Tipografía</span></a></li>
+						<li><a href="clases.htm"><span class="textomenu">Clases</span></a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estructura"></i><span class="textomenu">Tablas</span></a>
+					<ul>
+			    	    <li><a href="tablas-basicas.htm"><span class="textomenu">Tablas básicas</span></a></li>
+						<li><a href="tablas-especiales.htm"><span class="textomenu">Tablas especiales</span></a></li>
+					</ul>
+				</li> 
+				<li>
+					<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+					<a href="formularios.htm"><i class="flaticon-lista"></i><span class="textomenu">Formularios</span></a>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estrella"></i><span class="textomenu">Iconos / Svg</span></a>
+					<ul>
+			    	    <li><a href="flaticons.htm"><span class="textomenu">Flaticons</span></a></li>
+						<li><a href="svg.htm"><span class="textomenu">Imágenes SVG</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">Pre-Built Pages</li>
+				<li class="has-sub "><a href="#"><i class="flaticon-llave-inglesa"></i><span class="textomenu">Error</span></a>
+					<ul>
+			    	    <li class="">
+			    	    	<div class="posicion-top-right"><div class="badge xs-size rojo">2</div></div>
+			    	    	<a href="404.htm"><span class="textomenu">404</span></a>
+			    	    </li>
+						<li class=""><a href="500.htm"><span class="textomenu">500</span></a></li>
+					</ul>
+				</li>
+				<li><a href="usuarios.htm"><i class="flaticon-ajuste"></i><span class="textomenu">Gestión usuarios</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</aside>
+</div>
+<!--FIN MENÚ LATERAL IZQUIERDA-->
+
+<!--CONTENIDOS DERECHA-->
+<div class="zona-derecha">
+
+	<!--Header menú-->
+	<header class="fixed">
+		<div class="menu-top-fixed">
+			<ul class="top-menu">
+				<li><a href=""><i class="flaticon-menu icon"></i></a></li>
+			</ul>
+			<ul class="top-menu dere">
+				
+				<li><a href=""><i class="flaticon-configuracion icon ani-rotar-der"></i></a></li>
+				<li><a href=""><i class="flaticon-full-screen icon"></i></a></li>
+				<li>
+					<label id="switch_dia_noche" for="dia_noche" class="switch-checkbox nomargin" title="Modo día/noche">
+						<input id="dia_noche" type="checkbox" checked="">
+						<img src="images/luna.svg" class="checked" alt="Noche">
+						<img src="images/sol.svg" class="unchecked" alt="Día">
+					</label>
+				</li>
+				<li class="">
+					<div class="posicion-top-right">
+						<span class="badge amarillo">2</span>
+					</div>
+					<a href=""><i class="flaticon-usuarios icon"></i></a>
+					<!--<div class="submenu-top s-size mini-scrollbar">
+						<a class="menu-vertical-top" href="#"><i class="flaticon-usuario s-size"></i> Lostrego </a>
+						<a class="menu-vertical-top active" href="#">
+							<div class="posicion-top-right">
+								<i class="flaticon-check verde xs-size"></i>
+							</div>
+							<img src="images/yo.jpg" style="" class="img-rounded">Neo
+						</a>
+					</div>-->
+				</li>
+				<li><a href=""><i class="flaticon-puntos-vertical icon"></i></a></li>
+			</ul>
+			
+		</div>
+	</header>
+
+	<!--CONTENIDOS-->
+	<div class="contenedor-fluid septopbot tiene-footer-fixed">
+		<div class="fila">
+			<div class="col12">
+				<div class="centradovertical aling-between mb"><!--mb (margin bottom 1rem)-->
+		
+					<div class="zona-title">
+						<i class="icon flaticon-alarma"></i>
+						<div>
+							<h1 class="title mayusculas">Agenda</h1>
+							<p class="txtmin s-size"><em>Calendario de eventos</em></p>
+						</div>
+					</div>
+
+					<div class="push">
+						<ul class="page-breadcrumb desktop der mayusculas">
+							<li><a href="index.htm">Inicio</a></li>
+							<li>Páginas</li>
+							<li><a href="agenda.htm">Agenda</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--calendario y listado-->
+			<div class="col06 sepcolbot">
+				<div class="card card-borde card-stretch redondo">
+					<div class="card-body">
+						<div class="card-content padding">
+							
+							<!--calendario / fecha-->
+							<div class="fondo-calendar redondo p-2">
+								<div class="fila" >
+									<div class="col06 col07-xl">
+										<table class="calendar redondo fondo-blanco" summary="Calendario agenda">
+											<!--<caption class="mb-s-size">
+												<a href="#" class="izq redondo" title="Anterior">‹</a>
+												<a href="#" class="der redondo" title="Siguiente">›</a>
+												<div>
+													<select size="1" class="formcal redondo" name="mes" id="mes">
+														<option selected="selected">Septiembre</option><option>Octubre</option><option>Noviembre</option>
+													</select>
+													<select size="1" class="formcal redondo" name="ano" id="ano">
+														<option selected="selected">2023</option><option>2020</option><option>2022</option>
+													</select>
+												</div>
+											</caption>-->
+											<thead>
+												<tr>
+													<th class="anterior">‹</th>
+													<th colspan="5"><strong>Octubre 2023</strong></th>
+													<th class="siguiente">›</th>
+									            </tr>
+												<tr class="tr-oscuro">
+													<th scope="col" title="Lunes">Lu</th>
+													<th scope="col" title="Martes">Ma</th>
+													<th scope="col" title="Miércores">Mi</th>
+													<th scope="col" title="Jueves">Ju</th>
+													<th scope="col" title="Viernes">Vi</th>
+													<th scope="col" title="Sábado">Sa</th>
+													<th scope="col" title="Domingo">Do</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="antes">30</td><td class="antes">31</td>
+													<td><a href="" class="">1</a></td><td><a href="" class="">2</a></td><td><a href="" class="">3</a></td><td class=""><a href="" class="">4</a></td><td class=""><a href="" class="">5</a></td>
+												</tr>
+												<tr>
+													<td class="hoy">6</td><td><a href="" class="">7</a></td><td><a href="" class="">8</a></td><td><a href="" class="">9</a></td><td><a href="#" class="active">10</a></td><td><a href="" class="">11</a></td><td>12</td>
+												</tr>
+												<tr>
+													<td><a href="#" class="">13</a></td><td>14</td><td>15</td><td class="seleccionado"><a href="#">16</a></td><td>17</td><td>18</td><td class=""><a href="#" class="">19</a></td>
+												</tr>
+												<tr>
+													<td>20</td><td>21</td><td>22</td><td><a href="#" class="">23</a></td><td>24</td><td>25</td><td class="">26</td>
+												</tr>
+												<tr>
+													<td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="despues">1<!--&nbsp;--></td><td class="despues">2</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<th colspan="7" class="btfoot">Borrar selección</th>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+									<did class="col06 col05-xl escritorio">
+										<div class="centradovertical center">
+											<div class="fondo-fecha redondo">
+												<p class="title maxsize verde">16</p>
+												<p class="txtmin center">Septiembre 2021</p>
+											</div>
+										</div>
+									</did>
+								</div>
+							</div>
+							<!--/calendario / fecha-->
+
+							<!--listado sólo pc-->
+							<div class="zona-post-users escritorio">
+
+								<div class="post-users redondo">
+									<div class="posicion-top-right"><div class="badge xs-size azul mayusculas">Evento</div></div>
+									<div class="post-date">
+										<span>16</span>
+										<em>Sep</em>
+									</div>
+									<div class="post-content">
+										<figure>
+											<img src="images/yo.jpg" class="icono-img l-size img-rounded" alt="">
+										</figure>
+										<div class="post-info">
+											<span>
+												Título del post de la agenda que se quiera
+											<em><i class="flaticon-reloj va-middle"></i> 19:30</em></span>
+											<div class="limpiar"></div>
+											<a href="" class="boton xxs-size verde redondo mt-s-size"><i class="flaticon-pagina"></i> Ver</a>
+											<div class="modal-borrar boton xxs-size rojo redondo  mt-s-size"><i class="flaticon-basura" title="Borrar"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="post-users redondo">
+									<div class="posicion-top-right"><div class="badge xs-size cian mayusculas">Tarea</div></div>
+									<div class="post-date">
+										<span>16</span>
+										<em>Sep</em>
+									</div>
+									<div class="post-content">
+										<figure>
+											<img src="images/nofoto.jpg" class="icono-img l-size img-rounded" alt="">
+										</figure>
+										<div class="post-info">
+											<span>
+												Otro título de otro evento del mismo día
+											<em><i class="flaticon-reloj va-middle"></i> 13:20</em></span>
+											<div class="limpiar"></div>
+											<a href="" class="boton xxs-size verde redondo mt-s-size"><i class="flaticon-pagina"></i> Ver</a>
+											<div class="modal-borrar boton xxs-size rojo redondo  mt-s-size"><i class="flaticon-basura" title="Borrar"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="post-users redondo">
+									<div class="posicion-top-right"><div class="badge xs-size purpura mayusculas">Recordatorio</div></div>
+									<div class="post-date">
+										<span>16</span>
+										<em>Sep</em>
+									</div>
+									<div class="post-content">
+										<figure>
+											<div class="avatar s-size">
+												<span class="zona-avatar img-rounded naranja">Ed</span>
+											</div>
+										</figure>
+										<div class="post-info">
+											<span>
+												Título de otro evento del día 16 de septiembre
+											<em><i class="flaticon-reloj va-middle"></i> 11:00</em></span>
+											<div class="limpiar"></div>
+											<a href="" class="boton xxs-size verde redondo mt-s-size"><i class="flaticon-pagina"></i> Ver</a>
+											<div class="modal-borrar boton xxs-size rojo redondo  mt-s-size"><i class="flaticon-basura" title="Borrar"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--detalle-->
+			<div class="col06">
+				<div class="card card-borde card-stretch redondo">
+					<div class="card-body">
+						<div class="card-content padding">
+							<div class="posicion-top-right"><div class="badge xs-size azul mayusculas">Evento</div></div>
+							
+							<div class="post-imagen"><img src="images/yo.jpg" class="icono-img l-size img-rounded" alt=""></div>
+							<div class="post-texto">
+								<p class="txtmin verde"><i class="flaticon-calendario va-middle"></i> 16/09/2021&nbsp;&nbsp;<i class="flaticon-reloj va-middle"></i> 19:30</p>
+								<p class="title xs-size">Título del post de la agenda que se quiera</p>
+							</div>
+							<div class="linea s-size"></div>
+
+							<!--botones-->
+							<div class="flex-der mb">
+								<a href="" class="boton xs-size colordest redondo mr"><i class="flaticon-editar"></i> Editar</a>
+								<div class="modal-borrar boton xs-size rojo redondo"><i class="flaticon-basura" title="Borrar"></i> Borrar</div>
+							</div>
+
+							<!--lugar y hora inicio y hora fin-->
+							<div class="caja borde-punteado blanca s-size redondo mb">
+								<i class="flaticon-ubica va-middle"></i> Skyline Madrid - Paseo de la Castellana, 111, 28046 Madrid
+								<div class="limpiar"></div>
+								<i class="flaticon-reloj va-middle"></i> 19:30 a 20:30
+							</div>
+
+							<!--zona texto enriquecido-->
+							<div class="zona-descripcion">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue molestie magna, id placerat justo vulputate eu. Nam tincidunt, nunc ut dignissim scelerisque, est <strong>libero elementum lectus</strong>, eu euismod purus augue ut ante. Ut blandit felis diam, id tincidunt orci fringilla eu. In hac habitasse platea dictumst. Curabitur <a href="" target="_blank" rel="nofollow noopener noreferrer">facilisis dictum tincidunt</a>. Maecenas eu dui arcu. Fusce non tempor sem. Suspendisse iaculis dictum quam, sit amet ornare turpis interdum quis.<br><br>
+								Sed varius neque justo, non ornare ante porta vel. Nullam quis mattis felis, et aliquet arcu. Maecenas sit <strong>amet urna non nibh blandit</strong> gravida nec eget eros. Donec risus lorem, semper sit amet risus vitae, accumsan iaculis dui.</p>
+								
+								<ul>
+									<li>Lorem ipsum dolor sit</li>
+									<li>Consectetur adipiscing elit</li>
+									<li>Duis congue molestie magna</li>
+								</ul>
+								
+								<p>Integer suscipit, nisi non dictum pretium, lectus tellus blandit eros, in <strong>gravida augue massa</strong> accumsan nisl. Fusce rutrum convallis augue non porttitor. Sed sed enim ut metus <strong>vestibulum</strong> hendrerit. Aenean cursus, leo consequat condimentum venenatis, tellus tellus sollicitudin augue, ut convallis odio dolor at odio.</p><br>
+
+								<img src="images/producto02.jpg" alt="">
+								<br>
+								
+								<p>Duis <em>egestas odio tristique</em> purus porta laoreet. Vestibulum viverra, massa in gravida hendrerit, nibh elit luctus ante, vel porttitor augue tortor sit amet ipsum. Nunc commodo sagittis elementum.</p>
+								
+								<blockquote>
+									Suspendisse iaculis dictum quam, sit amet ornare turpis interdum quis
+								</blockquote>
+								
+								<p><em>Fusce vel eleifend lectus. Quisque tempus tempor tempus</em>. Suspendisse potenti. Nullam convallis nisl non luctus accumsan. Vestibulum placerat risus a mauris vulputate posuere. Proin et massa ante. Sed viverra tellus vel placerat accumsan. Vivamus scelerisque accumsan felis at faucibus. Aenean eget ante ac erat bibendum tincidunt nec id massa. Aliquam in efficitur nulla. Fusce at faucibus elit. Curabitur pulvinar euismod urna, eget laoreet ex vulputate vitae.</p>
+							</div>
+
+							
+
+						</div>
+					</div>
+				</div>
+
+				<!--Paginación-->
+				<div class="separa xs-size"></div>
+				<div class="flex-start-end">
+				    <ul class="paginacion redondo ">
+				        <li class="pagina-item"><a class="pagina-link" href="#">‹ Anterior</a></li>
+				    </ul>
+				     <ul class="paginacion redondo ">
+				        <li class="pagina-item"><a class="pagina-link" href="#">Siguiente ›</a></li>
+				    </ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--FIN CONTENIDOS-->
+
+	<!--FOOTER PEGADO-->
+	<footer class="fixed">
+		<div class="flex-der">
+			<div class="boton colordest s-size redondo modal-tabs mr"><i class="flaticon-anadir"></i> Añadir</div>
+		</div>
+	</footer>
+	<!--FIN FOOTER PEGADO-->
+
+</div>
+<!--FIN CONTENIDO DERECHA-->
+	
+	<!--Tamaño pantalla-->
+	<div id="dimensions">
+		Resolución: <span class="width"></span>
+	</div>
+
+	<!--Jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--Grupo5.com - scrolltop y dimensions-->
+	<script src="js/general.js"></script>
+	
+	<!--Scripts de la web al final-->
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

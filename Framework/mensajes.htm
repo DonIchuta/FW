@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>UI ELEMENTS - Mensajes | www.grupo5.com</title>
+	<meta name="description" content="Panel de control privado de aplicaciones y páginas web, potente y conceptual creada y pensada para los clientes de Grupo5.com." />
+	<meta name="keywords" content="admin, cms, panel, privado, administración, gestión, control, webs, tiendas, online, nube, virtual, aplicaciones" />
+    <meta name="author" content="Grupo5.com" />
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+   	   	
+   	<!-- Chrome, Firefox OS y Opera -->
+	<meta name="theme-color" content="#15171f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#15171f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+	
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="dark_style" disabled="">
+	
+	<!-- Fav y touch icons-->
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png" />
+   	
+</head>
+
+<body class="wide">
+
+<!--Mensaje urgente
+<div id="topbar" class="top-urgente">
+	<div class="parrafo-centrado xl-size">
+		<a href="javascript:oculta_quickview('topbar')" class="topurgente-close">×</a>
+		<p><span>Urgente!</span> Texto que saldrá indicando algo urgente y que se podrá enlazar. <a href="">Más información</a></p>
+	</div>
+</div>-->
+
+<!--Mensaje aparece-->
+<div id="infotopbar" class="slideDown">
+    Mensaje para el usuario en formato horizontal que se corta si es muy largo
+    <a href="javascript:oculta_quickview('infotopbar')" class="infotopbar-close">×</a>
+</div>
+
+<!--MENSAJES ADMIN-->
+<div class="posicion-mensajes">
+	<div class="mensajes-admin">
+		<div class="error" role="error">
+			<div class="btn-cerrar" onclick="this.parentElement.style.display='none';">×</div>
+			<span>Añadir la clase <code class="code-class amarillo">.posicion-mensajes</code> para ubicar dentro de la pantalla la zona donde saldrán los mensajes de la administración.</span>
+		</div>
+		
+		<div class="mensaje redondo" role="mensaje">
+			<div class="btn-cerrar" onclick="this.parentElement.style.display='none';">×</div>
+			<span>Luego añadir la clase <code class="code-class amarillo">.mensajes-admin</code> para delimitar el ancho máximo de las cajas de los mensajes.</span>
+		</div>
+		
+		<div class="aviso" role="aviso">
+			<div class="btn-cerrar" onclick="this.parentElement.style.display='none';">×</div>
+				<p>Añadir los tipos de mensajes con las clases <code class="code-class morado">.error</code>, <code class="code-class morado">.mensaje</code>, <code class="code-class morado">.aviso</code> y <code class="code-class morado">.cargando</code>.</p>
+			</div>
+			
+		<div class="cargando redondo" role="cargando">
+			<div class="btn-cerrar" onclick="this.parentElement.style.display='none';">×</div>
+			<p>Cargando...</p>
+		</div>
+	</div>
+</div>
+
+<!--MENÚ LATERAL IZQUIERDA-->
+<div class="zona-izquierda mini-scrollbar">
+	<aside>
+		<div class="zona-logotipo">
+			<div class="elipsis">
+				<!--GRUPO 5-->
+				<img src="images/logotipo.svg" class="img-responsive" alt="Nombre" />
+			</div>
+		</div>
+		
+		<!--menu-->
+		<div class="right-menu">
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ HORIZONTAL TOP</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-cuadrados"></i><span class="textomenu">Desplegables</span></a>
+					<ul>
+			    	    <li><a href="menu-top-usuarios.htm"><span class="textomenu">Menú usuarios</span></a></li>
+			    	    <li><a href="menu-top-idiomas.htm"><span class="textomenu">Menú idiomas</span></a></li>
+			    	    <li><a href="menu-top-opciones.htm"><span class="textomenu">Menú opciones</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">SECCIONES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-monitor"></i><span class="textomenu">Páginas</span></a>
+					<ul>
+			    	    <li><a href="listado1.htm"><span class="textomenu">Listado 1</span></a></li>
+			    	    <li><a href="listado2.htm"><span class="textomenu">Listado 2</span></a></li>
+			    	    <li><a href="listado3.htm"><span class="textomenu">Listado 3</span></a></li>
+			    	    
+						<li><a href="detalle.htm"><span class="textomenu">Detalle</span></a></li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="detalle-nuevo.htm"><span class="textomenu">Detalle nuevo</span></a>
+						</li>
+						<li><a href="detalle-full.htm"><span class="textomenu">Detalle full</span></a></li>
+						<li class="has-sub"><a href="#"><span class="textomenu">Ecommerce</span></a>
+			    	    	<ul>
+			    	    		<li><a href="tienda-listado.htm">Tienda</a></li>
+			    	    		<li><a href="tienda-pedidos.htm">Pedidos</a></li>
+			    	    		<li><a href="tienda-detalle.htm">Detalle producto</a></li>
+			    	    		<li><a href="tienda-anadir.htm">Añadir producto</a></li>
+			    	    		<li><a href="tienda-carro.htm">Carro</a></li>
+			    	    		<li><a href="tienda-checkout.htm">Checkout</a></li>
+			    	    	</ul>
+			    	    </li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="alta.htm"><span class="textomenu">Alta</span></a>
+						</li>
+						<li><a href="agenda.htm"><span class="textomenu">Agenda</span></a></li>
+						<li><a href="seo.htm"><span class="textomenu">Seo</span></a></li>
+						<li><a href="comentarios.htm"><span class="textomenu">Comentarios</span></a></li>
+						<li><a href="email.htm"><span class="textomenu">Email</span></a></li>
+						<li><a href="factura.htm"><span class="textomenu">Factura</span></a></li>
+						<li><a href="reserva.htm"><span class="textomenu">Reserva</span></a></li>
+						<li>
+							<div class="posicion-top-right" style="padding-top:5px"><i class="flaticon-circulo-menos rojo" title="Módulo NO disponible"></i></div>
+							<a href="estadisticas.htm"><span class="textomenu rojo" title="Módulo NO disponible">Estadísticas</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-candado"></i><span class="textomenu">Autentificación</span></a>
+					<ul>
+			    	    <li><a href="login.htm" target="_blank"><span class="textomenu">Login</span></a></li>
+			    	    <li><a href="recordar.htm" target="_blank"><span class="textomenu">Recordar contraseña</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">COMPONENTES</li>
+				<li class="has-sub active"><a href="#"><i class="flaticon-capas"></i><span class="textomenu">UI Elements</span></a>
+					<ul>
+			    	    <li class="active"><a href="mensajes.htm"><span class="textomenu">Mensajes</span></a></li>
+						<li><a href="botones.htm"><span class="textomenu">Botones</span></a></li>
+						<li><a href="modals.htm"><span class="textomenu">Modals</span></a></li>
+						<li><a href="paginacion.htm"><span class="textomenu">Paginación</span></a></li>
+						<li><a href="tabs.htm"><span class="textomenu">Tabs</span></a></li>
+						<li><a href="slider.htm"><span class="textomenu">Slider</span></a></li>
+						<li><a href="acordeon.htm"><span class="textomenu">Acordeón</span></a></li>
+						<li><a href="progress-bars.htm"><span class="textomenu">Progress bars</span></a></li>
+						<li><a href="flex.htm"><span class="textomenu">Flex</span></a></li>
+						<li><a href="calendarios.htm"><span class="textomenu">Calendarios</span></a></li>
+						<li><a href="tipografia.htm"><span class="textomenu">Tipografía</span></a></li>
+						<li><a href="clases.htm"><span class="textomenu">Clases</span></a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estructura"></i><span class="textomenu">Tablas</span></a>
+					<ul>
+			    	    <li><a href="tablas-basicas.htm"><span class="textomenu">Tablas básicas</span></a></li>
+						<li><a href="tablas-especiales.htm"><span class="textomenu">Tablas especiales</span></a></li>
+					</ul>
+				</li> 
+				<li>
+					<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+					<a href="formularios.htm"><i class="flaticon-lista"></i><span class="textomenu">Formularios</span></a>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estrella"></i><span class="textomenu">Iconos / Svg</span></a>
+					<ul>
+			    	    <li><a href="flaticons.htm"><span class="textomenu">Flaticons</span></a></li>
+						<li><a href="svg.htm"><span class="textomenu">Imágenes SVG</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">Pre-Built Pages</li>
+				<li class="has-sub "><a href="#"><i class="flaticon-llave-inglesa"></i><span class="textomenu">Error</span></a>
+					<ul>
+			    	    <li class="">
+			    	    	<div class="posicion-top-right"><div class="badge xs-size rojo">2</div></div>
+			    	    	<a href="404.htm"><span class="textomenu">404</span></a>
+			    	    </li>
+						<li class=""><a href="500.htm"><span class="textomenu">500</span></a></li>
+					</ul>
+				</li>
+				<li><a href="usuarios.htm"><i class="flaticon-ajuste"></i><span class="textomenu">Gestión usuarios</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</aside>
+</div>
+<!--FIN MENÚ LATERAL IZQUIERDA-->
+
+<!--CONTENIDOS DERECHA-->
+<div class="zona-derecha">
+	
+	<!--Header menú-->
+	<header class="fixed">
+		<div class="menu-top-fixed">
+			<ul class="top-menu">
+				<li><a href=""><i class="flaticon-menu icon"></i></a></li>
+			</ul>
+			<ul class="top-menu dere">
+				
+				<li><a href=""><i class="flaticon-configuracion icon ani-rotar-der"></i></a></li>
+				<li><a href=""><i class="flaticon-circulo-check icon verde"></i></a></li>
+				<li>
+					<label id="switch_dia_noche" for="dia_noche" class="switch-checkbox nomargin" title="Modo día/noche">
+						<input id="dia_noche" type="checkbox" checked="">
+						<img src="images/luna.svg" class="checked" alt="Noche">
+						<img src="images/sol.svg" class="unchecked" alt="Día">
+					</label>
+				</li>
+				<li><a href=""><i class="flaticon-puntos-vertical icon"></i></a></li>
+			</ul>
+			
+		</div>
+	</header>
+
+	<!--CONTENIDOS ahora aplicamos un max-width-->
+	<div class="contenido-maxwidth l-size">
+		<div class="contenedor-fluid septopbot">
+			<div class="fila">
+
+				<div class="col12">
+					<div class="centradovertical aling-between mb"><!--mb (margin bottom 1rem)-->
+						<div class="zona-title center-flex izq">
+							<i class="icon flaticon-capas"></i>
+							<div>
+								<h1 class="title mayusculas">Mensajes</h1>
+								<p class="txtmin s-size"><em>Documentación y ejemplos</em></p>
+							</div>
+						</div>
+						<div class="push">
+							<ul class="page-breadcrumb desktop flex-der mayusculas">
+								<li><a href="index.htm">Inicio</a></li>
+								<li>UI Elements</li>
+								<li><a href="mensajes.htm">Mensajes</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col12">
+					<div class="card card-borde card-stretch mb">
+						<div class="card-body">
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Msg-form colores</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.msg-form</code> y el color.</p>
+								<div class="fila">
+									<div class="col04 col06-xs">
+										<div class="msg-form colordest">colordest</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form amarillo">amarillo</div>										
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form verde">verde</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form rojo">rojo</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form gris">gris</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form blanco">blanco</div>
+									</div>
+								</div>
+								<h2 class="title xs-size mt mb">Msg-form con borde</h2>
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.borde</code> y el color para que los mensajes tengan borde izquierda de 4px.</p>
+								<div class="fila">
+									<div class="col04 col06-xs">
+										<div class="msg-form borde colordest">colordest</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form borde amarillo">amarillo</div>										
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form borde verde">verde</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form borde rojo redondo">rojo</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form borde gris redondo">gris</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form borde blanco redondo">blanco</div>
+									</div>
+								</div>
+
+								<h2 class="title xs-size mt mb">Msg-form con fondo</h2>
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.con-fondo</code> y la clase del color para que los mensajes tengan fondo del color seleccionado.</p>
+								<div class="fila">
+									<div class="col04 col06-xs">
+										<div class="msg-form con-fondo colordest redondo">colordest</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form con-fondo amarillo redondo">amarillo</div>										
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form con-fondo verde redondo">verde</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form con-fondo rojo redondo">rojo</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form con-fondo gris redondo">gris</div>
+									</div>
+									<div class="col04 col06-xs">
+										<div class="msg-form con-fondo blanco redondo">blanco</div>
+									</div>
+								</div>
+								<h2 class="title xs-size mt mb">Msg-form tamaños</h2>
+								<p class="txtmin mb">Los mensajes tienen dos tamaños el que no precisa clase y sale por defecto y añadiendo la clase <code class="code-class">.s-size</code> convierte el mensaje en mas pequeño.</p>
+								<div class="fila">
+									<div class="col03-s col06-xs">
+										<div class="msg-form colordest redondo">sin tamaño</div>
+									</div>
+									<div class="col03-s col06-xs">
+										<div class="msg-form s-size colordest redondo">s-size</div>
+									</div>
+                                    <div class="col03-s col06-xs">
+										<div class="msg-form xs-size colordest redondo">xs-size</div>
+									</div>
+									<div class="col03-s col06-xs">
+										<div class="msg-form xxs-size colordest redondo">xxs-size</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Msg-form ejemplos</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.link</code> dentro del enlace.</p>
+								<div class="msg-form colordest redondo">
+									Your credit card <strong>already expired</strong>. Please enter a valid &amp; up-to-date <a href="#" class="link">credit card</a> for make deposit.
+								</div>
+								<div class="separa s-size"></div>
+
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.con-icono</code> dentro del <code class="code-tag">&lt;div&gt;</code> y luego dentro de la etiqueta <code class="code-tag">&lt;i&gt;</code> poner la clase <code class="code-class">.icono</code> junto con el icono a cargar.</p>
+								<div class="msg-form amarillo con-icono redondo">
+									<i class="icono flaticon-advertencia bold"></i>
+									Your credit card <strong>already expired</strong>. Please enter a valid &amp; up-to-date <a href="#" class="link">credit card</a> for make deposit.
+								</div>
+								<div class="separa s-size"></div>
+
+								<p class="txtmin mb">Añadir un <code class="code-tag">&lt;div&gt;</code> con la clase <code class="code-class">.close</code> poner un aspa de cerrar a la derecha.</p>
+								<div class="msg-form verde con-icono redondo">
+                                 	<i class="icono flaticon-correcto bold"></i>
+                                 	Your credit card <strong>already expired</strong>. Please enter a valid &amp; up-to-date <a href="#" class="link">credit card</a> for make deposit.
+									<div class="close" onclick="this.parentElement.style.display='none';">×</div>
+								</div>
+								<div class="separa s-size"></div>
+
+								<div class="msg-form rojo con-icono redondo">
+                                 	<i class="icono flaticon-error bold"></i>
+                                 	Your credit card <strong>already expired</strong>. Please enter a valid &amp; up-to-date <a href="#" class="link">credit card</a> for make deposit.
+									<div class="close" onclick="this.parentElement.style.display='none';">×</div>
+								</div>
+								<div class="separa s-size"></div>
+
+								<div class="msg-form s-size gris con-icono redondo">
+                                 	<i class="icono flaticon-informacion bold"></i>
+                                 	Your credit card <strong>already expired</strong>. Please enter a valid &amp; up-to-date <a href="#" class="link">credit card</a> for make deposit.
+									<div class="close" onclick="this.parentElement.style.display='none';">×</div>
+								</div>
+								<div class="separa s-size"></div>
+
+								<div class="msg-form xs-size blanco con-icono redondo">
+                                 	<i class="icono flaticon-pregunta bold"></i>
+                                 	Your credit card <strong>already expired</strong>. Please enter a valid &amp; up-to-date <a href="#" class="link">credit card</a> for make deposit.
+									<div class="close" onclick="this.parentElement.style.display='none';">×</div>
+								</div>
+
+							</div>
+
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Badges (mensajitos / insignias)</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.badge</code> y el color.</p>
+								<span class="badge verde">Enviado</span>
+								<span class="badge naranja">Pendiente</span>
+								<span class="badge rojo">Cancelado</span>
+								<span class="badge amarillo">Badge amarillo</span>
+								<span class="badge colordest">Badge colordest</span>
+								<span class="badge purpura">Badge purpura</span>
+								<span class="badge azul">Badge azul</span>
+								<span class="badge cian">Badge cian</span>
+								<span class="badge palido">Badge palido</span>
+								<span class="badge gris">Badge gris</span>
+								<span class="badge negro">Badge negro</span>
+								<span class="badge blanco">Badge blanco</span>
+								
+								<div class="separa"></div>
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.bordered</code> para que tengan borde sin fondo.</p>
+								<span class="badge verde bordered">Enviado</span>
+								<span class="badge naranja bordered">Pendiente</span>
+								<span class="badge rojo bordered">Cancelado</span>
+								<span class="badge amarillo bordered">Badge amarillo</span>
+								<span class="badge colordest bordered">Badge colordest</span>
+								<span class="badge purpura bordered">Badge purpura</span>
+								<span class="badge azul bordered">Badge azul</span>
+								<span class="badge cian bordered">Badge cian</span>
+								<span class="badge gris bordered">Badge gris</span>
+								<span class="badge negro bordered">Badge negro</span>
+								<span class="badge blanco bordered">Badge blanco</span>
+
+								<div class="separa"></div>
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.xs-size</code> para mostrar la insignia mas pequeña.</p>
+								<div class="badge xs-size verde">Nuevo</div>
+								<div class="badge xs-size naranja">12</div>
+								<div class="badge xs-size rojo">Error</div>
+								<div class="badge xs-size colordest">Colordest</div>
+								<div class="badge xs-size azul">Azul</div>
+								<div class="badge xs-size gris">Gris</div>
+								<div class="badge xs-size negro">Negro</div>
+								<div class="badge xs-size blanco">Blanco</div>
+
+								<div class="separa xs-size"></div>
+								<div class="badge xs-size verde bordered">Nuevo</div>
+								<div class="badge xs-size naranja bordered">12</div>
+								<div class="badge xs-size rojo bordered">Error</div>
+								<div class="badge xs-size colordest bordered">Colordest</div>
+								<div class="badge xs-size azul bordered">Azul</div>
+								<div class="badge xs-size gris bordered">Gris</div>
+								<div class="badge xs-size negro bordered">Negro</div>
+								<div class="badge xs-size blanco bordered">Blanco</div>
+
+								<div class="separa"></div>
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.minibox</code> para mostrar módulos de colores.</p>
+								<div class="badge minibox verde redondo"></div>
+								<div class="badge minibox naranja"></div>
+								<div class="badge minibox amarillo"></div>
+								<div class="badge minibox rojo redondo"></div>
+								<div class="badge minibox colordest"></div>
+								<div class="badge minibox azul redondo"></div>
+								<div class="badge minibox gris"></div>
+								<div class="badge minibox negro redondo"></div>
+
+								<div class="badge minibox verde bordered"></div>
+								<div class="badge minibox naranja bordered redondo"></div>
+								<div class="badge minibox rojo bordered"></div>
+								<div class="badge minibox colordest bordered redondo"></div>
+								<div class="badge minibox azul bordered"></div>
+								<div class="badge minibox gris bordered redondo"></div>
+								<div class="badge minibox negro bordered"></div>
+
+								<!--ejemplos-->
+								<div class="separa xs-size"></div>
+								<p class="txtmin xs-size"><span class="badge minibox amarillo redondo"></span> Campos obligatorios.</p>
+								<p class="txtmin xs-size enlinea"><span class="badge minibox verde cursor-help" title="Altas"></span> Altas.</p>
+								<p class="txtmin xs-size enlinea"><span class="badge minibox rojo cursor-help" title="Bajas"></span> Bajas.</p>
+
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Cards info</h2>
+								<!--<h2 class="subtitle">Cards info</h2>-->
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.card</code> y <code class="code-class">.info</code> con el color.</p>
+
+								<div class="fila fila-igual-altura nopadding">
+									<div class="col06 mb">
+										<a href="">
+											<div class="card info h100 colordest redondo">
+												<div class="card-content overflow-hidden">
+													<div class="card-texto">
+														<i class="flaticon-informacion"></i>
+														<div>
+															Aquí ponemos texto con un flaticon a la izquierda todo dentro de un href.
+														</div>
+													</div>
+												</div>                        
+											</div>
+										</a>
+									</div>
+									<div class="col06 mb">
+										<div class="card info h100 azul redondo">
+											<div class="card-content overflow-hidden">
+												<div class="card-texto">
+													<img src="images/mensaje-aviso.svg" class="" alt="">
+													<div>
+														Aquí ponemos texto con una imagen svg a la izquierda.
+													</div>
+												</div>
+											</div>                        
+										</div>
+									</div>
+									<div class="col06 mb">
+										<div class="card info h100 cian redondo">
+											<div class="card-content overflow-hidden">
+												<div class="card-texto">
+													<i class="flaticon-informacion ani-agrandar"></i>
+													<div>
+														Aquí flaticon animado .ani-agrandar a la izquierda
+													</div>
+												</div>
+											</div>                        
+										</div>
+									</div>
+									<div class="col06 mb">
+										<div class="card info h100 verde redondo">
+											<div class="card-content overflow-hidden">
+												<div class="card-texto">
+													<i class="flaticon-refrescar ani-rotar-der"></i>
+													<div>
+														Aquí ponemos flaticon animado .ani-rotar-der a la izquierda.
+													</div>
+												</div>
+											</div>                        
+										</div>
+									</div>
+									<div class="col06 mb">
+										<div class="card info h100 naranja redondo cursor-pointer" onclick="javascript:">
+											<div class="card-content overflow-hidden">
+												<div class="card-texto">
+													<i class="flaticon-pregunta"></i>
+													<div>
+														<p class="card-title">TÍTULO</p>
+														Aquí ponemos un onclick y antes la clase .cursor-pointer para cambiar el cursor.
+													</div>
+												</div>
+											</div>                        
+										</div>
+									</div>
+									<div class="col06 mb">
+										<div class="card info h100 amarillo redondo cursor-help" title="Información sobre este mensaje">
+											<div class="card-content overflow-hidden">
+												<div class="card-texto">
+													<i class="flaticon-advertencia"></i>
+													<div>
+														<p class="card-title">SEO</p>
+														Incompleta
+													</div>
+												</div>
+											</div>                        
+										</div>
+									</div>
+
+									<div class="col06 mb">
+										<a href="">
+											<div class="card info h100 rojo redondo">
+												<div class="posicion-top-right"><div class="badge amarillo">Developers</div></div>
+												<div class="card-content overflow-hidden">
+													<div class="card-texto">
+														<i class="flaticon-llave-inglesa"></i>
+														<div>
+															<p class="card-title"><strong>ERRORES</strong></p>
+															Se requiere revisión periódica.
+														</div>
+													</div>
+												</div>                        
+											</div>
+										</a>
+									</div>
+									<div class="col03 col06-xs mb">
+										<div class="card info h100 verde redondo cursor-pointer" onclick="javascript:">
+											<div class="card-content overflow-hidden">
+												<div class="card-texto">
+													<i class="flaticon-telefono"></i>
+													<div>
+														<p class="card-title"><strong>9</strong> <span class="s-size">llamadas</span></p>
+														204.33 min.
+													</div>
+												</div>
+											</div>                        
+										</div>
+									</div>
+									<div class="col03 col06-xs mb">
+										<div class="card info h100 purpura redondo cursor-pointer" onclick="javascript:">
+											<div class="card-content overflow-hidden">
+												<div class="card-texto">
+													<i class="flaticon-tarjeta"></i>
+													<div>
+														<p class="card-title"><strong>52</strong> <span class="s-size">1129.95 €</span></p>
+														Renovaciones.
+													</div>
+												</div>
+											</div>                        
+										</div>
+									</div>
+
+									<div class="col06 mb">
+										<div class="card info h100 gris redondo">
+											<div class="card-header"><p class="card-title">Header</p></div>
+											<div class="card-content overflow-hidden">
+												<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ornare ipsum, vitae mattis mi.</p>
+											</div>
+											<div class="card-footer">Footer</div>                       
+										</div>
+									</div>
+									<div class="col06 mb">
+										<div class="card info h100 negro redondo">
+											<div class="card-header"><p class="card-title">Header</p></div>
+											<div class="card-content overflow-hidden">
+												<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ornare ipsum, vitae mattis mi.</p>
+											</div>  
+											<div class="card-footer">Footer</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				
+										
+			</div>
+		</div>
+	</div>
+	<!--FIN CONTENIDOS-->
+
+		
+</div>
+<!--FIN CONTENIDO DERECHA-->
+	
+	<!--Tamaño pantalla-->
+	<div id="dimensions">
+		Resolución: <span class="width"></span>
+	</div>
+
+	<!--Jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--Grupo5.com - scrolltop y dimensions-->
+	<script src="js/general.js"></script>
+	
+	<!--Scripts de la web al final-->
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

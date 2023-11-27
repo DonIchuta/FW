@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>UI ELEMENTS - Clases y componentes | www.grupo5.com</title>
+	<meta name="description" content="Panel de control privado de aplicaciones y páginas web, potente y conceptual creada y pensada para los clientes de Grupo5.com." />
+	<meta name="keywords" content="admin, cms, panel, privado, administración, gestión, control, webs, tiendas, online, nube, virtual, aplicaciones" />
+    <meta name="author" content="Grupo5.com" />
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+   	   	
+   	<!-- Chrome, Firefox OS y Opera -->
+	<meta name="theme-color" content="#15171f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#15171f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+	
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="dark_style" disabled="">
+	
+	<!-- Fav y touch icons-->
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png" />
+   	
+</head>
+
+<body class="wide">
+	
+<!--MENÚ LATERAL IZQUIERDA-->
+<div class="zona-izquierda mini-scrollbar">
+	<aside>
+		<div class="zona-logotipo">
+			<div class="elipsis">
+				<!--GRUPO 5-->
+				<img src="images/logotipo.svg" class="img-responsive" alt="Nombre" />
+			</div>
+		</div>
+		
+		<!--menu-->
+		<div class="right-menu">
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ HORIZONTAL TOP</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-cuadrados"></i><span class="textomenu">Desplegables</span></a>
+					<ul>
+			    	    <li><a href="menu-top-usuarios.htm"><span class="textomenu">Menú usuarios</span></a></li>
+			    	    <li><a href="menu-top-idiomas.htm"><span class="textomenu">Menú idiomas</span></a></li>
+			    	    <li><a href="menu-top-opciones.htm"><span class="textomenu">Menú opciones</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">SECCIONES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-monitor"></i><span class="textomenu">Páginas</span></a>
+					<ul>
+			    	    <li><a href="listado1.htm"><span class="textomenu">Listado 1</span></a></li>
+			    	    <li><a href="listado2.htm"><span class="textomenu">Listado 2</span></a></li>
+			    	    <li><a href="listado3.htm"><span class="textomenu">Listado 3</span></a></li>
+			    	    
+						<li><a href="detalle.htm"><span class="textomenu">Detalle</span></a></li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="detalle-nuevo.htm"><span class="textomenu">Detalle nuevo</span></a>
+						</li>
+						<li><a href="detalle-full.htm"><span class="textomenu">Detalle full</span></a></li>
+						<li class="has-sub"><a href="#"><span class="textomenu">Ecommerce</span></a>
+			    	    	<ul>
+			    	    		<li><a href="tienda-listado.htm">Tienda</a></li>
+			    	    		<li><a href="tienda-pedidos.htm">Pedidos</a></li>
+			    	    		<li><a href="tienda-detalle.htm">Detalle producto</a></li>
+			    	    		<li><a href="tienda-anadir.htm">Añadir producto</a></li>
+			    	    		<li><a href="tienda-carro.htm">Carro</a></li>
+			    	    		<li><a href="tienda-checkout.htm">Checkout</a></li>
+			    	    	</ul>
+			    	    </li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="alta.htm"><span class="textomenu">Alta</span></a>
+						</li>
+						<li><a href="agenda.htm"><span class="textomenu">Agenda</span></a></li>
+						<li><a href="seo.htm"><span class="textomenu">Seo</span></a></li>
+						<li><a href="comentarios.htm"><span class="textomenu">Comentarios</span></a></li>
+						<li><a href="email.htm"><span class="textomenu">Email</span></a></li>
+						<li><a href="factura.htm"><span class="textomenu">Factura</span></a></li>
+						<li><a href="reserva.htm"><span class="textomenu">Reserva</span></a></li>
+						<li>
+							<div class="posicion-top-right" style="padding-top:5px"><i class="flaticon-circulo-menos rojo" title="Módulo NO disponible"></i></div>
+							<a href="estadisticas.htm"><span class="textomenu rojo" title="Módulo NO disponible">Estadísticas</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-candado"></i><span class="textomenu">Autentificación</span></a>
+					<ul>
+			    	    <li><a href="login.htm" target="_blank"><span class="textomenu">Login</span></a></li>
+			    	    <li><a href="recordar.htm" target="_blank"><span class="textomenu">Recordar contraseña</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">COMPONENTES</li>
+				<li class="has-sub active"><a href="#"><i class="flaticon-capas"></i><span class="textomenu">UI Elements</span></a>
+					<ul>
+			    	    <li><a href="mensajes.htm"><span class="textomenu">Mensajes</span></a></li>
+						<li><a href="botones.htm"><span class="textomenu">Botones</span></a></li>
+						<li><a href="modals.htm"><span class="textomenu">Modals</span></a></li>
+						<li><a href="paginacion.htm"><span class="textomenu">Paginación</span></a></li>
+						<li><a href="tabs.htm"><span class="textomenu">Tabs</span></a></li>
+						<li><a href="slider.htm"><span class="textomenu">Slider</span></a></li>
+						<li><a href="acordeon.htm"><span class="textomenu">Acordeón</span></a></li>
+						<li><a href="progress-bars.htm"><span class="textomenu">Progress bars</span></a></li>
+						<li><a href="flex.htm"><span class="textomenu">Flex</span></a></li>
+						<li><a href="calendarios.htm"><span class="textomenu">Calendarios</span></a></li>
+						<li><a href="tipografia.htm"><span class="textomenu">Tipografía</span></a></li>
+						<li class="active"><a href="clases.htm"><span class="textomenu">Clases</span></a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estructura"></i><span class="textomenu">Tablas</span></a>
+					<ul>
+			    	    <li><a href="tablas-basicas.htm"><span class="textomenu">Tablas básicas</span></a></li>
+						<li><a href="tablas-especiales.htm"><span class="textomenu">Tablas especiales</span></a></li>
+					</ul>
+				</li> 
+				<li>
+					<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+					<a href="formularios.htm"><i class="flaticon-lista"></i><span class="textomenu">Formularios</span></a>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estrella"></i><span class="textomenu">Iconos / Svg</span></a>
+					<ul>
+			    	    <li><a href="flaticons.htm"><span class="textomenu">Flaticons</span></a></li>
+						<li><a href="svg.htm"><span class="textomenu">Imágenes SVG</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">Pre-Built Pages</li>
+				<li class="has-sub "><a href="#"><i class="flaticon-llave-inglesa"></i><span class="textomenu">Error</span></a>
+					<ul>
+			    	    <li class="">
+			    	    	<div class="posicion-top-right"><div class="badge xs-size rojo">2</div></div>
+			    	    	<a href="404.htm"><span class="textomenu">404</span></a>
+			    	    </li>
+						<li class=""><a href="500.htm"><span class="textomenu">500</span></a></li>
+					</ul>
+				</li>
+				<li><a href="usuarios.htm"><i class="flaticon-ajuste"></i><span class="textomenu">Gestión usuarios</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</aside>
+</div>
+<!--FIN MENÚ LATERAL IZQUIERDA-->
+
+<!--CONTENIDOS DERECHA-->
+<div class="zona-derecha">
+	
+	<!--Header menú-->
+	<header class="fixed">
+		<div class="menu-top-fixed">
+			<ul class="top-menu">
+				<li><a href=""><i class="flaticon-menu icon"></i></a></li>
+			</ul>
+			<ul class="top-menu dere">
+				
+				<li><a href=""><i class="flaticon-configuracion icon ani-rotar-der"></i></a></li>
+				<li><a href=""><i class="flaticon-circulo-check icon verde"></i></a></li>
+				<li>
+					<label id="switch_dia_noche" for="dia_noche" class="switch-checkbox nomargin" title="Modo día/noche">
+						<input id="dia_noche" type="checkbox" checked="">
+						<img src="images/luna.svg" class="checked" alt="Noche">
+						<img src="images/sol.svg" class="unchecked" alt="Día">
+					</label>
+				</li>
+				<li><a href=""><i class="flaticon-puntos-vertical icon"></i></a></li>
+			</ul>
+			
+		</div>
+	</header>
+
+	<!--CONTENIDOS ahora aplicamos un max-width-->
+	<div class="contenido-maxwidth l-size">
+		<div class="contenedor-fluid septopbot">
+			<div class="fila">
+
+				<div class="col12">
+					<div class="centradovertical aling-between mb"><!--mb (margin bottom 1rem)-->
+						<div class="zona-title center-flex izq">
+							<i class="icon flaticon-capas"></i>
+							<div>
+								<h1 class="title mayusculas">Clases</h1>
+								<p class="txtmin s-size"><em>Documentación y ejemplos</em></p>
+							</div>
+						</div>
+						<div class="push">
+							<ul class="page-breadcrumb desktop flex-der mayusculas">
+								<li><a href="index.htm">Inicio</a></li>
+								<li>UI Elements</li>
+								<li><a href="clases.htm">Clases</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col12">
+					<div class="card card-borde card-stretch mb">
+						<div class="card-body">
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Separadores</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir las clase <code class="code-class">.title</code> u otra, al encabezado <code class="code-class">.h1</code>, <code class="code-class">.h2</code>, <code class="code-class">.h3</code>... con el tamaño deseado.</p>
+								
+								<table class="table table-bordered tabla-block-movil">
+									<thead class="thead-claro">
+                                    	<tr>
+											<th class="w-25">Clases</th>
+                                            <th>Información</th>
+                                        </tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.separa</code></td>
+											<td>Añadir a la clase <code class="code-class">.separa</code> los tamaños: <code class="code-tag">xxl-size, xl-size, l-size, s-size, xs-size</code>.</td>
+										</tr>
+										<tr>
+											<td><code>.p-1</code> <code>.p-2</code> <code>.p-3</code> <code>.p-4</code> <code>.p-5</code></td>
+											<td>Añade un padding pequeño de 0.375rem hasta un padding de 2.75rem.</p></td>
+										</tr>
+										<tr>
+											<td><code>.ma</code></td>
+											<td><p>Añade un margen por todos lados <code class="code-tag">margin</code> desde <code class="code-tag">0.5rem</code>. Se pueden utilizar las clases <code class="code-class">ma-s-size</code> con separación de <code class="code-tag">0.25rem</code>, <code class="code-class">ma-l-size</code> con separación de <code class="code-tag">1rem</code> y <code class="code-class">ma-xl-size</code> con separación de <code class="code-tag">1.5rem</code>.</p></td>
+										</tr>
+										<tr>
+											<td><code>.mr</code></td>
+											<td><p>Añade un margen por la derecha <code class="code-tag">margin-right</code> de <code class="code-tag">0.5rem</code>. Se puede utilizar la clase <code class="code-class">mr-s-size</code> para añadir una separación mas pequeña de <code class="code-tag">.25rem</code>.</p></td>
+										</tr>
+										<tr>
+											<td><code>.ml</code></td>
+											<td><p>Añade un margen por la izquierda <code class="code-tag">margin-left</code> de <code class="code-tag">0.5rem</code>. Se puede utilizar la clase <code class="code-class">ml-s-size</code> para añadir una separación mas pequeña de <code class="code-tag">.25rem</code>.</p></td>
+										</tr>
+										<tr>
+											<td><code>.mt</code></td>
+											<td><p>Añade un margen por arriba <code class="code-tag">margin-top</code> de <code class="code-tag">1rem</code>. Se puede utilizar la clase <code class="code-class">mt-s-size</code> para añadir una separación mas pequeña de <code class="code-tag">.25rem</code>.</p></td>
+										</tr>
+										<tr>
+											<td><code>.mb</code></td>
+											<td><p>Añade un margen por abajo <code class="code-tag">margin-bottom</code> de <code class="code-tag">1rem</code>. Se puede utilizar la clase <code class="code-class">mb-s-size</code> para añadir una separación mas pequeña de <code class="code-tag">.25rem</code>.</p></td>
+										</tr>
+										<tr>
+											<td><code>.mtb</code></td>
+											<td><p>Añade un margen por arriba y por abajo <code class="code-tag">margin-top margin-bottom</code> de <code class="code-tag">0.5rem</code>. Se puede utilizar la clase <code class="code-class">mtb-s-size</code> para añadir una separación mas pequeña de <code class="code-tag">.25rem</code> y utilizar la clase <code class="code-class">mtb-l-size</code> para añadir una separación mayor de <code class="code-tag">.1rem</code>.</p></td>
+										</tr>
+										<tr>
+											<td><code>.contenido-maxwidth</code></td>
+											<td>Añadir a la clase <code class="code-class">.contenido-maxwidth</code> los tamaños: <code class="code-tag">xl-size, l-size, s-size, xs-size</code> para delimitar los tamaños máximos del contenedor a 850px (<code class="code-tag">por defecto</code>), 1400px (<code class="code-tag">xl-size</code>), 1200px (<code class="code-tag">l-size</code>), 650px (<code class="code-tag">s-size</code>) y 520px (<code class="code-tag">xs-size</code>).</td>
+										</tr>
+										<tr>
+											<td><code>.der</code> o <code>.float-right</code>, <code>.izq</code> o <code>.float-left</code>, <code>.float-none</code></td>
+											<td>Añadir a las clases para flotar un elmento a la derecha, izquierda o no flotarlo. Para que flote en tablet o no lo haga añadir <code class="code-class">.float-tablet-right</code> o <code class="code-class">.float-tablet-left</code> o <code class="code-class">.float-tablet-none</code> y para móvil añadir <code class="code-class">.float-movil-right</code> o <code class="code-class">.float-movil-left</code> o <code class="code-class">.float-movil-none</code>.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Iconos <span class="txtmin s-size gris">(para fuentes e imágenes)</span></h2>
+							</div>
+							<div class="card-content">
+
+								<table class="table table-bordered tabla-block-movil">
+									<thead class="thead-claro">
+	                                   	<tr>
+											<th class="w-25">Clases</th>
+	                                           <th>Información</th>
+	                                       </tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.icono-fon</code></td>
+											<td>
+												Añadir a la clase <code class="code-class">.icono-fon</code> para un <strong>FLATICON</strong> con los tamaños: <code class="code-tag">xxl-size, xl-size, l-size, s-size, xs-size</code>.
+												<div class="separa s-size"></div>
+												<i class="flaticon-foto icono-fon xxl-size enlinea"></i>
+												<i class="flaticon-foto icono-fon xl-size enlinea"></i>
+												<i class="flaticon-foto icono-fon l-size enlinea"></i>
+												<i class="flaticon-foto icono-fon s-size enlinea"></i>
+												<i class="flaticon-foto icono-fon xs-size enlinea"></i>
+											</td>
+										</tr>
+										<tr>
+											<td><code>.icono-img</code></td>
+											<td>
+												Añadir a la clase <code class="code-class">.icono-img</code> para una <strong>IMAGEN</strong> con los tamaños: <code class="code-tag">xxl-size, xl-size, l-size, s-size, xs-size</code>.
+												<div class="separa s-size"></div>
+												<img src="images/carpeta.svg" class="icono-img xxl-size" alt="">
+												<img src="images/carpeta.svg" class="icono-img xl-size" alt="">
+												<img src="images/carpeta.svg" class="icono-img l-size" alt="">
+												<img src="images/carpeta.svg" class="icono-img s-size" alt="">
+												<img src="images/carpeta.svg" class="icono-img xs-size" alt="">
+											</td>
+										</tr>
+										<tr>
+											<td><code>.avatar</code></td>
+											<td>
+												<p>Añadir a la clase <code class="code-class">.avatar</code> para <strong>FUENTES</strong> o <strong>IMÁGENES</strong> con los tamaños: <code class="code-tag">xxs-size, xs-size, s-size, l-size, xl-size, xxl-size</code>.</p>
+												<div class="separa s-size"></div>
+												<div class="avatar xxs-size enlinea">
+								                   	<a href=""><span class="zona-avatar img-rounded"><i class="flaticon-check"></i></span></a>
+								                </div>
+												<div class="avatar xs-size enlinea">
+								                   <a href=""><span class="zona-avatar"><i class="flaticon-aspa"></i></span></a>
+								                </div>
+								                <div class="avatar s-size enlinea">
+								                   	<span class="zona-avatar img-rounded"><i class="flaticon-cuadrados"></i></span>
+								                </div>
+								                <div class="avatar l-size enlinea">
+								                   	<span class="zona-avatar naranja"><i class="flaticon-usuario"></i></span>
+								                </div>
+								                <div class="avatar xl-size enlinea">
+								                   	<a href=""><span class="zona-avatar redondo rojo"><i class="flaticon-candado"></i></span></a>
+								                </div>
+								                <div class="avatar xxl-size enlinea">
+								                   	<a href=""><span class="zona-avatar img-rounded verde">JA</span></a>
+								                </div>
+								                 <div class="avatar xxl-size enlinea">
+								                   	<a href=""><img src="images/producto08.jpg" class="img-rounded" alt=""></a>
+								                </div>
+
+
+								                <div class="separa"></div>
+								                <p>Añadir el contenedor <code class="code-class">.avatar-group</code> para que se coloquen en línea ocupando el menor espacio posible.</p>
+								                <div class="separa s-size"></div>
+								                <div class="avatar-group">
+								                	<div class="avatar xxs-size"><img src="images/yo.jpg" class="img-rounded" alt=""></div>
+								                	<div class="avatar xxs-size"><span class="zona-avatar img-rounded naranja">2</span></div>
+								                	<div class="avatar xxs-size"><img src="images/angel.jpg" class="img-rounded" alt=""></div>
+								                	<div class="avatar xxs-size"><img src="images/rafa.jpg" class="img-rounded" alt=""></div>
+								                	<div class="avatar xxs-size"><img src="images/fran.jpg" class="img-rounded" alt=""></div>
+								                </div>
+
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Animaciones <span class="txtmin s-size gris">(auto y hover)</span></h2>
+							</div>
+							<div class="card-content">
+								<table class="table table-bordered tabla-block-movil">
+									<thead class="thead-claro">
+	                                   	<tr>
+											<th class="w-25">Clases</th>
+	                                           <th>Información</th>
+	                                       </tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.ani-rotar-der</code>, <code>.ani-tada</code>...</td>
+											<td>
+												Añadir las clases <code class="code-class">.ani-rotar-der</code>, <code class="code-class">.ani-rotar-izq</code>, <code class="code-class">.ani-agrandar</code>, <code class="code-class">.ani-tada</code>, <code class="code-class">.ani-izqder</code>, <code class="code-class">.ani-fade</code>, <code class="code-class">.ani-bounce</code>
+												<div class="separa s-size"></div>
+												<i class="flaticon-foto icono-fon xs-size enlinea ani-rotar-der"></i>
+												<img src="images/carpeta.svg" class="icono-img xs-size enlinea ani-rotar-izq" alt="">
+												<i class="flaticon-foto icono-fon xs-size enlinea ani-agrandar ani-agrandar"></i>
+												<img src="images/carpeta.svg" class="icono-img xs-size enlinea ani-tada" alt="">
+												<i class="flaticon-foto icono-fon xs-size enlinea ani-izqder"></i>
+												<img src="images/carpeta.svg" class="icono-img xs-size enlinea ani-fade" alt="">
+												<i class="flaticon-foto icono-fon xs-size enlinea ani-bounce"></i>
+											</td>
+										</tr>
+										<tr>
+											<td><code>.ani-rotar</code>, <code>.ani-crecer</code>...</td>
+											<td>
+												Añadir las clases <code class="code-class">.ani-rotar360</code>, <code class="code-class">.ani-rotar</code>, <code class="code-class">.ani-expandir</code>, <code class="code-class">.ani-crecer</code>, <code class="code-class">.ani-mov-horizontal</code>, <code class="code-class">.ani-opacidad</code> para <strong>que se ejecute al hacer HOVER</strong> sobre un objeto.
+												<div class="separa s-size"></div>
+												<i class="flaticon-foto icono-fon xs-size enlinea ani-rotar360"></i>
+												<img src="images/carpeta.svg" class="icono-img xs-size enlinea ani-rotar" alt="">
+												<i class="flaticon-foto icono-fon xs-size enlinea ani-expandir"></i>
+												<img src="images/carpeta.svg" class="icono-img xs-size enlinea ani-crecer" alt="">
+												<i class="flaticon-foto icono-fon xs-size enlinea ani-mov-horizontal"></i>
+												<img src="images/carpeta.svg" class="icono-img xs-size enlinea ani-opacidad" alt="">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Cargadores</h2>
+							</div>
+							<div class="card-content">
+								<table class="table table-bordered tabla-block-movil">
+									<thead class="thead-claro">
+	                                   	<tr>
+											<th class="w-25">Clases</th>
+	                                           <th>Información</th>
+	                                       </tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.spinner-border</code></td>
+											<td>
+												Añadir las clases <code class="code-class">.spinner-border</code> y <code class="code-class">.spinner</code> y luego los tamaños: <code class="code-tag">s-size, l-size, xl-size, xxl-size</code>.
+												<div class="separa s-size"></div>
+												<div class="spinner-border spinner s-size enlinea"></div>
+												<div class="spinner-border colordest spinner l-size enlinea"></div>
+												<div class="spinner-border verde spinner xl-size enlinea"></div>
+												<div class="spinner-border rojo spinner xxl-size enlinea"></div>
+											</td>
+										</tr>
+										<tr>
+											<td><code>.spinner-grow</code></td>
+											<td>
+												Añadir las clases <code class="code-class">.spinner-grow</code> y <code class="code-class">.spinner</code> y luego los tamaños: <code class="code-tag">s-size, l-size, xl-size, xxl-size</code>.
+												<div class="separa s-size"></div>
+												<div class="spinner-grow spinner s-size enlinea"></div>
+												<div class="spinner-grow colordest spinner l-size enlinea"></div>
+												<div class="spinner-grow verde spinner xl-size enlinea"></div>
+												<div class="spinner-grow rojo spinner xxl-size enlinea"></div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Posición imágenes</h2>
+							</div>
+							<div class="card-content">
+
+								<table class="table table-bordered tabla-block-movil">
+									<thead class="thead-claro">
+	                                   	<tr>
+											<th class="w-25">Clases</th>
+	                                           <th>Información</th>
+	                                       </tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.position-top-right</code>, <code>.position-bottom-left</code>...</td>
+											<td>
+												Añadir a las clases de la posición: <code class="code-class">.position-bottom-left</code>, <code class="code-class">.position-bottom-right</code>, <code class="code-class">.position-middle</code>... dentro de un contenedor con clase <code class="code-class">.relative</code>.
+												<div class="separa s-size"></div>
+												
+												<div class="relative">
+													
+													<div class="position-top-left"><div class="badge xs-size cian">1</div></div>
+													<div class="position-top"><div class="badge xs-size verde">2</div></div>
+													<div class="position-top-right"><div class="badge xs-size naranja">3</div></div>
+													
+													<div class="position-middle-left"><div class="badge xs-size purpura">4</div></div>
+													<div class="position-middle"><div class="badge xs-size rojo">5</div></div>
+													<div class="position-middle-right"><div class="badge xs-size gris">6</div></div>
+													
+													<div class="position-bottom-left"><div class="badge xs-size colordest">7</div></div>
+													<div class="position-bottom"><div class="badge xs-size amarillo">8</div></div>
+													<div class="position-bottom-right"><div class="badge xs-size azul">9</div></div>
+													
+													<img src="images/imgfull03.jpg" class="img-responsive full" alt="">
+												</div>
+												
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Tooltip <span class="txtmin s-size gris">(solo html)</span></h2>
+							</div>
+							<div class="card-content">
+
+								<table class="table table-bordered tabla-block-movil">
+									<thead class="thead-claro">
+	                                   	<tr>
+											<th class="w-25">Clases</th>
+	                                           <th>Información</th>
+	                                       </tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.tooltip top</code>, <code>.tooltip bottom</code>...</td>
+											<td>
+												Añadir a la clase <code class="code-class">.tooltip</code> con la posición del mensaje <code class="code-class">.top</code>, <code class="code-class">.bottom</code>, <code class="code-class">.left</code>, <code class="code-class">.right</code> y dentro la clase del mensaje <code class="code-class">.tiptext</code> con lo su color: <code class="code-tag">rojo, verde y gris</code> por defecto es negro.
+												<div class="separa s-size"></div>
+												<div class="tooltip top enlinea mr-s-size cursor-help"><strong>Arriba</strong>
+								                    <span class="tiptext">Texto del tooltip </span>
+								                </div>
+								                <div class="tooltip bottom enlinea mr-s-size cursor-pointer"><strong>Abajo</strong>
+								                    <span class="tiptext rojo">Texto del tooltip</span>
+								                </div>
+								                <div class="tooltip left enlinea mr-s-size cursor-default"><strong>Izquierda</strong>
+								                    <span class="tiptext gris">Texto del tooltip</span>
+								                </div>
+								                <div class="tooltip right enlinea mr-s-size"><strong>Derecha</strong>
+								                    <span class="tiptext verde">Texto del tooltip</span>
+								                </div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Compartir <span class="txtmin s-size gris">(share)</span></h2>
+							</div>
+							<div class="card-content">
+
+								<table class="table table-bordered tabla-block-movil">
+									<thead class="thead-claro">
+	                                   	<tr>
+											<th class="w-25">Clases</th>
+	                                           <th>Información</th>
+	                                       </tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.share</code>, <code>.share mini</code>, <code>.share nomostrar</code> <code>.share mini rounded</code>...</td>
+											<td>
+												Añadir la clase <code class="code-class">.share</code> y dentro el href con las clases de las redes sociales.
+												<div class="separa s-size"></div>
+
+								                 <div class="share">
+													<a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&amp;title={{title}}" target="blank"><i class="flaticon-facebook"></i><span>Compartir</span></a>
+													<a class="twitter" href="https://twitter.com/intent/tweet?status={{title}}+{{url}}" target="blank"><i class="flaticon-twitter"></i><span>Compartir</span></a>
+													<a class="whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fwww.dominio.com/url.htm" target="blank"><i class="flaticon-whatsapp"></i><span>Compartir</span></a>
+													<a class="telegram" href="tg://msg_url?url=https://www.dominio.com/url.htm" target="blank" rel="noopener"><i class="flaticon-telegram"></i><span>Compartir</span></a>
+													<a class="instagram" href="" target="blank" rel="noopener"><i class="flaticon-instagram"></i><span>Visitar</span></a>
+													<a class="pinterest" href="" target="blank" rel="noopener"><i class="flaticon-pinterest"></i><span>Visitar</span></a>
+													<a class="linkedin" href="" target="blank" rel="noopener"><i class="flaticon-linkedin"></i><span>Visitar</span></a>
+												</div>
+
+												<div class="separa s-size"></div>
+												Añadir la clase <code class="code-class">.share</code> y la clase <code class="code-class">.rounded</code> para hacer los botones circulares. Añadir también la clase <code class="code-class">.nomostrar</code> para que no se vea el mensaje al hacer hover.
+												<div class="separa s-size"></div>
+												<div class="share nomostrar rounded">
+													<a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&amp;title={{title}}" target="blank"><i class="flaticon-facebook"></i><span>Compartir</span></a>
+													<a class="twitter" href="https://twitter.com/intent/tweet?status={{title}}+{{url}}" target="blank"><i class="flaticon-twitter"></i><span>Compartir</span></a>
+													<a class="whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fwww.dominio.com/url.htm" target="blank"><i class="flaticon-whatsapp"></i><span>Compartir</span></a>
+													<a class="telegram" href="tg://msg_url?url=https://www.dominio.com/url.htm" target="blank" rel="noopener"><i class="flaticon-telegram"></i><span>Compartir</span></a>
+													<a class="instagram" href="" target="blank" rel="noopener"><i class="flaticon-instagram"></i><span>Visitar</span></a>
+													<a class="pinterest" href="" target="blank" rel="noopener"><i class="flaticon-pinterest"></i><span>Visitar</span></a>
+													<a class="linkedin" href="" target="blank" rel="noopener"><i class="flaticon-linkedin"></i><span>Visitar</span></a>
+												</div>
+
+												<div class="separa s-size"></div>
+												Añadir la clase <code class="code-class">.share</code> y la clase <code class="code-class">.mini</code> para el botón mas pequeño. Si no se añade <code class="code-tag">span</code> tampoco sale mensaje al hacer hover.
+												<div class="separa s-size"></div>
+												<div class="share mini rounded">
+													<a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&amp;title={{title}}" target="blank"><i class="flaticon-facebook"></i></a>
+													<a class="twitter" href="https://twitter.com/intent/tweet?status={{title}}+{{url}}" target="blank"><i class="flaticon-twitter"></i></a>
+													<a class="whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fwww.dominio.com/url.htm" target="blank"><i class="flaticon-whatsapp"></i></a>
+													<a class="telegram" href="tg://msg_url?url=https://www.dominio.com/url.htm" target="blank" rel="noopener"><i class="flaticon-telegram"></i></a>
+													<a class="instagram" href="" target="blank" rel="noopener"><i class="flaticon-instagram"></i></a>
+													<a class="pinterest" href="" target="blank" rel="noopener"><i class="flaticon-pinterest"></i></a>
+													<a class="linkedin" href="" target="blank" rel="noopener"><i class="flaticon-linkedin"></i></a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Timeline</h2>
+							</div>
+							<div class="card-content">
+								<div class="timeline">
+									<ul class="timeline-lista">
+										<li class="timeline-item">
+											<div class="timeline-circle bordered bg-rojo"></div>
+											<div class="timeline-date">13/11/2021</div>
+											<div class="timeline-content">
+												<h3 class="title xxs-size">Título del timeline.</h3>
+												ddd
+											</div>
+										</li>
+										<li class="timeline-item">
+											<div class="timeline-circle bg-verde"></div>
+											<div class="timeline-date">13 Nov</div>
+											<div class="timeline-content">
+												<h3 class="title xxs-size">Re-submitted KYC Application form.</h3>
+												ddd											
+											</div>
+										</li>
+										<li class="timeline-item">
+											<div class="timeline-circle bg-colordest"></div>
+											<div class="timeline-date">13 Nov</div>
+											<div class="timeline-content">
+													<h3 class="title xxs-size">Re-submitted KYC Application form.</h3>
+												Re-submitted KYC Application form. 
+												<p class="txtmin">09:30am</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Tree <span class="txtmin s-size gris">(tiene javascript)</span></h2>
+							</div>
+							<div class="card-content">
+								<div class="tree-view-menu-list">
+									<ul>
+										<li class="openable">
+											<a href="#"><i class="flaticon-carpeta"></i> Personal</a>
+											<ul class="subtree">
+												<li><a href="#"><i class="flaticon-nota"></i> Notas.txt</a></li>
+												<li class="openable">
+													<a href="#"><i class="flaticon-camara"></i> Fotografías</a>
+													<ul class="subtree">
+														<li><a href="#"><i class="flaticon-foto"></i> Foto1.jpg</a></li>
+														<li><a href="#"><i class="flaticon-foto"></i> Foto2.jpg</a></li>
+														<li class="last-link"><a href="#"><i class="flaticon-foto"></i> Foto3.jpg</a></li>
+													</ul>
+												</li>
+														
+												<li class="openable last-link">
+													<a href="#"><i class="flaticon-carpeta"></i> Entretenimiento</a>
+													<ul class="subtree last-subtree">
+														<li class="openable">
+															<a href="#"><i class="flaticon-carpeta"></i> Películas</a>
+															<ul class="subtree">
+																<li><a href="#"><i class="flaticon-video"></i> Pelicula1.avi</a></li>
+																<li class="last-link"><a href="#"><i class="flaticon-video"></i> Pelicula2.avi</a></li>
+															</ul>
+														</li>
+														<li class="openable last-link">
+															<a href="#"><i class="flaticon-carpeta"></i> Música</a>
+															<ul class="subtree">
+																<li><a href="#"><i class="flaticon-cascos"></i> Cancion1.mp3</a></li>
+																<li><a href="#"><i class="flaticon-cascos"></i> Cancion2.mp3</a></li>
+																<li class="last-link"><a href="#"><i class="flaticon-cascos"></i> Cancion3.mp3</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="openable">
+											<a href="#"><i class="flaticon-carpeta"></i> Empresa</a>
+											<ul class="subtree last-subtree">
+												<li class="openable">
+													<a href="#"><i class="flaticon-carpeta"></i> Documentos</a>
+														<ul class="subtree">
+														<li><a href="#"><i class="flaticon-hojas"></i> Documento1.pdf</a></li>
+														<li><a href="#"><i class="flaticon-hojas"></i> Documento2.pdf</a></li>
+														<li class="last-link"><a href="#"><i class="flaticon-hojas"></i> Documento3.pdf</a></li>
+													</ul>
+												</li>
+													<li class="openable last-link">
+													<a href="#"><i class="flaticon-carpeta"></i> Estadísticas</a>
+													<ul class="subtree">
+														<li><a href="#"><i class="flaticon-hojas"></i> Resumen1.xls</a></li>
+														<li class="last-link"><a href="#"><i class="flaticon-hojas"></i> Resumen2.xls</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					
+					</div>
+				</div>
+				
+										
+			</div>
+		</div>
+	</div>
+	<!--FIN CONTENIDOS-->
+
+		
+</div>
+<!--FIN CONTENIDO DERECHA-->
+	
+	<!--Tamaño pantalla-->
+	<div id="dimensions">
+		Resolución: <span class="width"></span>
+	</div>
+
+	<!--Jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--Grupo5.com - scrolltop y dimensions-->
+	<script src="js/general.js"></script>
+	
+	<!--Scripts de la web al final-->
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

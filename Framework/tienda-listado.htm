@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>PÁGINAS - Tienda | www.grupo5.com</title>
+	<meta name="description" content="Panel de control privado de aplicaciones y páginas web, potente y conceptual creada y pensada para los clientes de Grupo5.com." />
+	<meta name="keywords" content="admin, cms, panel, privado, administración, gestión, control, webs, tiendas, online, nube, virtual, aplicaciones" />
+    <meta name="author" content="Grupo5.com" />
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+   	   	
+   	<!-- Chrome, Firefox OS y Opera -->
+	<meta name="theme-color" content="#15171f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#15171f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<!--input range-->
+	<link rel="stylesheet" media="screen" type="text/css" href="css/ion.rangeSlider.min.css" />
+
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estadisticas.css" />
+
+
+	
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="dark_style" disabled="">
+	
+	<!-- Fav y touch icons-->
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png" />
+   	
+</head>
+
+<body class="wide">
+
+	<!--cargando
+	<div id="cargando" class="fullscreen-wrap position-fixed full" style="z-index:2000;">
+		<div class="fullscreen-content">
+			<div class="fullscreen-block centrado">
+				<div class="sombra relative" style="background: rgba(255,255,255,1); padding: 20px; border-radius:50%;">
+					<div class="centradovertical full position-absolute" style="z-index:1; top:0; left:0;"><p class="txtmin xs-size">cargando</p></div>
+					<div class="spinner-border verde spinner xxl-size enlinea"></div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<!--Buscador oculto derecha-->
+	<div class="zona-oculta-derecha">
+		<div class="header-zona-oculta-derecha fondo morado">
+			Búsqueda
+			<div class="close_menu cerrar-zona-oculta blanco">
+				<span class="blanco"></span>
+				<span class="blanco"></span>
+			</div>
+		</div>
+		<div class="contenido-zona-oculta-derecha">
+			<p class="txtmin gris der mb"><i class="flaticon-papelera va-middle"></i> <a href="" class="gris underline">Borrar filtros</a></p>
+			<input name="buscar" class="formulario redondo" type="text" placeholder="Buscar" value="">
+			<select class="formulario" name="filtrado">		
+				<option value="">Sin filtrar</option>								
+				<option value="">Estado</option>
+				<option value="">Nuevo</option>
+				<option value="">Familia</option>
+			</select>
+			<select class="formulario redondo" name="filtro">		
+				<option value="">Seleccionar:</option>								
+				<option value="">Activo</option>
+				<option value="">Agotado</option>
+				<option value="">Dormido</option>
+			</select>
+			<input name="buscar" class="boton verde full redondo" id="buscar" onclick="javascript:busqueda_formulario('formulario_busqueda')" type="button" value="BUSCAR">
+		</div>
+	</div>
+	<div id="capaoscura" class="capaoscura autohide"></div>
+	<!--Find buscador oculto derecha-->
+	
+<!--MENÚ LATERAL IZQUIERDA-->
+<div class="zona-izquierda mini-scrollbar">
+	<aside>
+		<div class="zona-logotipo">
+			<div class="elipsis">
+				<!--GRUPO 5-->
+				<img src="images/logotipo.svg" class="img-responsive" alt="Nombre" />
+			</div>
+		</div>
+		
+		<!--Menú básico para programación Edu-->
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li class="primera-profundidad"><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ VERTICAL BÁSICO</li>
+				<li class="primera-profundidad has-sub">
+					<a href="#"><i class="flaticon-carrito"></i><span class="textomenu">Ecommerce</span></a>				
+				</li>
+				<li class="segunda-profundidad active">
+					<div class="posicion-top-right"><div class="badge xs-size verde ani-izqder">Nuevo</div></div>
+					<a href="tienda-listado.htm"><span class="textomenu">Tienda online</span></a>
+				</li>
+				<li class="segunda-profundidad">
+					<a href="tienda-detalle.htm"><span class="textomenu">Detalle producto</span></a>
+				</li>
+				<li class="segunda-profundidad">
+					<a href="tienda-anadir.htm"><span class="textomenu">Añadir producto</span></a>
+				</li>
+				<li class="segunda-profundidad">
+					<a href="tienda-carro.htm"><span class="textomenu">Carro</span></a>
+				</li>
+				<li class="segunda-profundidad">
+					<a href="tienda-checkout.htm"><span class="textomenu">Checkout</span></a>
+				</li>
+				<li class="segunda-profundidad has-sub">
+					<a href="#"><span class="textomenu">Pedidos</span></a>
+				</li>
+				<li class="tercera-profundidad">
+					<a href="tienda-pedidos.htm"><span class="textomenu">Listado</span></a>
+				</li>
+				<li class="tercera-profundidad">
+					<a href="tienda-productos.htm"><span class="textomenu">Carrito</span></a>
+				</li>
+				<li class="tercera-profundidad"><!-- active -->
+					<a href="tienda-procesar.htm"><span class="textomenu">Procesar pedido</span></a>
+				</li>
+			</ul>
+		</div>
+		<!--/Menu Edu-->
+		
+		
+		<!--menu primigenio Jose-->
+		<div class="right-menu d-none">
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ HORIZONTAL TOP</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-cuadrados"></i><span class="textomenu">Desplegables</span></a>
+					<ul>
+			    	    <li><a href="menu-top-usuarios.htm"><span class="textomenu">Menú usuarios</span></a></li>
+			    	    <li><a href="menu-top-idiomas.htm"><span class="textomenu">Menú idiomas</span></a></li>
+			    	    <li><a href="menu-top-opciones.htm"><span class="textomenu">Menú opciones</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">SECCIONES</li>
+				<li class="has-sub active"><a href="#"><i class="flaticon-monitor"></i><span class="textomenu">Páginas</span></a>
+					<ul>
+			    	    <li><a href="listado1.htm"><span class="textomenu">Listado 1</span></a></li>
+			    	    <li><a href="listado2.htm"><span class="textomenu">Listado 2</span></a></li>
+			    	    <li><a href="listado3.htm"><span class="textomenu">Listado 3</span></a></li>
+			    	    
+						<li><a href="detalle.htm"><span class="textomenu">Detalle</span></a></li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="detalle-nuevo.htm"><span class="textomenu">Detalle nuevo</span></a>
+						</li>
+						<li><a href="detalle-full.htm"><span class="textomenu">Detalle full</span></a></li>
+						<li class="has-sub active"><a href="#"><span class="textomenu">Ecommerce</span></a>
+			    	    	<ul>
+			    	    		<li class="active"><a href="tienda-listado.htm">Tienda</a></li>
+			    	    		<li><a href="tienda-pedidos.htm">Pedidos</a></li>
+			    	    		<li><a href="tienda-detalle.htm">Detalle producto</a></li>
+			    	    		<li><a href="tienda-anadir.htm">Añadir producto</a></li>
+			    	    		<li><a href="tienda-carro.htm">Carro</a></li>
+			    	    		<li><a href="tienda-checkout.htm">Checkout</a></li>
+			    	    	</ul>
+			    	    </li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="alta.htm"><span class="textomenu">Alta</span></a>
+						</li>
+						<li><a href="agenda.htm"><span class="textomenu">Agenda</span></a></li>
+						<li><a href="seo.htm"><span class="textomenu">Seo</span></a></li>
+						<li><a href="comentarios.htm"><span class="textomenu">Comentarios</span></a></li>
+						<li><a href="email.htm"><span class="textomenu">Email</span></a></li>
+						<li><a href="factura.htm"><span class="textomenu">Factura</span></a></li>
+						<li><a href="reserva.htm"><span class="textomenu">Reserva</span></a></li>
+						<li>
+							<div class="posicion-top-right" style="padding-top:5px"><i class="flaticon-circulo-menos rojo" title="Módulo NO disponible"></i></div>
+							<a href="estadisticas.htm"><span class="textomenu rojo" title="Módulo NO disponible">Estadísticas</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-candado"></i><span class="textomenu">Autentificación</span></a>
+					<ul>
+			    	    <li><a href="login.htm" target="_blank"><span class="textomenu">Login</span></a></li>
+			    	    <li><a href="recordar.htm" target="_blank"><span class="textomenu">Recordar contraseña</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">COMPONENTES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-capas"></i><span class="textomenu">UI Elements</span></a>
+					<ul>
+			    	    <li><a href="mensajes.htm"><span class="textomenu">Mensajes</span></a></li>
+						<li><a href="botones.htm"><span class="textomenu">Botones</span></a></li>
+						<li><a href="modals.htm"><span class="textomenu">Modals</span></a></li>
+						<li><a href="paginacion.htm"><span class="textomenu">Paginación</span></a></li>
+						<li><a href="tabs.htm"><span class="textomenu">Tabs</span></a></li>
+						<li><a href="slider.htm"><span class="textomenu">Slider</span></a></li>
+						<li><a href="acordeon.htm"><span class="textomenu">Acordeón</span></a></li>
+						<li><a href="progress-bars.htm"><span class="textomenu">Progress bars</span></a></li>
+						<li><a href="flex.htm"><span class="textomenu">Flex</span></a></li>
+						<li><a href="calendarios.htm"><span class="textomenu">Calendarios</span></a></li>
+						<li><a href="tipografia.htm"><span class="textomenu">Tipografía</span></a></li>
+						<li><a href="clases.htm"><span class="textomenu">Clases</span></a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estructura"></i><span class="textomenu">Tablas</span></a>
+					<ul>
+			    	    <li><a href="tablas-basicas.htm"><span class="textomenu">Tablas básicas</span></a></li>
+						<li><a href="tablas-especiales.htm"><span class="textomenu">Tablas especiales</span></a></li>
+					</ul>
+				</li> 
+				<li>
+					<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+					<a href="formularios.htm"><i class="flaticon-lista"></i><span class="textomenu">Formularios</span></a>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estrella"></i><span class="textomenu">Iconos / Svg</span></a>
+					<ul>
+			    	    <li><a href="flaticons.htm"><span class="textomenu">Flaticons</span></a></li>
+						<li><a href="svg.htm"><span class="textomenu">Imágenes SVG</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">Pre-Built Pages</li>
+				<li class="has-sub "><a href="#"><i class="flaticon-llave-inglesa"></i><span class="textomenu">Error</span></a>
+					<ul>
+			    	    <li class="">
+			    	    	<div class="posicion-top-right"><div class="badge xs-size rojo">2</div></div>
+			    	    	<a href="404.htm"><span class="textomenu">404</span></a>
+			    	    </li>
+						<li class=""><a href="500.htm"><span class="textomenu">500</span></a></li>
+					</ul>
+				</li>
+				<li><a href="usuarios.htm"><i class="flaticon-ajuste"></i><span class="textomenu">Gestión usuarios</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</aside>
+</div>
+<!--FIN MENÚ LATERAL IZQUIERDA-->
+
+<!--CONTENIDOS DERECHA-->
+<div class="zona-derecha relative">
+
+	
+	
+	
+
+	<!--Header menú-->
+	<header class="fixed">
+		<div class="menu-top-fixed">
+			<ul class="top-menu">
+				<li><a href=""><i class="flaticon-menu icon"></i></a></li>
+			</ul>
+			<ul class="top-menu dere">
+				
+				<li><a href=""><i class="flaticon-configuracion icon ani-rotar-der"></i></a></li>
+				<li><a href=""><i class="flaticon-full-screen icon"></i></a></li>
+				<li>
+					<label id="switch_dia_noche" for="dia_noche" class="switch-checkbox nomargin" title="Modo día/noche">
+						<input id="dia_noche" type="checkbox" checked="">
+						<img src="images/luna.svg" class="checked" alt="Noche">
+						<img src="images/sol.svg" class="unchecked" alt="Día">
+					</label>
+				</li>
+				<li class="">
+					<div class="posicion-top-right">
+						<span class="badge amarillo">2</span>
+					</div>
+					<a href=""><i class="flaticon-usuarios icon"></i></a>
+					<!--<div class="submenu-top s-size mini-scrollbar">
+						<a class="menu-vertical-top" href="#"><i class="flaticon-usuario s-size"></i> Lostrego </a>
+						<a class="menu-vertical-top active" href="#">
+							<div class="posicion-top-right">
+								<i class="flaticon-check verde xs-size"></i>
+							</div>
+							<img src="images/yo.jpg" style="" class="img-rounded">Neo
+						</a>
+					</div>-->
+				</li>
+				<li><a href=""><i class="flaticon-puntos-vertical icon"></i></a></li>
+			</ul>
+			
+		</div>
+	</header>
+
+	<!--CONTENIDOS-->
+	<div class="contenedor-fluid septopbot">
+		<div class="fila">
+			<div class="col12">
+				<div class="centradovertical aling-between mb"><!--mb (margin bottom 1rem)-->
+					<div class="zona-title">
+						<i class="icon flaticon-carrito"></i>
+						<div>
+							<h1 class="title mayusculas">Tienda</h1>
+							<p class="txtmin s-size"><em>Ecommerce online</em></p>
+						</div>
+					</div>
+					<div class="push">
+						<ul class="page-breadcrumb desktop der mayusculas">
+							<li><a href="index.htm">Inicio</a></li>
+							<li>Páginas</li>
+							<li>Ecommerce</li>
+							<li><a href="tienda-listado.htm">Tienda</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col04 col03-xxl">
+				<div class="card card-borde card-stretch redondo mb">
+					<div class="card-body">
+						<div class="card-content padding">
+							<div class="input-group nomargin">
+						 		<input type="text" class="form-control formulario s-size flex-izq redondo-left" placeholder="Buscar productos...">
+								<button class="boton colordest flex-der icono-input redondo-right" type="button"><i class="flaticon-lupa bold"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--categorías / subcategorías-->
+				<div class="card card-borde card-stretch redondo mb">
+					<div class="card-body">
+						<div class="card-header">
+							<p class="title xxs-size">Categorías</p>
+						</div>
+						<div class="card-content padding">
+							<div class="select-estilo">
+								<select name="formato" class="formulario s-size full redondo" style="" size="1">
+									<option value="select-style">Categoría:</option>
+									<option value="W116">Opción 1</option>
+									<option value="W123">Opción 2</option>
+									<option value="W124">Opción 3</option>
+									<option value="W126">Opción 4</option>
+								</select>
+
+								<select name="formato" class="formulario s-size full redondo nomargin" style="" size="1">
+									<option value="select-style">Subcategoría:</option>
+									<option value="W116">Opción 1</option>
+									<option value="W123">Opción 2</option>
+									<option value="W124">Opción 3</option>
+									<option value="W126">Opción 4</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--filtros-->
+				<div class="card card-borde card-stretch redondo mb">
+					<div class="card-body">
+						<div class="card-header">
+							<p class="title xxs-size">Marca</p>
+						</div>
+						<div class="card-content padding">
+							<label class="container-check">Nombre marca 1<input type="checkbox" value="true"><span class="checkmark-check"></span></label>
+							<label class="container-check">Nombre marca 2<input type="checkbox" value="true"><span class="checkmark-check"></span></label>
+							<label class="container-check">Nombre marca 3<input type="checkbox" value="true"><span class="checkmark-check"></span></label>
+						</div>
+					</div>
+				</div>
+				
+				<!--precio rango-->
+				<div class="card card-borde card-stretch redondo mb">
+					<div class="card-body">
+						<div class="card-header">
+							<p class="title xxs-size">Precio</p>
+						</div>
+						<div class="p-3">
+							<input type="text" id="slider3" class="js-range-slider" name="my_range" value="" />
+						</div>
+
+					</div>
+				</div>				
+
+			</div>
+
+			<div class="col08 col09-xxl">
+				
+				<div class="fila">
+
+					<div class="col06 col04-xl col03-xxl col06-s">
+						<div class="card card-borde redondo mb">
+							<div class="card-header nopadding mb">
+								<div class="posicion-top-left"><div class="badge xs-size naranja mayusculas redondo">Oferta</div></div>
+								<div class="posicion-top-right"><div class="badge xs-size colordest mayusculas redondo">-30%</div></div>
+								<a href="tienda-detalle.htm"><img src="images/producto04.jpg" class="full img-responsive redondo-top" alt=""></a>
+							</div>
+							<div class="card-content center">
+								<p class="txtmin gris elipsis">Mochilas</p>
+								<p class="title xxs-size elipsis">Mochila modelo Aqua RJ32</p>				                
+								<p class="colordest mt bold">25,90 € <span class="txtmin tachado gris-claro normal">28,90 €</span></p>
+								<div class="separa s-size"></div>
+								<input type="text" name="miniform1" class="formulario cantidad xs-size redondo enlinea" placeholder="1" value="" autocomplete="off">
+								<a href="tienda-carro.htm" class="boton verde xs-size redondo enlinea enlinea">Añadir</a>
+							</div>
+						</div>
+					</div>
+					<div class="col06 col04-xl col03-xxl col06-s">
+						<div class="card card-borde redondo mb">
+							<div class="card-header nopadding mb">
+								<div class="posicion-top-left"><div class="badge xs-size verde mayusculas redondo">Novedad</div></div>
+								<a href="tienda-detalle.htm"><img src="images/producto03.jpg" class="full img-responsive redondo-top" alt=""></a>
+							</div>
+							<div class="card-content center">
+								<p class="txtmin gris elipsis">Imagen y sonido</p>
+								<p class="title xxs-size elipsis">Canon EOS R7</p>				                
+								<p class="colordest mt bold">1199,00 €</p>
+								<div class="separa s-size"></div>
+								<input type="text" name="miniform2" class="formulario cantidad xs-size redondo enlinea" placeholder="1" value="" autocomplete="off">
+								<a href="tienda-carro.htm" class="boton verde xs-size redondo enlinea">Añadir</a>
+							</div>
+						</div>
+					</div>
+					<div class="col06 col04-xl col03-xxl col06-s">
+						<div class="card card-borde redondo mb">
+							<div class="card-header nopadding mb">
+								<div class="posicion-top-right"><div class="badge xs-size rojo mayusculas redondo">Sin stock</div></div>
+								<a href="tienda-detalle.htm"><img src="images/producto02.jpg" class="full img-responsive redondo-top" alt=""></a>
+							</div>
+							<div class="card-content center">
+								<p class="txtmin gris elipsis">Imagen y sonido</p>
+								<p class="title xxs-size elipsis">Sony WH-CH710N Auriculares Bluetooth Negros</p>				                
+								<p class="colordest mt bold">89 €</p>
+								<div class="separa s-size"></div>
+								<a href="tienda-detalle.htm" class="boton verde xs-size redondo enlinea">Ver producto</a>
+							</div>
+						</div>
+					</div>
+					<div class="col06 col04-xl col03-xxl col06-s">
+						<div class="card card-borde redondo mb">
+							<div class="card-header nopadding mb">
+								<div class="posicion-bottom-left"><div class="badge xs-size cian mayusculas redondo">Mejor precio</div></div>
+								<a href="tienda-detalle.htm"><img src="images/producto01.jpg" class="full img-responsive redondo-top" alt=""></a>
+							</div>
+							<div class="card-content center">
+								<p class="txtmin gris elipsis">Imagen y sonido</p>
+								<p class="title xxs-size elipsis">Transcend StoreJet 25M3</p>				                
+								<p class="colordest mt bold">105,75 €</p>
+								<div class="separa s-size"></div>
+								<input type="text" name="miniform3" class="formulario cantidad xs-size redondo enlinea" placeholder="1" value="" autocomplete="off">
+								<a href="tienda-carro.htm" class="boton verde xs-size redondo enlinea">Añadir</a>
+							</div>
+						</div>
+					</div>
+					<div class="col06 col04-xl col03-xxl col06-s">
+						<div class="card card-borde redondo mb">
+							<div class="card-header nopadding mb">
+								<a href="tienda-detalle.htm"><img src="images/producto05.jpg" class="full img-responsive redondo-top" alt=""></a>
+							</div>
+							<div class="card-content center">
+								<p class="txtmin gris elipsis">Ropa y accesorios</p>
+								<p class="title xxs-size elipsis">Mocasines de piel Callahan</p>				                
+								<p class="colordest mt bold">125,90 €</p>
+								<div class="separa s-size"></div>
+								<a href="tienda-detalle.htm" class="boton verde xs-size redondo enlinea">Ver producto</a>
+							</div>
+						</div>
+					</div>
+					<div class="col06 col04-xl col03-xxl col06-s">
+						<div class="card card-borde redondo mb">
+							<div class="card-header nopadding mb">
+								<a href="tienda-detalle.htm"><img src="images/producto06.jpg" class="full img-responsive redondo-top" alt=""></a>
+							</div>
+							<div class="card-content center">
+								<p class="txtmin gris elipsis">Ropa y accesorios</p>
+								<p class="title xxs-size elipsis">Bolso Michael Kors</p>				                
+								<p class="colordest mt bold">145 €</p>
+								<div class="separa s-size"></div>
+								<a href="tienda-detalle.htm" class="boton verde xs-size redondo enlinea">Ver producto</a>
+							</div>
+						</div>
+					</div>
+
+					<!--paginación-->
+					<div class="col12">
+						<ul class="paginacion s-size redondo separar">
+							<li class="pagina-item active"><a class="pagina-link" href="#">1</a></li>
+							<li class="pagina-item"><a class="pagina-link" href="#">2</a></li>
+							<li class="pagina-item"><a class="pagina-link" href="#">3</a></li>
+							<li class="pagina-item"><a class="pagina-link" href="#">5</a></li>
+							<li class="pagina-item"><a class="pagina-link" href="#">6</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!--FIN CONTENIDOS-->
+
+	
+</div>
+<!--FIN CONTENIDO DERECHA-->
+	
+	<!--Tamaño pantalla-->
+	<div id="dimensions">
+		Resolución: <span class="width"></span>
+	</div>
+
+	<!--Jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--Grupo5.com - scrolltop y dimensions-->
+	<script src="js/general.js"></script>
+	
+	<!--Scripts de la web al final-->
+	<script src="js/custom.js"></script>
+
+	<!--ion.rangeSlider.min.js-->
+	<script src="js/ion.rangeSlider.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			"use strict";
+			                
+			$("#slider3").ionRangeSlider({
+				type: "double",
+				grid: true,
+				min: 0,
+				max: 3000,
+				from: 0,
+				to: 1500,
+				postfix: " €"
+			});
+             
+		});
+	</script>
+
+</body>
+
+</html>

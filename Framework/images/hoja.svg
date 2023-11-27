@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 36 50"
+   width="45"
+   height="62.5"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="hoja.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs22" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="1001"
+     id="namedview20"
+     showgrid="false"
+     inkscape:zoom="9.5555556"
+     inkscape:cx="22.5"
+     inkscape:cy="31.25"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <path
+     d="M 31,50 H 5 A 5.0147,5.0147 0 0 1 0,45 V 5 A 5.0147,5.0147 0 0 1 5,0 H 22.9091 L 36,11.1111 V 45 a 5.0147,5.0147 0 0 1 -5,5 z"
+     fill="#e3edfc"
+     id="path2" />
+  <path
+     d="M 36,11.1111 H 26.1818 A 3.3034,3.3034 0 0 1 22.9091,7.7778 V 0 c 0,0 1.8409,0.2083 6.9545,4.5833 C 34.8409,9.0972 36,11.1111 36,11.1111 Z"
+     fill="#b7d0ea"
+     id="path4" />
+  <path
+     d="M 1.03,48 A 4.9835,4.9835 0 0 0 5,50 h 26 a 4.9835,4.9835 0 0 0 3.97,-2 z"
+     fill="#c4dbf2"
+     id="path6" />
+  <rect
+     x="9"
+     y="20"
+     width="18"
+     height="2"
+     rx="1"
+     ry="1"
+     fill="#7e95c4"
+     id="rect8" />
+  <rect
+     x="9"
+     y="24"
+     width="18"
+     height="2"
+     rx="1"
+     ry="1"
+     fill="#7e95c4"
+     id="rect10" />
+  <rect
+     x="9"
+     y="28"
+     width="18"
+     height="2"
+     rx="1"
+     ry="1"
+     fill="#7e95c4"
+     id="rect12" />
+  <rect
+     x="9"
+     y="32"
+     width="14"
+     height="2"
+     rx="1"
+     ry="1"
+     fill="#7e95c4"
+     id="rect14" />
+  <rect
+     x="9"
+     y="36"
+     width="8"
+     height="2"
+     rx="1"
+     ry="1"
+     fill="#7e95c4"
+     id="rect16" />
+</svg>

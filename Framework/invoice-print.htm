@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Grupo5">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Factura">
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	<title>Imprimir factura | GRUPO5.COM</title>
+     
+	<link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+	
+	<!--print-->
+	<link rel="stylesheet" media="print" type="text/css" href="css/print.css" />
+    
+</head>
+
+<body class="fondo blanco" onload="printPromot()">
+	<div class="invoice invoice-print">
+		<div class="invoice-caja">
+			<div class="invoice-empresa"><span>GRUPO5.COM S.C.<br>J32424947<br>+34 988 510 046<br>C/ Progreso 113, entlo.  32003 - (Ourense)</span></div>
+			<div class="invoice-boton-der"><a class="boton s-size default redondo" href="invoice-print.htm"><i class="flaticon-impresora"></i></a></div>
+			<img src="images/logotipo-grupo5.svg" class="invoice-logo" alt="">
+			<div class="invoice-head">
+				<div class="invoice-cliente">
+					<div class="invoice-contact-info">
+						<h2 class="invoice-title">Romualdo Rodríguez Formoso</h2>
+						<ul>
+							<li>Avenida de Marín, 18 3B</li>
+							<li>23002 Ourense (España)</li>
+							<li>34424947F</li>
+						</ul>
+					</div>
+				</div>
+				<div class="invoice-datos">
+					<h3 class="invoice-title">FACTURA</h3>
+					<ul>
+						<li><span>Número:</span><span>005W3</span></li>
+						<li><span>Fecha:</span><span>26/09/2021</span></li>
+					</ul>
+				</div>
+			</div>
+				      	
+			<!--productos-->
+			<div class="invoice-productos">
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Descripción</th>
+								<th>Precio</th>
+								<th>Cantidad</th>
+								<th>Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>24108054</td>
+								<td>
+									<p>EXCURSIÓN A FINISTERRE Y CATARATA DE ÉZARO</p>
+									<p><small><strong>Fecha salida</strong>: 11/09/2021 | <strong>Hora</strong>: 08:45</small></p>
+								</td>
+								<td>70 €/pers.</td>
+								<td>2</td>
+								<td>140 €</td>
+							</tr>
+							<tr>
+								<td>24108054</td>
+								<td>
+									<p>EXCURSIÓN A FINISTERRE Y CATARATA DE ÉZARO</p>
+									<p><small><strong>Bono regalo</strong></small></p>
+									<p><small><strong>Para</strong>: María Jesús | mariagmas@gmail.com</small></p>
+								</td>
+								<td>70 €/pers.</td>
+								<td>3</td>
+								<td>210 €</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2"></td>
+								<td colspan="2">Subtotal</td>
+								<td>276,50 €</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td colspan="2">IVA</td>
+								<td>73,50 €</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td colspan="2">Forma de pago:</td>
+								<td>3,00 €</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td colspan="2">Total</td>
+								<td><strong>353,00 €</strong></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+								
+			<!--condiciones-->
+			<div class="invoice-condiciones">
+				<p><strong>Condiciones generales</strong></p>
+				<p class="txtmin">Si hay algún texto que se quiera poner como condiciones o también se puede utilizar una lista.</p>
+			</div>
+		</div>
+	
+	</div>
+	<script>function printPromot() {window.print();}</script>
+
+</body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>PÁGINAS - Pedidos | www.grupo5.com</title>
+	<meta name="description" content="Panel de control privado de aplicaciones y páginas web, potente y conceptual creada y pensada para los clientes de Grupo5.com." />
+	<meta name="keywords" content="admin, cms, panel, privado, administración, gestión, control, webs, tiendas, online, nube, virtual, aplicaciones" />
+    <meta name="author" content="Grupo5.com" />
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+   	   	
+   	<!-- Chrome, Firefox OS y Opera -->
+	<meta name="theme-color" content="#15171f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#15171f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estadisticas.css" />
+	
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="dark_style" disabled="">
+	
+	<!-- Fav y touch icons-->
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png" />
+   	
+</head>
+
+<body class="wide">
+
+	<!--Buscador oculto derecha-->
+	<div class="zona-oculta-derecha">
+		<div class="header-zona-oculta-derecha fondo morado">
+			Búsqueda
+			<div class="close_menu cerrar-zona-oculta blanco">
+				<span class="blanco"></span>
+				<span class="blanco"></span>
+			</div>
+		</div>
+		<div class="contenido-zona-oculta-derecha">
+			<p class="txtmin gris der mb"><i class="flaticon-papelera va-middle"></i> <a href="" class="gris underline">Borrar filtros</a></p>
+			<input name="buscar" class="formulario redondo" type="text" placeholder="Buscar" value="">
+			<select class="formulario" name="filtrado">		
+				<option value="">Sin filtrar</option>								
+				<option value="">Estado</option>
+				<option value="">Nuevo</option>
+				<option value="">Familia</option>
+			</select>
+			<select class="formulario redondo" name="filtro">		
+				<option value="">Seleccionar:</option>								
+				<option value="">Activo</option>
+				<option value="">Agotado</option>
+				<option value="">Dormido</option>
+			</select>
+			<input name="buscar" class="boton verde full redondo" id="buscar" onclick="javascript:busqueda_formulario('formulario_busqueda')" type="button" value="BUSCAR">
+		</div>
+	</div>
+	<div id="capaoscura" class="capaoscura autohide"></div>
+	<!--Find buscador oculto derecha-->
+
+	
+<!--MENÚ LATERAL IZQUIERDA-->
+<div class="zona-izquierda mini-scrollbar">
+	<aside>
+		<div class="zona-logotipo">
+			<div class="elipsis">
+				<!--GRUPO 5-->
+				<img src="images/logotipo.svg" class="img-responsive" alt="Nombre" />
+			</div>
+		</div>
+		
+		<!--menu-->
+		<div class="right-menu">
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ HORIZONTAL TOP</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-cuadrados"></i><span class="textomenu">Desplegables</span></a>
+					<ul>
+			    	    <li><a href="menu-top-usuarios.htm"><span class="textomenu">Menú usuarios</span></a></li>
+			    	    <li><a href="menu-top-idiomas.htm"><span class="textomenu">Menú idiomas</span></a></li>
+			    	    <li><a href="menu-top-opciones.htm"><span class="textomenu">Menú opciones</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">SECCIONES</li>
+				<li class="has-sub active"><a href="#"><i class="flaticon-monitor"></i><span class="textomenu">Páginas</span></a>
+					<ul>
+			    	    <li><a href="listado1.htm"><span class="textomenu">Listado 1</span></a></li>
+			    	    <li><a href="listado2.htm"><span class="textomenu">Listado 2</span></a></li>
+			    	    <li><a href="listado3.htm"><span class="textomenu">Listado 3</span></a></li>
+			    	    
+						<li><a href="detalle.htm"><span class="textomenu">Detalle</span></a></li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="detalle-nuevo.htm"><span class="textomenu">Detalle nuevo</span></a>
+						</li>
+						<li><a href="detalle-full.htm"><span class="textomenu">Detalle full</span></a></li>
+						<li class="has-sub active"><a href="#"><span class="textomenu">Ecommerce</span></a>
+			    	    	<ul>
+			    	    		<li><a href="tienda-listado.htm">Tienda</a></li>
+			    	    		<li class="active"><a href="tienda-pedidos.htm">Pedidos</a></li>
+			    	    		<li><a href="tienda-detalle.htm">Detalle producto</a></li>
+			    	    		<li><a href="tienda-anadir.htm">Añadir producto</a></li>
+			    	    		<li><a href="tienda-carro.htm">Carro</a></li>
+			    	    		<li><a href="tienda-checkout.htm">Checkout</a></li>
+			    	    	</ul>
+			    	    </li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="alta.htm"><span class="textomenu">Alta</span></a>
+						</li>
+						<li><a href="agenda.htm"><span class="textomenu">Agenda</span></a></li>
+						<li><a href="seo.htm"><span class="textomenu">Seo</span></a></li>
+						<li><a href="comentarios.htm"><span class="textomenu">Comentarios</span></a></li>
+						<li><a href="email.htm"><span class="textomenu">Email</span></a></li>
+						<li><a href="factura.htm"><span class="textomenu">Factura</span></a></li>
+						<li><a href="reserva.htm"><span class="textomenu">Reserva</span></a></li>
+						<li>
+							<div class="posicion-top-right" style="padding-top:5px"><i class="flaticon-circulo-menos rojo" title="Módulo NO disponible"></i></div>
+							<a href="estadisticas.htm"><span class="textomenu rojo" title="Módulo NO disponible">Estadísticas</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-candado"></i><span class="textomenu">Autentificación</span></a>
+					<ul>
+			    	    <li><a href="login.htm" target="_blank"><span class="textomenu">Login</span></a></li>
+			    	    <li><a href="recordar.htm" target="_blank"><span class="textomenu">Recordar contraseña</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">COMPONENTES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-capas"></i><span class="textomenu">UI Elements</span></a>
+					<ul>
+			    	    <li><a href="mensajes.htm"><span class="textomenu">Mensajes</span></a></li>
+						<li><a href="botones.htm"><span class="textomenu">Botones</span></a></li>
+						<li><a href="modals.htm"><span class="textomenu">Modals</span></a></li>
+						<li><a href="paginacion.htm"><span class="textomenu">Paginación</span></a></li>
+						<li><a href="tabs.htm"><span class="textomenu">Tabs</span></a></li>
+						<li><a href="slider.htm"><span class="textomenu">Slider</span></a></li>
+						<li><a href="acordeon.htm"><span class="textomenu">Acordeón</span></a></li>
+						<li><a href="progress-bars.htm"><span class="textomenu">Progress bars</span></a></li>
+						<li><a href="flex.htm"><span class="textomenu">Flex</span></a></li>
+						<li><a href="calendarios.htm"><span class="textomenu">Calendarios</span></a></li>
+						<li><a href="tipografia.htm"><span class="textomenu">Tipografía</span></a></li>
+						<li><a href="clases.htm"><span class="textomenu">Clases</span></a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estructura"></i><span class="textomenu">Tablas</span></a>
+					<ul>
+			    	    <li><a href="tablas-basicas.htm"><span class="textomenu">Tablas básicas</span></a></li>
+						<li><a href="tablas-especiales.htm"><span class="textomenu">Tablas especiales</span></a></li>
+					</ul>
+				</li> 
+				<li>
+					<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+					<a href="formularios.htm"><i class="flaticon-lista"></i><span class="textomenu">Formularios</span></a>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estrella"></i><span class="textomenu">Iconos / Svg</span></a>
+					<ul>
+			    	    <li><a href="flaticons.htm"><span class="textomenu">Flaticons</span></a></li>
+						<li><a href="svg.htm"><span class="textomenu">Imágenes SVG</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">Pre-Built Pages</li>
+				<li class="has-sub "><a href="#"><i class="flaticon-llave-inglesa"></i><span class="textomenu">Error</span></a>
+					<ul>
+			    	    <li class="">
+			    	    	<div class="posicion-top-right"><div class="badge xs-size rojo">2</div></div>
+			    	    	<a href="404.htm"><span class="textomenu">404</span></a>
+			    	    </li>
+						<li class=""><a href="500.htm"><span class="textomenu">500</span></a></li>
+					</ul>
+				</li>
+				<li><a href="usuarios.htm"><i class="flaticon-ajuste"></i><span class="textomenu">Gestión usuarios</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</aside>
+</div>
+<!--FIN MENÚ LATERAL IZQUIERDA-->
+
+<!--CONTENIDOS DERECHA-->
+<div class="zona-derecha">
+
+	<!--Header menú-->
+	<header class="fixed">
+		<div class="menu-top-fixed">
+			<ul class="top-menu">
+				<li><a href=""><i class="flaticon-menu icon"></i></a></li>
+			</ul>
+			<ul class="top-menu dere">
+				
+				<li><a href=""><i class="flaticon-configuracion icon ani-rotar-der"></i></a></li>
+				<li><a href=""><i class="flaticon-full-screen icon"></i></a></li>
+				<li>
+					<label id="switch_dia_noche" for="dia_noche" class="switch-checkbox nomargin" title="Modo día/noche">
+						<input id="dia_noche" type="checkbox" checked="">
+						<img src="images/luna.svg" class="checked" alt="Noche">
+						<img src="images/sol.svg" class="unchecked" alt="Día">
+					</label>
+				</li>
+				<li class="">
+					<div class="posicion-top-right">
+						<span class="badge amarillo">2</span>
+					</div>
+					<a href=""><i class="flaticon-usuarios icon"></i></a>
+					<!--<div class="submenu-top s-size mini-scrollbar">
+						<a class="menu-vertical-top" href="#"><i class="flaticon-usuario s-size"></i> Lostrego </a>
+						<a class="menu-vertical-top active" href="#">
+							<div class="posicion-top-right">
+								<i class="flaticon-check verde xs-size"></i>
+							</div>
+							<img src="images/yo.jpg" style="" class="img-rounded">Neo
+						</a>
+					</div>-->
+				</li>
+				<li><a href=""><i class="flaticon-puntos-vertical icon"></i></a></li>
+			</ul>
+			
+		</div>
+	</header>
+
+	<!--CONTENIDOS-->
+	<div class="contenedor-fluid septopbot">
+		<div class="fila">
+			<div class="col12">
+				<div class="centradovertical aling-between mb"><!--mb (margin bottom 1rem)-->
+					<div class="zona-title">
+						<i class="icon flaticon-paquetes"></i>
+						<div>
+							<h1 class="title mayusculas">Pedidos</h1>
+							<p class="txtmin s-size"><em>Ecommerce online</em></p>
+						</div>
+					</div>
+					<div class="push">
+						<ul class="page-breadcrumb desktop der mayusculas">
+							<li><a href="index.htm">Inicio</a></li>
+							<li>Páginas</li>
+							<li>Ecommerce</li>
+							<li><a href="tienda-pedidos.htm">pedidos</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--contenido-->
+			<div class="col07">
+				
+				<!--usuario-->
+				<div class="msg-form s-size redondo amarillo d-flex center-flex negro">
+					<div class="elipsis">
+						<p class="negro elipsis"><i class="flaticon-usuario va-middle"></i> José María Cardenal Gutiérrez <i class="flaticon-sobre va-middle ml"></i> jcardenal@edu.xunta.gal</p>
+					</div>
+					<div class="push elipsis">
+						<p class="negro elipsis modal-selector cursor-pointer"><i class="flaticon-lupa va-middle"></i> Buscar docente</p>
+					</div>
+				</div>
+				<!--/usuario-->
+				
+				<!--listado-->
+				<div class="card card-borde card-stretch redondo">
+					<div class="card-body">
+						<div class="card-header forms">
+							
+							<input type="text" class="formulario xs-size redondo full-movil" name="buscador1" id="buscador" placeholder="Buscar aquí..." value="" autocomplete="off">
+							<select name="1" class="formulario xs-size redondo full-movil" style="" size="1">
+								<option selected="selected">Proveedores: todos</option>
+								<option>Opción 1</option>
+								<option>Opción 2</option>
+							</select>
+							<select name="1" class="formulario xs-size redondo full-movil" style="" size="1">
+								<option selected="selected">Familia: todas</option>
+								<option>Opción 1</option>
+								<option>Opción 2</option>
+							</select>
+							<button type="button" class="boton verde xs-size redondo full-movil">Buscar</button>
+							
+						</div>
+						<div class="card-content nopadding">
+							<div class="table-responsive nomargin mini-scrollbar">
+								<table class="table table-hover table-condensed table-striped">
+									<thead class="thead-claro">
+										<tr>
+									    	<th scope="col">
+									      		<span class="inline-icon">
+									      			<span  class="bold">Código</span>
+									      			<i class="flaticon-flecha-abajo verde xs-size" title="Orden descendente"></i>
+									      			<a href=""><i class="flaticon-flecha-arriba xs-size" title="Orden ascendente"></i></a>
+									      		</span>
+									  	  	</th>
+									  	  
+									      	<th scope="col" class="center"><i class="flaticon-camara"></i></th>
+									      	
+									      	<th scope="col">
+									      		<span  class="bold">Producto</span>
+									      	</th>
+									      	<th scope="col" class="center">
+									      		<i class="flaticon-circulo-info" title="Estado"></i>
+									      	</th>
+									      	<th scope="col">
+									      		<span  class="bold">PVD</span>
+									      	</th>
+									    </tr>
+									</thead>
+									<tbody>
+									    <tr class="cursor-pointer">
+											<td><div class="inline-icon"><i class="flaticon-circulo-check verde cursor-help mr-s-size" title="Activo"></i> 016817</div></td>
+											<td class="center">
+												<div class="img-sidezoom">
+													<img src="images/producto04.jpg" class="icono-img l-size redondo" alt="zoom">
+													<div class="sidezoom">
+														<img src="images/sidezoom.jpg" class="redondo" alt="">
+													</div>
+												</div>
+											</td>												
+											<td class="elipsis" style="max-width: 150px;">Nombre del producto que se puede añadir una medida máxima y un elipsis</td>
+											<td class="center">
+												<div class="badge s-size verde">Disponible</div>
+											</td>
+											<td>25,90€</td>
+									    </tr>
+									    <tr class="cursor-pointer">
+											<td><div class="inline-icon"><i class="flaticon-circulo-check verde cursor-help mr-s-size" title="Activo"></i> 573200</div></td>
+											<td class="center"><img src="images/nofoto.jpg" class="icono-img l-size redondo" alt="Sin foto"></td>
+											<td>Nombre del producto en cuestión</td>
+											<td class="center">
+												<div class="badge s-size rojo">Sin stock</div>
+											</td>
+											<td>18,50€</td>
+									    </tr>
+									     <tr class="cursor-pointer">
+											<td><div class="inline-icon"><i class="flaticon-circulo-check verde cursor-help mr-s-size" title="Activo"></i> 014739</div></td>
+											<td class="center"><img src="images/producto01.jpg" class="icono-img l-size redondo" alt=""></td>
+											<td>Nombre del producto en cuestión</td>
+											<td class="center">
+												<div class="badge s-size verde">Disponible</div>
+											</td>
+											<td>80,90€</td>
+									    </tr>
+									     <tr class="cursor-pointer">
+											<td><div class="inline-icon"><i class="flaticon-circulo-check verde cursor-help mr-s-size" title="Activo"></i> 323837</div></td>
+											<td class="center"><img src="images/producto02.jpg" class="icono-img l-size redondo" alt=""></td>
+											<td>Nombre del producto en cuestión</td>
+											<td class="center">
+												<div class="badge s-size verde">Disponible</div>
+											</td>
+											<td>75,50€</td>
+									    </tr>
+									    <tr class="cursor-pointer">
+											<td><div class="inline-icon"><i class="flaticon-circulo-check verde cursor-help mr-s-size" title="Activo"></i> 003452</div></td>
+											<td class="center"><img src="images/producto03.jpg" class="icono-img l-size redondo" alt=""></td>
+											<td>Nombre del producto en cuestión</td>
+											<td class="center">
+												<div class="badge s-size verde">Disponible</div>
+											</td>
+											<td>250,00€</td>
+									    </tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="card-footer-grupo">
+							<div class="flex-center">
+								<ul class="paginacion redondo separar s-size">
+									<li class="pagina-item active"><a class="pagina-link" href="#">1</a></li>
+									<li class="pagina-item"><a class="pagina-link" href="#">2</a></li>
+									<li class="pagina-item"><a class="pagina-link" href="#">3</a></li>
+									<!--<li class="pagina-item"><a class="pagina-link" href="#">5</a></li>
+									<li class="pagina-item"><a class="pagina-link" href="#">6</a></li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/listado-->
+				
+			</div>
+			<div class="col05">
+				
+				<!--tabs-->
+				<div class="tabs-responsive nomargin mini-scrollbar">
+			        <ul class="tabs redondo">
+					    <li><a href="tienda-pedidos.htm"><i class="flaticon-hoja va-middle"></i> Detalle</a></li>
+					    <li>
+					    	<a href="tienda-productos.htm">
+					    		<div class="posicion-top-right">
+									<div class="badge xs-size default">2</div>
+								</div>
+					    		<i class="flaticon-carrito va-middle"></i> Productos
+					    	</a>
+					    </li>
+					    <li class="destacado"><a href="tienda-procesar.htm" class="active"><i class="flaticon-flecha-hacia-adelante va-middle"></i> Procesar pedido</a></li>
+					</ul>
+				</div>
+				<!--contenido tabs-->
+				<div class="card card-borde redondo-bottom" style="border-top:0px;">
+					<div class="card-content padding">
+						
+						<!--mensaje-->
+						<div class="msg-form colordest xs-size full center redondo">
+							<i class="flaticon-circulo-info va-middle" alt="Info"></i> Todavía no hay ningún pedido para procesar.
+						</div>
+						
+						<!--fecha pedido-->
+						<div class="txtmin mb-s-size gris-oscuro">
+							<i class="flaticon-circulo-info va-middle" alt="Fecha del pedido"></i> Fecha del pedido:
+						</div>
+						<div class="input-group d-inline-flex">
+						 	<input type="text" class="form-control formulario xs-size flex-center redondo-left" size="20" placeholder="dd/mm/aa">
+							<button class="boton colordest flex-der icono-input xs-size redondo-right" type="button"><i class="flaticon-calendario"></i></button>
+						</div>
+						
+						<!--importes y demás-->
+						<div class="zona-date-table full redondo" style="background:rgba(0,0,0,0.04);">
+							<table class="data-table">
+								<tbody>
+									<tr>
+										<td>Productos:</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td colspan="2"><div class="linea xs-size"></div></td>
+									</tr>
+									<tr>
+										<td>Subtotal:</td>
+										<td><strong>6,80€</strong></td>
+									</tr>
+									<tr>
+										<td>IVA:</td>
+										<td>1,60€</td>
+									</tr>
+									<tr>
+										<td>
+											<select size="1" id="" name="" onchange="" class="formulario xs-size full redondo">
+								    			<option value="">Envío:</option>
+												<option value="">Envíos al aula</option>
+												<option value="">Recogida en almacén</option>
+											</select>
+										</td>
+										<td>0,00€</td>
+									</tr>
+									<tr>
+										<td>
+											<select size="1" id="" name="" onchange="" class="formulario xs-size full redondo">
+								    			<option value="">Pago:</option>
+												<option value="test">Tarjeta de crédito / débito</option>
+											</select>
+										</td>
+										<td>0,00€</td>
+									</tr>
+									<tr>
+										<td colspan="2"><div class="linea xs-size"></div></td>
+									</tr>
+									<tr>
+										<td class="total">TOTAL:</td>
+										<td class="suma">16,40€</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="limpiar"></div>
+							
+							<textarea name="observaciones" class="formulario full xs-size mt redondo" id="mensaje_texto" rows="4" onfocus="if(this.value == 'Observaciones...') { this.value = ''; }" onblur="if(this.value == '') {this.value = 'Observaciones...'}">Observaciones...</textarea>
+			
+							<!--botones-->
+							<div class="fila">
+								<div class="col05">
+									<a class="boton rojo redondo full" href="#"><i class="flaticon-circulo-prohibido va-middle"></i> Anular</a>
+								</div>
+								<div class="col07">
+									<a class="boton verde redondo full" href="#"><i class="flaticon-paquete va-middle"></i> Validar pedido</a>
+								</div>
+							</div>				
+							
+						</div>
+
+					</div>
+				</div>
+				<!--/contenido tabs-->
+				
+			</div>
+			<!--/contenido-->
+
+		</div>
+	</div>
+	<!--FIN CONTENIDOS-->
+
+	
+</div>
+<!--FIN CONTENIDO DERECHA-->
+	
+	<!--Tamaño pantalla-->
+	<div id="dimensions">
+		Resolución: <span class="width"></span>
+	</div>
+
+	<!--Jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--Grupo5.com - scrolltop y dimensions-->
+	<script src="js/general.js"></script>
+	
+	<!--Scripts de la web al final-->
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Grupo5">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Reserva">
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	<title>Imprimir reserva | GRUPO5.COM</title>
+     
+	<link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+	
+	<!--print-->
+	<link rel="stylesheet" media="print" type="text/css" href="css/print.css" />
+    
+</head>
+
+<body class="fondo blanco" onload="printPromot()">
+	<div class="invoice invoice-print">
+		<div class="invoice-boton-izq desktop"><a href="" target="_blank"><img src="images/qr.svg" class="img-responsive" alt="QR"></a></div>
+		<div class="invoice-boton-der"><a class="boton s-size default redondo" href="booking-print.htm"><i class="flaticon-impresora"></i></a></div>
+		<div class="invoice-caja">
+	
+			<img src="images/logotipo-grupo5.svg" class="invoice-logo" alt="">
+	      
+			<div class="invoice-reserva">
+				<div class="invoice-cliente">
+					<div class="invoice-contact-info">
+					<h2 class="invoice-title">Romualdo Rodríguez Formoso</h2>
+						<ul>
+							<li><strong>Fecha:</strong> 11/09/2021</li>
+							<li><strong>Salida desde:</strong> Ourense</li>
+							<li><strong>Hora salida:</strong> 08:45</li>
+							<li><strong>Hora llegada aprox.:</strong> 20:00</li>
+						</ul>
+					</div>
+				</div>
+				<div class="invoice-datos">
+					<h3 class="invoice-title">Reserva</h3>
+					<ul class="list-plain">
+						<li class="invoice-id"><span>Número:</span><span>001W3</span></li>
+						<li class="invoice-date"><span>IMPORTE:</span><span>70 €</span></li>
+						<li><a href="booking-print.htm" target="_blank" class="invisible-print mayusculas"><i class="flaticon-impresora va-middle"></i> IMPRIMIR BILLETE</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="invoice-reserva">
+				<div class="invoice-cliente">
+					<h2 class="invoice-title">María Pilar Campos Estévez</h2>
+					<ul>
+						<li><strong>Fecha:</strong> 11/09/2021</li>
+						<li><strong>Salida desde:</strong> Ourense</li>
+						<li><strong>Hora salida:</strong> 08:45</li>
+						<li><strong>Hora llegada aprox.:</strong> 20:00</li>
+					</ul>
+				</div>
+				<div class="invoice-datos">
+					<h3 class="invoice-title">Reserva</h3>
+					<ul>
+						<li><span>NÚMERO:</span><span>002W3</span></li>
+						<li><span>IMPORTE:</span><span>70 €</span></li>
+						<li><a href="booking-print.htm" target="_blank" class="invisible-print mayusculas"><i class="flaticon-impresora va-middle"></i> IMPRIMIR BILLETE</a></li>
+					</ul>
+				</div>
+			</div>
+	      	<!--condiciones-->
+			<div class="invoice-condiciones">
+				<p class="txt-center">Información</p>
+				<ul>
+					<li><strong>Punto de salida:</strong> Parada bus Parque de San Lázaro frente a Subdelegación de Gobierno. Calle Parque de San Lázaro, 2 - 32003 Ourense (Ourense)</li>
+					<li>Deben estar en el punto de salida <strong>10 minutos antes de la hora de salida</strong> de la excursión.</li>
+					<li>Deben <strong>llevar impresa la reserva</strong> o <strong>acreditar mediante el DNI de todas las personas</strong> que van a viajar.</li>
+					<li>La <strong>hora de llegada</strong> de cada viaje es siempre aproximada.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>function printPromot() {window.print();}</script>
+
+</body>
+</html>

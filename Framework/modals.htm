@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>UI ELEMENTS - Modals | www.grupo5.com</title>
+	<meta name="description" content="Panel de control privado de aplicaciones y páginas web, potente y conceptual creada y pensada para los clientes de Grupo5.com." />
+	<meta name="keywords" content="admin, cms, panel, privado, administración, gestión, control, webs, tiendas, online, nube, virtual, aplicaciones" />
+    <meta name="author" content="Grupo5.com" />
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+   	   	
+   	<!-- Chrome, Firefox OS y Opera -->
+	<meta name="theme-color" content="#15171f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#15171f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+	
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="dark_style" disabled="">
+
+	<!--animaciones-->
+	<link rel="stylesheet" media="screen" type="text/css" href="css/animate.min.css" />
+	
+	<!-- Fav y touch icons-->
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png" />
+   	
+</head>
+
+<body class="wide">
+
+<!--MODALS-->
+<div id="default" class="zona-modal"><!--onclick="oculta_id('default', 'slow', 'fade')"-->
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('default')">×</a></div>
+				<p class="title s-size nomargin">Modal default</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('default')"></div>
+</div>
+
+<div id="s-size" class="zona-modal">
+    <div class="modal-centrada s-size scroll"><!--'scroll': añade 210px de alto máximo al body y luego scroll-->
+		<div class="contenido-modal">
+
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('s-size')">×</a></div>
+				<p class="title s-size nomargin">Modal s-size</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('s-size')"></div>
+</div>
+
+<div id="l-size" class="zona-modal">
+    <div class="modal-centrada l-size">
+		<div class="contenido-modal">
+
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('l-size')">×</a></div>
+				<p class="title s-size nomargin">Modal l-size</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal right">
+				<a href="javascript:oculta_quickview('l-size')" class="boton s-size light redondo">Cancelar</a>
+				<a href="" class="boton s-size verde redondo">Guardar</a>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('l-size')"></div>
+</div>
+
+<div id="xl-size" class="zona-modal">
+    <div class="modal-centrada xl-size">
+		<div class="contenido-modal">
+
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('xl-size')">×</a></div>
+				<p class="title s-size nomargin">Modal xl-size</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('xl-size')"></div>
+</div>
+
+<div id="full" class="zona-modal">
+    <div class="modal-centrada full">
+		<div class="contenido-modal">
+
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('full')">×</a></div>
+				<p class="title s-size nomargin">Modal full</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('full')"></div>
+</div>
+
+<div id="fullscreen" class="zona-modal">
+    <div class="modal-centrada fullscreen">
+		<div class="contenido-modal">
+
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('fullscreen')">×</a></div>
+				<p class="title s-size nomargin">Modal fullscreen</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('fullscreen')"></div>
+</div>
+
+<!--colores header-->
+<div id="header-verde" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal verde">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('header-verde')" class="blanco">×</a></div>
+				<p class="title s-size nomargin blanco">Modal verde</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('header-verde')"></div>
+</div>
+<div id="header-cian" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal cian">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('header-cian')" class="blanco">×</a></div>
+				<p class="title s-size nomargin blanco">Modal cian</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('header-cian')"></div>
+</div>
+<div id="header-azul" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal azul">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('header-azul')" class="blanco">×</a></div>
+				<p class="title s-size nomargin blanco">Modal azul</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('header-azul')"></div>
+</div>
+<div id="header-gris" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal gris">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('header-gris')" class="blanco">×</a></div>
+				<p class="title s-size nomargin blanco">Modal gris</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('header-gris')"></div>
+</div>
+<div id="header-light" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal light">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('header-light')">×</a></div>
+				<p class="title s-size nomargin">Modal light</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('header-light')"></div>
+</div>
+
+<!--colores footer-->
+<div id="footer-verde" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('footer-verde')">×</a></div>
+				<p class="title s-size nomargin">Footer verde</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal verde">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('footer-verde')"></div>
+</div>
+<div id="footer-amarillo" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('footer-amarillo')">×</a></div>
+				<p class="title s-size nomargin">Footer amarillo</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal amarillo">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('footer-amarillo')"></div>
+</div>
+<div id="footer-rojo" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('footer-rojo')">×</a></div>
+				<p class="title s-size nomargin">Footer rojo</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal rojo">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('footer-rojo')"></div>
+</div>
+<div id="footer-gris" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('footer-gris')">×</a></div>
+				<p class="title s-size nomargin">Footer gris</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal gris">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('footer-gris')"></div>
+</div>
+<div id="footer-light" class="zona-modal">
+    <div class="modal-centrada">
+		<div class="contenido-modal">
+			<div class="header-modal">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('footer-light')">×</a></div>
+				<p class="title s-size nomargin">Footer light</p>
+			</div>
+			<div class="body-modal">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.
+			</div>
+			<div class="footer-modal light">
+				footer
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('footer-light')"></div>
+</div>
+
+<!--ejemplos-->
+<div id="planes" class="zona-modal">
+    <div class="modal-centrada l-size redondo">
+		<div class="contenido-modal animate__animated animate__fadeInDown">
+			<div class="header-modal noborde">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('planes')">×</a></div>
+			</div>
+			<div class="body-modal center">
+				
+             
+               <p class="title">Cambiar plan</p>
+                <div class="separa xs-size"></div>
+                <p class="txtmin">Este cambio entrará en vigencia el 14 de enero de 2022 en su cuenta.</p>
+				<div class="separa"></div>
+
+				<ul class="nav-switch nav-tabs">
+					<li class="nav-item"><a href="#" class="nav-link active">Anual</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Mensual</a></li>
+				</ul>
+
+				<!--<ul class="nav-switch nav-tabs">
+					<li class="nav-item"><a href="#" class="nav-link active">EUR</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">USD</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">BTC</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">ETH</a></li>
+				</ul>-->
+
+				<ul class="plan-lista">
+					<li class="plan-item">
+						<input class="plan-input" type="radio" name="planes" id="plan1" checked="">
+						<label class="plan-content" for="plan1">
+							<span class="plan-info">
+								<span class="plan-title">Enterprise Plan <span class="badge xs-size colordest redondeado">Activo</span></span>
+								<span class="plan-detail">Acceso ilimitado / 435,00 EUR / Año</span>
+							</span>
+							<span class="plan-precio">
+								<span class="plan-cantidad">
+									<span class="importe">435€</span>
+									<span class="light">Año</span>
+								</span>
+							</span>
+						</label>
+					</li>
+					<li class="plan-item">
+						<input class="plan-input" type="radio" name="planes" id="plan2">
+						<label class="plan-content" for="plan2">
+							<span class="plan-info">
+								<span class="plan-title title">Professional Plan</span>
+								<span class="plan-detail">Acceso ilimitado / 350,00 EUR / Año</span>
+							</span>
+							<span class="plan-precio">
+								<span class="plan-cantidad">
+									<span class="importe">350€</span>
+									<span class="light">Año</span>
+								</span>
+							</span>
+						</label>
+					</li>
+					<li class="plan-item">
+						<input class="plan-input" type="radio" name="planes" id="plan3">
+						<label class="plan-content" for="plan3">
+							<span class="plan-info">
+								<span class="plan-title title">Basic Plan</span>
+								<span class="plan-detail">Acceso básico / 72,00 EUR / Año</span>
+							</span>
+							<span class="plan-precio">
+								<span class="plan-cantidad">
+									<span class="importe">72€</span>
+									<span class="light">Año</span>
+								</span>
+							</span>
+						</label>
+					</li>
+				</ul>
+
+				<div class="separa"></div>
+				<a href="javascript:oculta_quickview('planes')" class="boton verde redondo centrado mr-s-size">Aceptar</a>
+				<a href="javascript:oculta_quickview('planes')" class="boton light redondo centrado">Cancelar</a>
+				<div class="separa s-size"></div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('planes')"></div>
+</div>
+<div id="login" class="zona-modal">
+    <div class="modal-centrada s-size">
+		<div class="contenido-modal redondo animate__animated animate__bounceIn">
+			<div class="header-modal noborde">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('login')">×</a></div>
+				<p class="title s-size nomargin center">Login</p>
+			</div>
+			<div class="body-modal xl-size">
+				<form>
+					<input name="email-login" class="formulario redondo" id="email-login" type="text" placeholder="Introducir email o usuario" value="" autocomplete="off">
+					<div class="limpiar"></div>
+						 
+					<input name="password-login" class="formulario redondo nomargin" id="password-login" type="password" placeholder="Introducir contraseña" value="" autocomplete="off">
+					<p class="txtmin s-size mb der"><a href="#" class="colordest">Recordar contraseña</a></p>
+					<div class="limpiar"></div>
+										
+					<div class="limpiar"></div>
+					<input name="enviar" class="formulario redondo full" id="enviar-identificacion" onclick="javascript:enviar_formulario('formulario_login')" type="button" value="ACCEDER"><!--*disabled/-->
+					<div class="limpiar"></div>
+					<label class="container-check mini mt"><!--mt: margin top: 1rem-->
+						<input type="checkbox" value="true">
+						<span class="checkmark-check"></span> Recordarme
+					</label>
+						
+					<!--nuevo usuario-->
+					<div class="linea-o">
+						<span>o</span>
+					</div>
+				   <p class="txtmin">¿Nuevo cliente? <a href="#" class="colordest underline">Crear una cuenta</a></p>
+				</form>
+			</div>
+			<div class="footer-modal light">
+				<p class="txtmin s-size center">© 2021 GRUPO5.COM S.C.</p>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('login')"></div>
+</div>
+<div id="selector" class="zona-modal">
+    <div class="modal-centrada redondo l-size">
+		<div class="contenido-modal animate__animated animate__fadeInDownBig">
+			<div class="header-modal colordest">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('selector')" class="blanco">×</a></div>
+				<p class="title s-size nomargin blanco">Selectores</p>
+			</div>
+			<div class="body-modal">
+
+				<!--búsqueda con filtros-->
+				<div class="fila">
+					<div class="col10 col10-xxs">
+						<div class="input-group izq full">
+						 	<input type="text" class="form-control formulario redondo-left flex-center" placeholder="Filtrar resultados">
+							<button class="boton azul flex-der icono-input redondo-right" type="button"><i class="flaticon-lupa bold"></i></button>
+						</div>
+					</div>
+					<div class="col02 col02-xxs">
+						<a href="" class="boton default redondo der"><i class="flaticon-txt-fuente "></i></a>
+					</div>
+				</div>
+				
+				<!--zona abecedario-->
+				<div class="zona-info bg-light redondo botones-enlinea">
+					<a href="javascript:filtrar_id('a');" class="boton default xs-size redondo mayusculas">a</a>
+					<a href="javascript:filtrar_id('b');" class="boton default xs-size redondo mayusculas">b</a>
+					<a href="javascript:filtrar_id('c');" class="boton default xs-size redondo mayusculas">c</a>
+					<a href="javascript:filtrar_id('d');" class="boton default xs-size redondo mayusculas">d</a>
+					<a href="javascript:filtrar_id('e');" class="boton default xs-size redondo mayusculas active">e</a>
+					<a href="javascript:filtrar_id('f');" class="boton default xs-size redondo mayusculas">f</a>
+					<a href="javascript:filtrar_id('g');" class="boton default xs-size redondo mayusculas">g</a>
+					<a href="javascript:filtrar_id('h');" class="boton default xs-size redondo mayusculas">h</a>
+					<a href="javascript:filtrar_id('i');" class="boton default xs-size redondo mayusculas">i</a>
+					<a href="javascript:filtrar_id('j');" class="boton default xs-size redondo mayusculas">j</a>
+					<a href="javascript:filtrar_id('k');" class="boton default xs-size redondo mayusculas">k</a>
+					<a href="javascript:filtrar_id('l');" class="boton default xs-size redondo mayusculas">l</a>
+					<a href="javascript:filtrar_id('m');" class="boton default xs-size redondo mayusculas">m</a>
+					<a href="javascript:filtrar_id('n');" class="boton default xs-size redondo mayusculas">n</a>
+					<a href="javascript:filtrar_id('o');" class="boton default xs-size redondo mayusculas">o</a>
+					<a href="javascript:filtrar_id('p');" class="boton default xs-size redondo mayusculas">p</a>
+					<a href="javascript:filtrar_id('q');" class="boton default xs-size redondo mayusculas">q</a>
+					<a href="javascript:filtrar_id('r');" class="boton default xs-size redondo mayusculas">r</a>
+					<a href="javascript:filtrar_id('s');" class="boton default xs-size redondo mayusculas">s</a>
+					<a href="javascript:filtrar_id('t');" class="boton default xs-size redondo mayusculas">t</a>
+					<a href="javascript:filtrar_id('u');" class="boton default xs-size redondo mayusculas">u</a>
+					<a href="javascript:filtrar_id('v');" class="boton default xs-size redondo mayusculas">v</a>
+					<a href="javascript:filtrar_id('w');" class="boton default xs-size redondo mayusculas">w</a>
+					<a href="javascript:filtrar_id('x');" class="boton default xs-size redondo mayusculas">x</a>
+					<a href="javascript:filtrar_id('y');" class="boton default xs-size redondo mayusculas">y</a>
+					<a href="javascript:filtrar_id('z');" class="boton default xs-size redondo mayusculas">z</a>
+				</div>
+
+				<!--selectores-->
+				<div class="fila">
+					<div class="col04 col06-s colo04-xl">
+						<label class="container-check mtb">Nombre del contenido<input type="checkbox" value="true"><span class="checkmark-check"></span></label>
+					</div>
+					<div class="col04 col06-s colo04-xl">
+						<label class="container-check mtb">Nombre del contenido un poco mas largo<input type="checkbox" value="true"><span class="checkmark-check"></span></label>
+					</div>
+					<div class="col04 col06-s colo04-xl">
+						<label class="container-check mtb">Nombre del contenido<input type="checkbox" value="true"><span class="checkmark-check"></span></label>
+					</div>
+					<div class="col04 col06-s colo04-xl">
+						<label class="container-check mtb">Nombre del contenido<input type="checkbox" value="true"><span class="checkmark-check"></span></label>
+					</div>
+					<div class="col04 col06-s colo04-xl">
+						<label class="container-check mtb">Nombre del contenido<input type="checkbox" value="true"><span class="checkmark-check"></span></label>
+					</div>
+				</div>
+			</div>
+			<div class="footer-modal right">
+				<a href="javascript:oculta_quickview('selector')" class="boton s-size light redondo"><i class="flaticon-prohibido"></i> Cancelar</a>
+				<a href="" class="boton s-size verde redondo"><i class="flaticon-disquete"></i> Guardar</a>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('selector')"></div>
+</div>
+<div id="tabs" class="zona-modal">
+    <div class="modal-centrada l-size">
+		<div class="contenido-modal redondo animate__animated animate__jackInTheBox">
+			<div class="header-modal colordest">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('tabs')" class="blanco">×</a></div>
+				<p class="title s-size nomargin blanco">Tabs</p>
+			</div>
+			<div class="body-modal" style="padding-top:0px">
+				<div class="tabs-responsive mini-scrollbar">
+					<ul class="tabs nomargin tab-estilo-2">
+				    	<li><a href="" class="active">Opción 1</a></li>
+				    	<li><a href="">Opción 2</a></li>
+					</ul>
+				</div>
+				<div class="mt">
+					<p class="title xs-size mb">Contenido</p>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro numquam distinctio ab cupiditate veniam a aperiam architecto perspiciatis quidem provident!</p>
+				</div>
+				<div class="separa s-size"></div>			
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('tabs')"></div>
+</div>
+<div id="borrar" class="zona-modal">
+    <div class="modal-centrada redondo">
+		<div class="contenido-modal animate__animated animate__tada">
+			<div class="header-modal noborde">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('borrar')">×</a></div>
+			</div>
+			<div class="body-modal center">
+				
+				<i class="flaticon-error icono-fon xxl-size rojo"></i>
+                
+                <p class="title s-size mt">¿Seguro que lo quieres borrar?</p>
+                <div class="separa s-size"></div>
+                <p>El registro se va a elmininar definitivamente.</p>
+				<div class="separa"></div>
+				<a href="javascript:oculta_quickview('borrar')" class="boton light redondo centrado mr-s-size">Cancelar</a>
+				<a href="javascript:oculta_quickview('borrar')" class="boton rojo redondo centrado">Borrar</a>
+				<div class="separa s-size"></div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('borrar')"></div>
+</div>
+<div id="correcto" class="zona-modal">
+    <div class="modal-centrada redondo">
+		<div class="contenido-modal animate__animated animate__shakeY">
+			<div class="header-modal noborde">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('correcto')">×</a></div>
+			</div>
+			<div class="body-modal center">
+				<div class="avatar xl-size centrado">
+                   	<span class="zona-avatar img-rounded verde"><i class="flaticon-check"></i></span>
+                </div>
+                <p class="title s-size mt">¡Enhorabuena!</p>
+                <div class="separa s-size"></div>
+                <p>Has comprado 0.5968 BTC por 200.00 USD</p>
+				<p class="txtmin">Revisa si ya han sido cargados en tu billetera. <a href="" class="colordest underline">Pulsa aquí</a></p>
+				<div class="separa s-size"></div>
+				<a href="javascript:oculta_quickview('correcto')" class="boton colordest redondo centrado">Aceptar</a>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('correcto')"></div>
+</div>
+<div id="error" class="zona-modal">
+    <div class="modal-centrada redondo">
+		<div class="contenido-modal animate__animated animate__shakeX">
+			<div class="header-modal noborde">
+				<div class="cerrar-modal"><a href="javascript:oculta_quickview('error')">×</a></div>
+			</div>
+			<div class="body-modal xl-size center">
+				<div class="avatar xl-size centrado">
+                   	<span class="zona-avatar img-rounded rojo"><i class="flaticon-aspa"></i></span>
+                </div>
+                <div class="separa xs-size"></div>
+                <p class="title s-size mb">¡Error!</p>
+                <p class="mb">Lo sentimos, no se pudo procesar el pago.<br />Intentar de nuevo mas tarde.</p>
+				<p class="txtmin">Para cualquier duda, llamar al <a href="tel:" class="colordest">(+34) 988 510 046</a></p>
+				<div class="separa s-size"></div>
+				<a href="javascript:oculta_quickview('error')" class="boton light redondo centrado">Volver</a>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-modal" onclick="oculta_quickview('error')"></div>
+</div>
+
+	<!--Modal promo 1 - Imagen sólo -->
+	<div id="promo1" class="zona-modal">
+	    <div class="modal-centrada">
+			<div class="contenido-modal">
+				
+				<div class="body-modal nopadding">
+					<div class="cerrar-modal"><a href="javascript:oculta_quickview('promo1')" class="sombra-blanca-texto">×</a></div>
+					<a href=""><img src="images/popup01.jpg" class="img-responsive" alt="Nombre promo"></a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="overlay-modal" onclick="oculta_quickview('promo1')"></div>
+	</div>
+	<!--/modal promo 1-->
+	
+	<!--Modal promo 2-->
+	<div id="promo2" class="zona-modal">
+	    <div class="modal-centrada">
+			<div class="contenido-modal">
+				<div class="header-modal noborde">
+					<div class="cerrar-modal"><a href="javascript:oculta_quickview('promo2')" class="sombra-blanca-texto">×</a></div>
+				</div>
+				<div class="body-modal">
+										
+					<a href=""><img src="images/popup02.jpg" class="img-responsive mb" alt="Nombre promo"></a>
+					<p class="title xs-size nomargin" >Título de la promoción</p>
+					<p class="mt">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus rhoncus lectus quis ornare. Sed euismod mauris at commodo viverra.
+					</p>
+					<a href="" class="boton s-size magenta redondo mt">Más información</a>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="overlay-modal" onclick="oculta_quickview('promo2')"></div>
+	</div>
+	<!--/modal promo 2-->
+	
+	<!--Modal promo 3-->
+	<div id="promo3" class="zona-modal">
+	    <div class="modal-centrada l-size">
+			<div class="contenido-modal">
+				
+				<div class="body-modal nopadding">
+					<div class="cerrar-modal" style="top:0px; right:5px;"><a href="javascript:oculta_quickview('promo3')" class="sombra-blanca-texto">×</a></div>
+
+					
+					<div class="contenedor-modal">
+						<div class="fila-modal-misma-altura">
+							<div class="col06 nopadding">
+								<a href=""><img src="images/popup03.jpg" class="img-responsive min-height-overflow" alt="Nombre promo"></a>
+							</div>
+							<div class="col06">
+								<div class="centradovertical">
+									<div class="" style="padding:30px 15px;">
+										<p class="title xs-size nomargin" >Título de la promoción</p>
+										<p class="mt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus rhoncus lectus quis ornare. Sed euismod mauris at commodo viverra.
+										</p>
+										<a href="" class="boton s-size azul redondo mt">Más información</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="overlay-modal" onclick="oculta_quickview('promo3')"></div>
+	</div>
+	<!--/modal promo 3-->
+
+<!--/MODALS-->
+
+
+<!--MENÚ LATERAL IZQUIERDA-->
+<div class="zona-izquierda mini-scrollbar">
+	<aside>
+		<div class="zona-logotipo">
+			<div class="elipsis">
+				<!--GRUPO 5-->
+				<img src="images/logotipo.svg" class="img-responsive" alt="Nombre" />
+			</div>
+		</div>
+		
+		<!--menu-->
+		<div class="right-menu">
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ HORIZONTAL TOP</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-cuadrados"></i><span class="textomenu">Desplegables</span></a>
+					<ul>
+			    	    <li><a href="menu-top-usuarios.htm"><span class="textomenu">Menú usuarios</span></a></li>
+			    	    <li><a href="menu-top-idiomas.htm"><span class="textomenu">Menú idiomas</span></a></li>
+			    	    <li><a href="menu-top-opciones.htm"><span class="textomenu">Menú opciones</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">SECCIONES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-monitor"></i><span class="textomenu">Páginas</span></a>
+					<ul>
+			    	    <li><a href="listado1.htm"><span class="textomenu">Listado 1</span></a></li>
+			    	    <li><a href="listado2.htm"><span class="textomenu">Listado 2</span></a></li>
+			    	    <li><a href="listado3.htm"><span class="textomenu">Listado 3</span></a></li>
+			    	    
+						<li><a href="detalle.htm"><span class="textomenu">Detalle</span></a></li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="detalle-nuevo.htm"><span class="textomenu">Detalle nuevo</span></a>
+						</li>
+						<li><a href="detalle-full.htm"><span class="textomenu">Detalle full</span></a></li>
+						<li class="has-sub"><a href="#"><span class="textomenu">Ecommerce</span></a>
+			    	    	<ul>
+			    	    		<li><a href="tienda-listado.htm">Tienda</a></li>
+			    	    		<li><a href="tienda-pedidos.htm">Pedidos</a></li>
+			    	    		<li><a href="tienda-detalle.htm">Detalle producto</a></li>
+			    	    		<li><a href="tienda-anadir.htm">Añadir producto</a></li>
+			    	    		<li><a href="tienda-carro.htm">Carro</a></li>
+			    	    		<li><a href="tienda-checkout.htm">Checkout</a></li>
+			    	    	</ul>
+			    	    </li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="alta.htm"><span class="textomenu">Alta</span></a>
+						</li>
+						<li><a href="agenda.htm"><span class="textomenu">Agenda</span></a></li>
+						<li><a href="seo.htm"><span class="textomenu">Seo</span></a></li>
+						<li><a href="comentarios.htm"><span class="textomenu">Comentarios</span></a></li>
+						<li><a href="email.htm"><span class="textomenu">Email</span></a></li>
+						<li><a href="factura.htm"><span class="textomenu">Factura</span></a></li>
+						<li><a href="reserva.htm"><span class="textomenu">Reserva</span></a></li>
+						<li>
+							<div class="posicion-top-right" style="padding-top:5px"><i class="flaticon-circulo-menos rojo" title="Módulo NO disponible"></i></div>
+							<a href="estadisticas.htm"><span class="textomenu rojo" title="Módulo NO disponible">Estadísticas</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-candado"></i><span class="textomenu">Autentificación</span></a>
+					<ul>
+			    	    <li><a href="login.htm" target="_blank"><span class="textomenu">Login</span></a></li>
+			    	    <li><a href="recordar.htm" target="_blank"><span class="textomenu">Recordar contraseña</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">COMPONENTES</li>
+				<li class="has-sub active"><a href="#"><i class="flaticon-capas"></i><span class="textomenu">UI Elements</span></a>
+					<ul>
+			    	    <li><a href="mensajes.htm"><span class="textomenu">Mensajes</span></a></li>
+						<li><a href="botones.htm"><span class="textomenu">Botones</span></a></li>
+						<li class="active"><a href="modals.htm"><span class="textomenu">Modals</span></a></li>
+						<li><a href="paginacion.htm"><span class="textomenu">Paginación</span></a></li>
+						<li><a href="tabs.htm"><span class="textomenu">Tabs</span></a></li>
+						<li><a href="slider.htm"><span class="textomenu">Slider</span></a></li>
+						<li><a href="acordeon.htm"><span class="textomenu">Acordeón</span></a></li>
+						<li><a href="progress-bars.htm"><span class="textomenu">Progress bars</span></a></li>
+						<li><a href="flex.htm"><span class="textomenu">Flex</span></a></li>
+						<li><a href="calendarios.htm"><span class="textomenu">Calendarios</span></a></li>
+						<li><a href="tipografia.htm"><span class="textomenu">Tipografía</span></a></li>
+						<li><a href="clases.htm"><span class="textomenu">Clases</span></a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estructura"></i><span class="textomenu">Tablas</span></a>
+					<ul>
+			    	    <li><a href="tablas-basicas.htm"><span class="textomenu">Tablas básicas</span></a></li>
+						<li><a href="tablas-especiales.htm"><span class="textomenu">Tablas especiales</span></a></li>
+					</ul>
+				</li> 
+				<li>
+					<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+					<a href="formularios.htm"><i class="flaticon-lista"></i><span class="textomenu">Formularios</span></a>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estrella"></i><span class="textomenu">Iconos / Svg</span></a>
+					<ul>
+			    	    <li><a href="flaticons.htm"><span class="textomenu">Flaticons</span></a></li>
+						<li><a href="svg.htm"><span class="textomenu">Imágenes SVG</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">Pre-Built Pages</li>
+				<li class="has-sub "><a href="#"><i class="flaticon-llave-inglesa"></i><span class="textomenu">Error</span></a>
+					<ul>
+			    	    <li class="">
+			    	    	<div class="posicion-top-right"><div class="badge xs-size rojo">2</div></div>
+			    	    	<a href="404.htm"><span class="textomenu">404</span></a>
+			    	    </li>
+						<li class=""><a href="500.htm"><span class="textomenu">500</span></a></li>
+					</ul>
+				</li>
+				<li><a href="usuarios.htm"><i class="flaticon-ajuste"></i><span class="textomenu">Gestión usuarios</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</aside>
+</div>
+<!--FIN MENÚ LATERAL IZQUIERDA-->
+
+<!--CONTENIDOS DERECHA-->
+<div class="zona-derecha">
+	
+	<!--Header menú-->
+	<header class="fixed">
+		<div class="menu-top-fixed">
+			<ul class="top-menu">
+				<li><a href=""><i class="flaticon-menu icon"></i></a></li>
+			</ul>
+			<ul class="top-menu dere">
+				
+				<li><a href=""><i class="flaticon-configuracion icon ani-rotar-der"></i></a></li>
+				<li><a href=""><i class="flaticon-circulo-check icon verde"></i></a></li>
+				<li>
+					<label id="switch_dia_noche" for="dia_noche" class="switch-checkbox" title="Modo día/noche">
+						<input id="dia_noche" type="checkbox" checked="">
+						<img src="images/luna.svg" class="checked" alt="Noche">
+						<img src="images/sol.svg" class="unchecked" alt="Día">
+					</label>
+				</li>
+				<li><a href=""><i class="flaticon-puntos-vertical icon"></i></a></li>
+			</ul>
+			
+		</div>
+	</header>
+
+	<!--CONTENIDOS ahora aplicamos un max-width-->
+	<div class="contenido-maxwidth l-size">
+		<div class="contenedor-fluid septopbot">
+			<div class="fila">
+
+				<div class="col12">
+					<div class="centradovertical aling-between mb"><!--mb (margin bottom 1rem)-->
+						<div class="zona-title center-flex izq">
+							<i class="icon flaticon-capas"></i>
+							<div>
+								<h1 class="title mayusculas">Modals</h1>
+								<p class="txtmin s-size"><em>Documentación y ejemplos</em></p>
+							</div>
+						</div>
+						<div class="push">
+							<ul class="page-breadcrumb desktop flex-der mayusculas">
+								<li><a href="index.htm">Inicio</a></li>
+								<li>UI Elements</li>
+								<li><a href="modals.htm">Modals</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col12">
+					<div class="card card-borde card-stretch mb">
+						<div class="card-body">
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Tamaños</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.s-size, .l-size, .xl-size, .full, .fullscreen</code> para cambiar los tamaños.</p>
+								<div class="botones-enlinea">
+									<div class="boton s-size colordest redondo modal-default">Modal defautl</div>
+									<div class="boton s-size colordest redondo modal-s-size">Modal s-size</div>
+									<div class="boton s-size colordest redondo modal-l-size">Modal l-size</div>
+									<div class="boton s-size colordest redondo modal-xl-size">Modal xl-size</div>
+									<div class="boton s-size colordest redondo modal-full">Modal full</div>
+									<div class="boton s-size colordest redondo modal-fullscreen">Modal fullscreen</div>
+								</div>
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-content">
+								<div class="fila">
+									<div class="col06 sepcolbot">
+										<h2 class="title xs-size">Colores header</h2>
+										<p class="txtmin mb">Añadir los colores <code class="code-class">.verde, .cian, .azul, .amarillo, .rojo, .gris, .light</code> para cambiar el fondo del header.</p>
+										<div class="botones-enlinea">
+											<div class="boton s-size verde redondo modal-header-verde">Header verde</div>
+											<div class="boton s-size cian redondo modal-header-cian">Header cian</div>
+											<div class="boton s-size azul redondo modal-header-azul">Header azul</div>
+											<div class="boton s-size gris redondo modal-header-gris">Header gris</div>
+											<div class="boton s-size light redondo modal-header-light">Header light</div>
+										</div>
+									</div>
+									<div class="col06">
+										<h2 class="title xs-size">Colores footer</h2>
+										<p class="txtmin mb">Añadir los colores <code class="code-class">.verde, .cian, .azul, .amarillo, .rojo, .gris, .light</code> para cambiar el fondo del footer.</p>
+										<div class="botones-enlinea">
+											<div class="boton s-size verde redondo modal-footer-verde">Footer verde</div>
+											<div class="boton s-size amarillo redondo modal-footer-amarillo">Footer amarillo</div>
+											<div class="boton s-size rojo redondo modal-footer-rojo">Footer rojo</div>
+											<div class="boton s-size gris redondo modal-footer-gris">Footer gris</div>
+											<div class="boton s-size light redondo modal-footer-light">Footer light</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Ejemplos</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Diferentes tipos de modals con animaciones con la clase <code class="code-tag">animate.min.css</code> utilizar: <code class="code-class">animate__animated animate__bounceIn</code> o <code class="code-class">animate__animated animate__fadeInDownBig</code> o <code class="code-class">animate__animated animate__jackInTheBox</code> o <code class="code-class">animate__animated animate__tada</code> o <code class="code-class">animate__animated animate__shakeY</code>...</p>
+								<div class="botones-enlinea">
+									<div class="boton s-size cian redondo modal-login">Modal login</div>
+									<div class="boton s-size colordest redondo modal-selector">Modal selector</div>
+									<div class="boton s-size azul redondo modal-tabs">Modal tabs</div>
+									<div class="boton s-size amarillo redondo modal-borrar">Modal borrar</div>
+									<div class="boton s-size verde redondo modal-correcto">Modal correcto</div>
+									<div class="boton s-size rojo redondo modal-error">Modal error</div>
+									<div class="boton s-size magenta redondo modal-planes">Modal planes</div>								
+								</div>
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Promos</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">PopUps para promociones, novedades, campañas publicitarias...</p>
+								<div class="botones-enlinea">
+									<div class="boton s-size rojo redondo modal-promo1">Imagen sóla</div>
+									<div class="boton s-size magenta redondo modal-promo2">Foto título texto botón</div>
+									<div class="boton s-size azul redondo modal-promo3">Imagen izquierda</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				
+										
+			</div>
+		</div>
+	</div>
+	<!--FIN CONTENIDOS-->
+
+		
+</div>
+<!--FIN CONTENIDO DERECHA-->
+	
+	<!--Tamaño pantalla-->
+	<div id="dimensions">
+		Resolución: <span class="width"></span>
+	</div>
+
+	<!--Jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--Grupo5.com - scrolltop y dimensions-->
+	<script src="js/general.js"></script>
+	
+	<!--Scripts de la web al final-->
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>UI ELEMENTS - Flex | www.grupo5.com</title>
+	<meta name="description" content="Panel de control privado de aplicaciones y páginas web, potente y conceptual creada y pensada para los clientes de Grupo5.com." />
+	<meta name="keywords" content="admin, cms, panel, privado, administración, gestión, control, webs, tiendas, online, nube, virtual, aplicaciones" />
+    <meta name="author" content="Grupo5.com" />
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+   	   	
+   	<!-- Chrome, Firefox OS y Opera -->
+	<meta name="theme-color" content="#15171f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#15171f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+	
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="dark_style" disabled="">
+	
+	<!-- Fav y touch icons-->
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png" />
+   	
+</head>
+
+<body class="wide">
+	
+<!--MENÚ LATERAL IZQUIERDA-->
+<div class="zona-izquierda mini-scrollbar">
+	<aside>
+		<div class="zona-logotipo">
+			<div class="elipsis">
+				<!--GRUPO 5-->
+				<img src="images/logotipo.svg" class="img-responsive" alt="Nombre" />
+			</div>
+		</div>
+		
+		<!--menu-->
+		<div class="right-menu">
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ HORIZONTAL TOP</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-cuadrados"></i><span class="textomenu">Desplegables</span></a>
+					<ul>
+			    	    <li><a href="menu-top-usuarios.htm"><span class="textomenu">Menú usuarios</span></a></li>
+			    	    <li><a href="menu-top-idiomas.htm"><span class="textomenu">Menú idiomas</span></a></li>
+			    	    <li><a href="menu-top-opciones.htm"><span class="textomenu">Menú opciones</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">SECCIONES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-monitor"></i><span class="textomenu">Páginas</span></a>
+					<ul>
+			    	    <li><a href="listado1.htm"><span class="textomenu">Listado 1</span></a></li>
+			    	    <li><a href="listado2.htm"><span class="textomenu">Listado 2</span></a></li>
+			    	    <li><a href="listado3.htm"><span class="textomenu">Listado 3</span></a></li>
+			    	    
+						<li><a href="detalle.htm"><span class="textomenu">Detalle</span></a></li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="detalle-nuevo.htm"><span class="textomenu">Detalle nuevo</span></a>
+						</li>
+						<li><a href="detalle-full.htm"><span class="textomenu">Detalle full</span></a></li>
+						<li class="has-sub"><a href="#"><span class="textomenu">Ecommerce</span></a>
+			    	    	<ul>
+			    	    		<li><a href="tienda-listado.htm">Tienda</a></li>
+			    	    		<li><a href="tienda-pedidos.htm">Pedidos</a></li>
+			    	    		<li><a href="tienda-detalle.htm">Detalle producto</a></li>
+			    	    		<li><a href="tienda-anadir.htm">Añadir producto</a></li>
+			    	    		<li><a href="tienda-carro.htm">Carro</a></li>
+			    	    		<li><a href="tienda-checkout.htm">Checkout</a></li>
+			    	    	</ul>
+			    	    </li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="alta.htm"><span class="textomenu">Alta</span></a>
+						</li>
+						<li><a href="agenda.htm"><span class="textomenu">Agenda</span></a></li>
+						<li><a href="seo.htm"><span class="textomenu">Seo</span></a></li>
+						<li><a href="comentarios.htm"><span class="textomenu">Comentarios</span></a></li>
+						<li><a href="email.htm"><span class="textomenu">Email</span></a></li>
+						<li><a href="factura.htm"><span class="textomenu">Factura</span></a></li>
+						<li><a href="reserva.htm"><span class="textomenu">Reserva</span></a></li>
+						<li>
+							<div class="posicion-top-right" style="padding-top:5px"><i class="flaticon-circulo-menos rojo" title="Módulo NO disponible"></i></div>
+							<a href="estadisticas.htm"><span class="textomenu rojo" title="Módulo NO disponible">Estadísticas</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-candado"></i><span class="textomenu">Autentificación</span></a>
+					<ul>
+			    	    <li><a href="login.htm" target="_blank"><span class="textomenu">Login</span></a></li>
+			    	    <li><a href="recordar.htm" target="_blank"><span class="textomenu">Recordar contraseña</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">COMPONENTES</li>
+				<li class="has-sub active"><a href="#"><i class="flaticon-capas"></i><span class="textomenu">UI Elements</span></a>
+					<ul>
+			    	    <li><a href="mensajes.htm"><span class="textomenu">Mensajes</span></a></li>
+						<li><a href="botones.htm"><span class="textomenu">Botones</span></a></li>
+						<li><a href="modals.htm"><span class="textomenu">Modals</span></a></li>
+						<li><a href="paginacion.htm"><span class="textomenu">Paginación</span></a></li>
+						<li><a href="tabs.htm"><span class="textomenu">Tabs</span></a></li>
+						<li><a href="slider.htm"><span class="textomenu">Slider</span></a></li>
+						<li><a href="acordeon.htm"><span class="textomenu">Acordeón</span></a></li>
+						<li><a href="progress-bars.htm"><span class="textomenu">Progress bars</span></a></li>
+						<li class="active"><a href="flex.htm"><span class="textomenu">Flex</span></a></li>
+						<li><a href="calendarios.htm"><span class="textomenu">Calendarios</span></a></li>
+						<li><a href="tipografia.htm"><span class="textomenu">Tipografía</span></a></li>
+						<li><a href="clases.htm"><span class="textomenu">Clases</span></a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estructura"></i><span class="textomenu">Tablas</span></a>
+					<ul>
+			    	    <li><a href="tablas-basicas.htm"><span class="textomenu">Tablas básicas</span></a></li>
+						<li><a href="tablas-especiales.htm"><span class="textomenu">Tablas especiales</span></a></li>
+					</ul>
+				</li> 
+				<li>
+					<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+					<a href="formularios.htm"><i class="flaticon-lista"></i><span class="textomenu">Formularios</span></a>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estrella"></i><span class="textomenu">Iconos / Svg</span></a>
+					<ul>
+			    	    <li><a href="flaticons.htm"><span class="textomenu">Flaticons</span></a></li>
+						<li><a href="svg.htm"><span class="textomenu">Imágenes SVG</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">Pre-Built Pages</li>
+				<li class="has-sub "><a href="#"><i class="flaticon-llave-inglesa"></i><span class="textomenu">Error</span></a>
+					<ul>
+			    	    <li class="">
+			    	    	<div class="posicion-top-right"><div class="badge xs-size rojo">2</div></div>
+			    	    	<a href="404.htm"><span class="textomenu">404</span></a>
+			    	    </li>
+						<li class=""><a href="500.htm"><span class="textomenu">500</span></a></li>
+					</ul>
+				</li>
+				<li><a href="usuarios.htm"><i class="flaticon-ajuste"></i><span class="textomenu">Gestión usuarios</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</aside>
+</div>
+<!--FIN MENÚ LATERAL IZQUIERDA-->
+
+<!--CONTENIDOS DERECHA-->
+<div class="zona-derecha">
+	
+	<!--Header menú-->
+	<header class="fixed">
+		<div class="menu-top-fixed">
+			<ul class="top-menu">
+				<li><a href=""><i class="flaticon-menu icon"></i></a></li>
+			</ul>
+			<ul class="top-menu dere">
+				
+				<li><a href=""><i class="flaticon-configuracion icon ani-rotar-der"></i></a></li>
+				<li><a href=""><i class="flaticon-circulo-check icon verde"></i></a></li>
+				<li>
+					<label id="switch_dia_noche" for="dia_noche" class="switch-checkbox nomargin" title="Modo día/noche">
+						<input id="dia_noche" type="checkbox" checked="">
+						<img src="images/luna.svg" class="checked" alt="Noche">
+						<img src="images/sol.svg" class="unchecked" alt="Día">
+					</label>
+				</li>
+				<li><a href=""><i class="flaticon-puntos-vertical icon"></i></a></li>
+			</ul>
+			
+		</div>
+	</header>
+
+	<!--CONTENIDOS ahora aplicamos un max-width-->
+	<div class="contenido-maxwidth l-size">
+		<div class="contenedor-fluid septopbot">
+			<div class="fila">
+
+				<div class="col12">
+					<div class="centradovertical aling-between mb"><!--mb (margin bottom 1rem)-->
+						<div class="zona-title center-flex izq">
+							<i class="icon flaticon-capas"></i>
+							<div>
+								<h1 class="title mayusculas">Flex</h1>
+								<p class="txtmin s-size"><em>Documentación y ejemplos</em></p>
+							</div>
+						</div>
+						<div class="push">
+							<ul class="page-breadcrumb desktop flex-der mayusculas">
+								<li><a href="index.htm">Inicio</a></li>
+								<li>UI Elements</li>
+								<li><a href="flex.htm">Flex</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col12">
+					<div class="card card-borde card-stretch mb">
+						<div class="card-body">
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Habilitar Flex</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.d-flex</code> para crear un contenedor con <mark>display flex</mark>.</p>
+								
+								<div class="d-flex p-2 bg-light"> ¡Soy un contenedor flex! </div>
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Dirección</h2>
+							</div>
+							<div class="card-content">
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code> y <code class="code-class">.flex-row</code> <mark class="txtmin s-size">valor por defecto</mark> para que los contenderores se alineen en <mark>fila</mark>.</p>
+								<div class="d-flex flex-row bg-light mb">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.flex-row-reverse</code> para que se alineen en <mark>fila</mark> de derecha a izquierda.</p>
+								<div class="d-flex flex-row flex-row-reverse bg-light mb">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code> y <code class="code-class">.flex-column</code> para que los contenderores se alineen en <mark>columna</mark>.</p>
+								<div class="d-flex flex-column bg-light mb">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-column</code> y <code class="code-class">.flex-column-reverse</code> para que se alineen en <mark>columna</mark> por orden inverso.</p>
+								<div class="d-flex flex-column-reverse flex-row-reverse bg-light">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+							</div>
+
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size nomargin">Envoltura flexible</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code> y <code class="code-class">.flex-wrap</code> para que los elementos se ajusten y si no caben pasen para abajo. Por defecto el valor es <code class="code-tag">nowrap</code> es decir que no hay salto de línea.</p>
+								<div class="d-flex flex-wrap bg-white">
+									<div class="p-1 bg-gris-100 ma"> Elemento flexible primero </div>
+									<div class="p-1 bg-gris-200 ma"> Elemento flexible </div>
+									<div class="p-1 bg-gris-300 ma"> Elemento flexible</div>
+									<div class="p-1 bg-gris-400 ma"> Otro elemento</div>
+									<div class="p-1 bg-gris-500 ma"> Elemento flexible</div>
+									<div class="p-1 bg-gris-600 ma"> Flexible</div>
+									<div class="p-1 bg-gris-700 ma"> Elemento flexible</div>
+									<div class="p-1 bg-gris-800 ma"> Elemento flexible</div>
+									<div class="p-1 bg-gris-900 ma"> Elemento flexible último</div>
+								</div>
+							</div>
+
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Justificar contenido</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.justify-start</code> para que se justifiquen desde el principio.</p>
+								<div class="d-flex flex-row justify-start bg-light mb">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.justify-end</code> para que se justifiquen desde el fin.</p>
+								<div class="d-flex flex-row justify-end bg-light mb">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.justify-center</code> para que se justifiquen al centro.</p>
+								<div class="d-flex flex-row justify-center bg-light mb">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.justify-between</code> para que se justifiquen inicio, centro y fin.</p>
+								<div class="d-flex flex-row justify-between bg-light mb">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.justify-around</code> para  crear un espacio equitativo a la derecha e izquierda de cada contenedor.</p>
+								<div class="d-flex flex-row justify-around bg-light">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+							</div>							
+
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Alinear elementos</h2>
+							</div>
+							<div class="card-content">
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.align-items-start</code> para alinear los contendores al principio del contenedor principal.</p>
+								<div class="d-flex flex-row align-items-start bg-light mb" style="height:100px !important;">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.align-items-center</code> para alinear los contendores al centro del contenedor principal.</p>
+								<div class="d-flex flex-row align-items-center bg-light mb" style="height:100px !important;">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.align-items-end</code> para alinear los contendores al fin del contenedor principal.</p>
+								<div class="d-flex flex-row align-items-end bg-light mb" style="height:100px !important;">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code>, <code class="code-class">.flex-row</code> y <code class="code-class">.align-items-stretch</code> para alinear los contendores ocupando el alto del contenedor principal.</p>
+								<div class="d-flex flex-row align-items-stretch bg-light" style="height:100px !important;">
+									<div class="p-1 bg-gris-300"> Elemento flexible 1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible 2 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible 3 </div>
+								</div>
+
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size">Alinearse a sí mismo</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code> y <code class="code-class">.flex-row</code> en el contenedor principal y luego cada elemento interior tendrá la clase <code class="code-class">.align-self-...</code> para alinear los contendores dentro del contenedor principal.</p>
+								<div class="d-flex flex-row bg-light" style="height:100px !important;">
+									<div class="p-1 bg-gris-300 align-self-start"> align-self-start </div>
+									<div class="p-1 bg-gris-400 align-self-center"> align-self-center </div>
+									<div class="p-1 bg-gris-500 align-self-end"> align-self-end </div>
+									<div class="p-1 bg-gris-600 align-self-stretch"> align-self-stretch </div>
+								</div>
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size nomargin">Llenar</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.d-flex</code> al contenedor principal y luego cada elemento interior tendrá la clase <code class="code-class">.flex-fill</code> para llenar contenedor principal.</p>
+								<div class="d-flex bg-light">
+									<div class="p-1 bg-gris-300 flex-fill"> Elemento flexible con mucho mas contenido que los otros </div>
+									<div class="p-1 bg-gris-400 flex-fill"> Elemento flexible menos contenido </div>
+									<div class="p-1 bg-gris-500 flex-fill"> Elemento flexible </div>
+								</div>
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size nomargin">Crecer y encoger</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.d-flex</code> al contenedor principal y luego un elemento tendrá la clase <code class="code-class">.flex-grow-1</code> para ocupar el total de espacio que dejen los demás contendores.</p>
+								<div class="d-flex bg-light mb">
+									<div class="p-1 bg-gris-300 flex-grow-1"> Elemento flexible flex-grow-1 </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible </div>
+								</div>
+								<div class="d-flex bg-light mb">
+									<div class="p-1 bg-gris-400"> Elemento flexible </div>
+									<div class="p-1 bg-gris-300 flex-grow-1"> Elemento flexible flex-grow-1 </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible </div>
+								</div>
+								<div class="d-flex bg-light">
+									<div class="p-1 bg-gris-400"> Elemento flexible </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible </div>
+									<div class="p-1 bg-gris-300 flex-grow-1"> Elemento flexible flex-grow-1 </div>
+								</div>
+							</div>
+							<div class="card-linea"></div>
+							<div class="card-header noborder">
+								<h2 class="title xs-size nomargin">Márgenes automáticos</h2>
+							</div>
+							<div class="card-content">
+								<p class="txtmin mb">Añadir la clase <code class="code-class">.d-flex</code> al contenedor principal y luego un elemento tendrá la clase <code class="code-class">.mr-auto</code> <mark class="txtmin s-size">margin right auto</mark> o <code class="code-class">.ml-auto</code> <mark class="txtmin s-size">margin left auto</mark> para separarlo de los demás contendores.</p>
+								<div class="d-flex bg-light mb">
+									<div class="p-1 bg-gris-300 mr-auto"> Elemento flexible mr-auto </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible </div>
+									<div class="p-1 bg-gris-500"> Elemento flexible </div>
+								</div>
+								<div class="d-flex bg-light">
+									<div class="p-1 bg-gris-300"> Elemento flexible </div>
+									<div class="p-1 bg-gris-400"> Elemento flexible </div>
+									<div class="p-1 bg-gris-500 ml-auto"> Elemento flexible ml-auto </div>
+								</div>
+							</div>
+						</div>
+						<div class="card-linea"></div>
+						<div class="card-header noborder">
+							<h2 class="title xs-size nomargin">Envoltura flexible</h2>
+						</div>
+						<div class="card-content">
+							<p class="txtmin mb">Añadir las clases <code class="code-class">.d-flex</code> y <code class="code-class">.flex-wrap</code> para que los elementos se ajusten y si no caben pasen para abajo.</p>
+							<div class="d-flex flex-wrap bg-white">
+								<div class="p-1 bg-gris-100 ma"> Elemento flexible primero </div>
+								<div class="p-1 bg-gris-200 ma"> Elemento flexible </div>
+								<div class="p-1 bg-gris-300 ma"> Elemento flexible</div>
+								<div class="p-1 bg-gris-400 ma"> Otro elemento</div>
+								<div class="p-1 bg-gris-500 ma"> Elemento flexible</div>
+								<div class="p-1 bg-gris-600 ma"> Flexible</div>
+								<div class="p-1 bg-gris-700 ma"> Elemento flexible</div>
+								<div class="p-1 bg-gris-800 ma"> Elemento flexible</div>
+								<div class="p-1 bg-gris-900 ma"> Elemento flexible último</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+										
+			</div>
+		</div>
+	</div>
+	<!--FIN CONTENIDOS-->
+
+		
+</div>
+<!--FIN CONTENIDO DERECHA-->
+	
+	<!--Tamaño pantalla-->
+	<div id="dimensions">
+		Resolución: <span class="width"></span>
+	</div>
+
+	<!--Jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--Grupo5.com - scrolltop y dimensions-->
+	<script src="js/general.js"></script>
+	
+	<!--Scripts de la web al final-->
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

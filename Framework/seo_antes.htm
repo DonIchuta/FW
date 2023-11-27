@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>PÁGINAS - SEO | www.grupo5.com</title>
+	<meta name="description" content="Panel de control privado de aplicaciones y páginas web, potente y conceptual creada y pensada para los clientes de Grupo5.com." />
+	<meta name="keywords" content="admin, cms, panel, privado, administración, gestión, control, webs, tiendas, online, nube, virtual, aplicaciones" />
+    <meta name="author" content="Grupo5.com" />
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+   	   	
+   	<!-- Chrome, Firefox OS y Opera -->
+	<meta name="theme-color" content="#15171f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#15171f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/flexible.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/body.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estilos.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/textos.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css" />
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+
+	<link rel="stylesheet" media="screen" type="text/css" href="css/estadisticas.css" />
+	
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="dark_style" disabled="">
+	
+	<!-- Fav y touch icons-->
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png" />
+   	
+</head>
+
+<body class="wide">
+
+	<!--Buscador oculto derecha-->
+	<div class="zona-oculta-derecha">
+		<div class="header-zona-oculta-derecha fondo morado">
+			Búsqueda
+			<div class="close_menu cerrar-zona-oculta blanco">
+				<span class="blanco"></span>
+				<span class="blanco"></span>
+			</div>
+		</div>
+		<div class="contenido-zona-oculta-derecha">
+			<p class="txtmin gris der mb"><i class="flaticon-papelera va-middle"></i> <a href="" class="gris underline">Borrar filtros</a></p>
+			<input name="buscar" class="formulario redondo" type="text" placeholder="Buscar" value="">
+			<select class="formulario" name="filtrado">		
+				<option value="">Sin filtrar</option>								
+				<option value="">Estado</option>
+				<option value="">Nuevo</option>
+				<option value="">Familia</option>
+			</select>
+			<select class="formulario redondo" name="filtro">		
+				<option value="">Seleccionar:</option>								
+				<option value="">Activo</option>
+				<option value="">Agotado</option>
+				<option value="">Dormido</option>
+			</select>
+			<input name="buscar" class="boton verde full redondo" id="buscar" onclick="javascript:busqueda_formulario('formulario_busqueda')" type="button" value="BUSCAR">
+		</div>
+	</div>
+	<div id="capaoscura" class="capaoscura autohide"></div>
+	<!--Find buscador oculto derecha-->
+	
+<!--MENÚ LATERAL IZQUIERDA-->
+<div class="zona-izquierda mini-scrollbar">
+	<aside>
+		<div class="zona-logotipo">
+			<div class="elipsis">
+				<!--GRUPO 5-->
+				<img src="images/logotipo.svg" class="img-responsive" alt="Nombre" />
+			</div>
+		</div>
+		
+		<!--menu-->
+		<div class="right-menu">
+		<div class="verticalmenu">
+			<ul>
+				<li class="cabecera"></li>
+				<li><a href="index.htm"><i class="flaticon-casa"></i><span class="textomenu">Inicio</span></a></li>
+				<li class="cabecera">MENÚ HORIZONTAL TOP</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-cuadrados"></i><span class="textomenu">Desplegables</span></a>
+					<ul>
+			    	    <li><a href="menu-top-usuarios.htm"><span class="textomenu">Menú usuarios</span></a></li>
+			    	    <li><a href="menu-top-idiomas.htm"><span class="textomenu">Menú idiomas</span></a></li>
+			    	    <li><a href="menu-top-opciones.htm"><span class="textomenu">Menú opciones</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">SECCIONES</li>
+				<li class="has-sub active"><a href="#"><i class="flaticon-monitor"></i><span class="textomenu">Páginas</span></a>
+					<ul>
+			    	    <li><a href="listado1.htm"><span class="textomenu">Listado 1</span></a></li>
+			    	    <li><a href="listado2.htm"><span class="textomenu">Listado 2</span></a></li>
+			    	    <li><a href="listado3.htm"><span class="textomenu">Listado 3</span></a></li>
+			    	    
+						<li><a href="detalle.htm"><span class="textomenu">Detalle</span></a></li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="detalle-nuevo.htm"><span class="textomenu">Detalle nuevo</span></a>
+						</li>
+						<li><a href="detalle-full.htm"><span class="textomenu">Detalle full</span></a></li>
+						<li class="has-sub"><a href="#"><span class="textomenu">Ecommerce</span></a>
+			    	    	<ul>
+			    	    		<li><a href="tienda-listado.htm">Tienda</a></li>
+			    	    		<li><a href="tienda-pedidos.htm">Pedidos</a></li>
+			    	    		<li><a href="tienda-detalle.htm">Detalle producto</a></li>
+			    	    		<li><a href="tienda-anadir.htm">Añadir producto</a></li>
+			    	    		<li><a href="tienda-carro.htm">Carro</a></li>
+			    	    		<li><a href="tienda-checkout.htm">Checkout</a></li>
+			    	    	</ul>
+			    	    </li>
+						<li>
+							<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+							<a href="alta.htm"><span class="textomenu">Alta</span></a>
+						</li>
+						<li><a href="agenda.htm"><span class="textomenu">Agenda</span></a></li>
+						<li class="active"><a href="seo.htm"><span class="textomenu">Seo</span></a></li>
+						<li><a href="comentarios.htm"><span class="textomenu">Comentarios</span></a></li>
+						<li><a href="email.htm"><span class="textomenu">Email</span></a></li>
+						<li><a href="factura.htm"><span class="textomenu">Factura</span></a></li>
+						<li><a href="reserva.htm"><span class="textomenu">Reserva</span></a></li>
+						<li>
+							<div class="posicion-top-right" style="padding-top:5px"><i class="flaticon-circulo-menos rojo" title="Módulo NO disponible"></i></div>
+							<a href="estadisticas.htm"><span class="textomenu rojo" title="Módulo NO disponible">Estadísticas</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-candado"></i><span class="textomenu">Autentificación</span></a>
+					<ul>
+			    	    <li><a href="login.htm" target="_blank"><span class="textomenu">Login</span></a></li>
+			    	    <li><a href="recordar.htm" target="_blank"><span class="textomenu">Recordar contraseña</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">COMPONENTES</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-capas"></i><span class="textomenu">UI Elements</span></a>
+					<ul>
+			    	    <li><a href="mensajes.htm"><span class="textomenu">Mensajes</span></a></li>
+						<li><a href="botones.htm"><span class="textomenu">Botones</span></a></li>
+						<li><a href="modals.htm"><span class="textomenu">Modals</span></a></li>
+						<li><a href="paginacion.htm"><span class="textomenu">Paginación</span></a></li>
+						<li><a href="tabs.htm"><span class="textomenu">Tabs</span></a></li>
+						<li><a href="slider.htm"><span class="textomenu">Slider</span></a></li>
+						<li><a href="acordeon.htm"><span class="textomenu">Acordeón</span></a></li>
+						<li><a href="progress-bars.htm"><span class="textomenu">Progress bars</span></a></li>
+						<li><a href="flex.htm"><span class="textomenu">Flex</span></a></li>
+						<li><a href="calendarios.htm"><span class="textomenu">Calendarios</span></a></li>
+						<li><a href="tipografia.htm"><span class="textomenu">Tipografía</span></a></li>
+						<li><a href="clases.htm"><span class="textomenu">Clases</span></a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estructura"></i><span class="textomenu">Tablas</span></a>
+					<ul>
+			    	    <li><a href="tablas-basicas.htm"><span class="textomenu">Tablas básicas</span></a></li>
+						<li><a href="tablas-especiales.htm"><span class="textomenu">Tablas especiales</span></a></li>
+					</ul>
+				</li> 
+				<li>
+					<div class="posicion-top-right"><div class="badge xs-size verde">Nuevo</div></div>
+					<a href="formularios.htm"><i class="flaticon-lista"></i><span class="textomenu">Formularios</span></a>
+				</li>
+				<li class="has-sub"><a href="#"><i class="flaticon-estrella"></i><span class="textomenu">Iconos / Svg</span></a>
+					<ul>
+			    	    <li><a href="flaticons.htm"><span class="textomenu">Flaticons</span></a></li>
+						<li><a href="svg.htm"><span class="textomenu">Imágenes SVG</span></a></li>
+					</ul>
+				</li>
+				<li class="cabecera">Pre-Built Pages</li>
+				<li class="has-sub "><a href="#"><i class="flaticon-llave-inglesa"></i><span class="textomenu">Error</span></a>
+					<ul>
+			    	    <li class="">
+			    	    	<div class="posicion-top-right"><div class="badge xs-size rojo">2</div></div>
+			    	    	<a href="404.htm"><span class="textomenu">404</span></a>
+			    	    </li>
+						<li class=""><a href="500.htm"><span class="textomenu">500</span></a></li>
+					</ul>
+				</li>
+				<li><a href="usuarios.htm"><i class="flaticon-ajuste"></i><span class="textomenu">Gestión usuarios</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</aside>
+</div>
+<!--FIN MENÚ LATERAL IZQUIERDA-->
+
+<!--CONTENIDOS DERECHA-->
+<div class="zona-derecha">
+
+	<!--Header menú-->
+	<header class="fixed">
+		<div class="menu-top-fixed">
+			<ul class="top-menu">
+				<li><a href=""><i class="flaticon-menu icon"></i></a></li>
+			</ul>
+			<ul class="top-menu dere">
+				
+				<li><a href=""><i class="flaticon-configuracion icon ani-rotar-der"></i></a></li>
+				<li><a href=""><i class="flaticon-full-screen icon"></i></a></li>
+				<li>
+					<label id="switch_dia_noche" for="dia_noche" class="switch-checkbox nomargin" title="Modo día/noche">
+						<input id="dia_noche" type="checkbox" checked="">
+						<img src="images/luna.svg" class="checked" alt="Noche">
+						<img src="images/sol.svg" class="unchecked" alt="Día">
+					</label>
+				</li>
+				<li class="">
+					<div class="posicion-top-right">
+						<span class="badge amarillo">2</span>
+					</div>
+					<a href=""><i class="flaticon-usuarios icon"></i></a>
+					<!--<div class="submenu-top s-size mini-scrollbar">
+						<a class="menu-vertical-top" href="#"><i class="flaticon-usuario s-size"></i> Lostrego </a>
+						<a class="menu-vertical-top active" href="#">
+							<div class="posicion-top-right">
+								<i class="flaticon-check verde xs-size"></i>
+							</div>
+							<img src="images/yo.jpg" style="" class="img-rounded">Neo
+						</a>
+					</div>-->
+				</li>
+				<li><a href=""><i class="flaticon-puntos-vertical icon"></i></a></li>
+			</ul>
+			
+		</div>
+	</header>
+
+	<!--CONTENIDOS-->
+	<div class="contenedor-fluid septopbot">
+		<div class="fila">
+			<div class="col12">
+				<div class="centradovertical aling-between mb"><!--mb (margin bottom 1rem)-->
+					<div class="zona-title center-flex izq">
+						<i class="icon flaticon-lista"></i>
+						<div>
+							<h1 class="title mayusculas">SEO</h1>
+							<p class="txtmin s-size"><em>Páginas principales</em></p>
+						</div>
+					</div>
+					<div class="push">
+						<ul class="page-breadcrumb desktop der mayusculas">
+							<li><a href="index.htm">Inicio</a></li>
+							<li>Páginas</li>
+							<li><a href="seo.htm">Seo</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--opciones-->
+			<div class="col12 mt-s-size">
+				
+				
+			</div>
+
+			<div class="col12">
+				<div class="card caja-full card-borde card-stretch redondo">
+					<div class="card-aside">
+
+						<div class="card-header">
+							<div class="centrado">
+							<p class="txtmin s-size enlinea">Idioma: </p>
+							<div class="btn-group capa1">
+								<button type="button" class="boton xs-size default redondo-left"><img src="images/es.svg" class="" alt="Español"></button><button type="button" class="boton xs-size default triangulo boton_dropdown redondo-right" id="idioma1"></button>
+							  	<ul class="dropdown-menu auto redondo" aria-labelledby="idioma1" style="display: none;">
+							      	<li><a href="#"><span class="d-flex"><img src="images/gl.svg" class="mr" alt="Galego"> Galego</span></a></li>
+							      	<li><a href="#"><span class="d-flex"><img src="images/en.svg" class="mr" alt="English"> English</span></a></li>
+							  	</ul>
+							</div>
+							</div>
+						</div>
+						<!--<div class="card-footer">footer</div>-->
+						<div class="card-content nopadding mini-scrollbar">
+
+							<ul class="verticalist">
+								<li>
+									<a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-check verde"></i> Inicio</a>
+								</li>
+								<li class="">
+									<a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-info ani-agrandar naranja"></i> Diseño web</a>
+									<ul>
+										<li class="active">
+											<a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-check verde"></i> diseno-de-paginas-web-en-galicia.htm</a>
+										</li>
+										<li><a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-info ani-agrandar naranja"></i> paginas-web-a-medida.htm</a></li>
+										<li><a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-info ani-agrandar naranja"></i> posicionamiento-web-natural.htm</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-info ani-agrandar naranja"></i> Hosting</a>
+									<ul>
+										<li><a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-info ani-agrandar naranja"></i> hosting-economico.htm</a></li>
+										<li><a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-info verde"></i> hosting-basico.htm</a></li>
+										<li><a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-info verde"></i> hosting-corporativo.htm</a></li>
+									</ul>
+								</li>
+								<li><a href="add-seo.htm" class="verticalist-item"><i class="flaticon-circulo-check verde"></i> Contacto</a></li>
+							</ul>
+						
+						</div>
+
+					</div>
+					<div class="card-body">
+						<div class="card-header">
+							<div class="msg-form xxs-size rojo center redondo nomargin full">
+                               	<p><strong>SEO incompleta</strong>. Cumplimentar todas las secciones de la izquierda que tengan un signo de admiración con fondo naranja.</p>
+							</div>
+							<!--<div class="msg-form xxs-size verde center redondo nomargin full">
+                               	<p><strong><i class="flaticon-check va-middle"></i> Optimización de datos SEO completa</strong></p>
+							</div>-->
+						</div>
+						<div class="card-content p-4 mini-scrollbar fondo claro">
+							<h2 class="title xs-size">SEO significa <strong>Search Engine Optimization</strong> (optimización para motores de búsqueda). Es el proceso de mejorar la visibilidad de un sitio web en los resultados orgánicos de cualquier buscador.</h2>
+							<div class="separa"></div>
+							
+							<div class="fila">
+								<div class="col05 col03-xxl">
+									<img src="images/google-seo.svg" class="icono-img img-responsive position-sticky" alt="Google">
+								</div>
+								<div class="col07 col09-xxl">
+									<h3 class="title xs-size mb">¿Qué significa SEO y por qué lo necesito?</h3>
+									<p>
+										Posicionamiento en buscadores u optimización de motores de búsqueda es el proceso de mejorar la visibilidad de un sitio web en los resultados orgánicos de los diferentes buscadores. También es frecuente nombrarlo por su título inglés, SEO (Search Engine Optimization).<br /><br />
+										La razón más importante por la que es necesario el SEO es porque hace más útil la página web tanto para los usuarios como para los motores de búsqueda, aunque estos últimos cada día son más sofisticados, aún no pueden ver una página web como lo hace un humano. El SEO es necesario para ayudar a los motores de búsqueda a entender sobre qué trata cada página y si es o no útil para los usuarios.
+									</p>
+									<a href="seo/seo-guia-rapida.pdf" class="boton s-size light redondo mt" target="_blank"><i class="flaticon-descargar"></i> Guía rápida SEO</a>
+									<a href="seo/guia_optimizacion_motores_busqueda.pdf" class="boton s-size light redondo mt" target="_blank"><i class="flaticon-descargar"></i> Guía optimización SEO</a>
+								</div>
+							</div>
+							<div class="linea"></div>
+							<h3 class="title xs-size mb-l-size">¿Cuál es la diferencia entre SEO y SEM?</h3>
+							<div class="fila">
+								<div class="col06 sepcolbot">
+									<h4 class="title xxs-size mb"><mark>SEO = Posicionamiento orgánico</mark></h4>
+									Se refiere a todas aquellas acciones que puedes tomar dentro o fuera de tu sitio web para optimizar su posicionamiento en los buscadores de forma orgánica. Este último punto es clave dado que orgánico quiere decir <strong>posicionamiento natural sin ser de pago</strong>.<br /><br />
+									Con una estrategia SEO no le pagas a Google o a cualquier otro motor de búsqueda para ganar posiciones en la <abbr title="Search Engine Results Page">SERP</abbr>. Son tus contenidos de valor y tus optimizaciones las que se ganan esos lugares por derecho propio.
+								</div>
+								<div class="col06">
+									<h4 class="title xxs-size mb"><mark>SEM = Posicionamiento pago</mark></h4>
+									Por el contrario, el SEM -Search Engine Marketing- se refiere a aquellas estrategias que incluyen la <strong>utilización de anuncios de pago</strong>.<br /><br />
+									Es decir, con una estrategia SEM creas una campaña publicitaria para que cuando un usuario teclee una búsqueda, tu sitio aparezca antes que los resultados orgánicos en forma de anuncio, siempre y cuando concuerde con la intención de búsqueda del usuario.
+								</div>
+							</div>
+						</div>
+						<!--<div class="card-footer">
+							<div class="flex-der">
+								<a href="" class="boton verde s-size redondo mr"><i class="flaticon-disquete"></i> Guardar</a>
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--FIN CONTENIDOS-->
+
+	
+</div>
+<!--FIN CONTENIDO DERECHA-->
+	
+	<!--Tamaño pantalla-->
+	<div id="dimensions">
+		Resolución: <span class="width"></span>
+	</div>
+
+	<!--Jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--Grupo5.com - scrolltop y dimensions-->
+	<script src="js/general.js"></script>
+	
+	<!--Scripts de la web al final-->
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>
