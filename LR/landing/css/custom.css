@@ -1,0 +1,164 @@
+.primary-font {
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+.color2{
+	color: #ffffff !important;
+}
+
+.btn-primary {
+	--bs-btn-bg: #FFB800 !important;
+	--bs-btn-border-color: #FFB800;
+	border-radius: 50px;
+	color: #000000;
+	font-weight: bold;
+	--bs-btn-hover-bg: #906f19;
+	--bs-btn-hover-border-color: #906f19;
+	--bs-btn-active-bg: #b9b9b9;
+}
+
+.btn-outline-secondary {
+	--bs-btn-bg: #00000066 !important;
+	--bs-btn-color: #ffffff;
+    --bs-btn-border-color: #ffffff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6c757d;
+    --bs-btn-hover-border-color: #6c757d;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.btn {
+	padding: 10px 32px;
+}
+
+.tit-hero {
+	font-size: 70px;
+	font-weight: bold;
+	color: white;
+	line-height: 120%;
+	letter-spacing: 6px;
+}
+
+.parr-hero{
+	font-size: 32px;
+	font-weight: normal;
+	color: white;
+	line-height: 160%;
+	color: #ffffff;
+}
+
+
+.text-body-emphasis {
+    --bs-text-opacity: 1;
+    color: #ffffff !important;
+}
+
+.hero{ 
+	background-image: url(../images/Backhero1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 90vh;
+		align-items: center;
+	display: flex;
+ }
+
+.container-hero {
+	margin-bottom: 80px;
+}
+
+.hero div{
+	width: 100%
+}
+
+ .bottomhero {
+ 	width: 100%;
+ 	height: 158px;
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	background-image: url(../images/BottomBackhero2.svg);
+ 	background-position: center;
+ }
+
+.container-bloque1{
+	background-image: url(../images/Trazopizarra.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.tit-bloque { 
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 160%;
+	color: #000000;
+	padding-bottom: 16px
+}
+
+.parr-bloque{
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 160%;
+	color: #000000;
+	padding-bottom: 16px
+}
+
+.lista {
+	list-style: none;
+}
+.lista li {
+	font-size: 14px;
+	color: #000000;
+	line-height: 160%;
+	padding-bottom: 16px
+}
+
+.container-bloque2{
+	background-color: #000000;
+	background-image: url(../images/basket.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	height: 843px;
+}
+
+.container-slider{
+	background-color: #000000;
+	background-image: url(../images/fondo-slider.jpg);
+	background-size: cover;
+	padding: 64px 0;
+}
+
+.tarjeta-slider{
+	width: 359px;
+	box-shadow: 0px 12px 10.5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.box-texto{
+	background-color: #FFB800;
+	padding: 4px 16px 4px 110px;
+	position: relative;
+	height: 68px;
+}
+.icono-deporte{
+	position: absolute;
+	top: -45px;
+	left: 8px;
+	border-radius: 50px;
+	height: 90px;
+	width: 90px;
+	border: 2px solid #FFB800;
+	background-color: #D9D9D9;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tit-slider{
+	color: #000000;
+	font-size: 20px;
+
+}
+.parr-texto {
+	color: #000000;
+	font-size: 14px
+}
