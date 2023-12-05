@@ -1,0 +1,22 @@
+﻿
+
+/*=========================
+    Cambio color barra
+=========================*/
+
+.color-barra.menu-top-fixed {background-color:#7367f0; color:#ffffff; border-bottom:1px solid #5f55cb;}
+.color-barra.menu-top-fixed .top-menu li {border-right: 1px solid transparent; color:#fbfaff;}
+.color-barra.menu-top-fixed .top-menu li:hover, .top-menu li.active{background-color:#5f55cb;}
+.color-barra.menu-top-fixed .top-menu li > i.icon{color:#fbfaff;}
+.color-barra.menu-top-fixed ul:first-child li{border-right: 1px solid #5f55cb;}
+.color-barra.menu-top-fixed .top-menu li a{border-bottom: 1px solid #5f55cb; color:#fbfaff;}
+.color-barra.menu-top-fixed .top-menu li.active a{border-bottom: 0px solid #5f55cb;}
+.color-barra.menu-top-fixed .top-menu li a i{color:#fbfaff;}
+.color-barra.menu-top-fixed .top-menu.dere li{border-left: 1px solid #5f55cb;}
+.color-barra.menu-top-fixed .top-menu li .submenu-top{background:#5f55cb; border: 1px solid #5f55cb;}
+
+.color-barra.menu-top-fixed .menu-vertical-top {color: #fbfaff;}
+.color-barra.menu-top-fixed .menu-vertical-top:hover, .menu-vertical-top.active{background-color: #4a429e;color:#fbfaff;}
+
+.color-barra.menu-top-fixed .switch-checkbox img {filter:invert(98%) sepia(41%) saturate(248%) hue-rotate(200deg) brightness(142%) contrast(107%);}
+
