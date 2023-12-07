@@ -1079,7 +1079,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   border-radius: 8px;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
   padding-bottom: 32px;
-  margin-bottom: 130px;
+  margin-bottom: 60px;
 }
 
 .tarjeta-tarifa.basico {
@@ -1178,6 +1178,12 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 .centrado-v-flex {
   display: flex; flex-direction: column; align-items: center;
   padding-top: 26px;
+}
+
+@media (max-width: 991px) {
+  .centrado-v-flex {
+    padding-top: 0;
+  }
 }
 
 .centrado-v-flex.basico{
