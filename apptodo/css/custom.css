@@ -1182,7 +1182,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 
 @media (max-width: 991px) {
   .centrado-v-flex {
-    padding-top: 0;
+    padding-top: 0px;
   }
 }
 
