@@ -92,7 +92,7 @@
 							<a href=""><img src="images/logotipo.svg"></a>
 						</div>
 						<div class="cabecera-der">
-							<div class="menu-top">
+							<div class="menu-top" id="menu-movil">
 								<ul>
 									<li>
 										<a href="" class="opc-menu-top font-3">Conoce Task-it</a> 
@@ -114,8 +114,8 @@
 									</li>
 								</ul>
 							</div>
-							<button class="buttom-menu font-3" href="" class="boton colordest redondeado centrado">Suscríbete</button>
-							<a href=""><img class="ico-menu" src="images/icon-menu.svg"></a>
+							<button class="buttom-menu font-3" href="" class="boton colordest redondeado centrado"><a href="">Suscríbete</a></button>
+							<a href="javascript:muestra_oculta_id('menu-movil')"><img class="ico-menu" src="images/icon-menu.svg"></a>
 
 						</div>
 					</div>
@@ -144,7 +144,7 @@
 							<h1 class="tit-hero font-graphic">Haz tu día a días<br>más sencillo</h1>
 							<h5 class="font-2 subtit-hero">No olvides ninguna cita o compromiso por pequeños que sean.</h5>
 							<br>
-							<p class="font-3 f3-700">Descárgate la App</p>
+							<p class="font-3 f3-700 escritorio tableta">Descárgate la App</p>
 							<img src="images/AppStore.png">&nbsp&nbsp<img src="images/GooglePlay.png">
 						</div>
 					</div>
@@ -355,23 +355,25 @@
 
 						</div>	
 						<div class="col04">
-							<div class="centrado-v-flex">
-								<div class="tarjeta-tarifa">
-									<div class="box-tit-tarjeta">
-										<span class="tit-tarjeta font-3">Plan Gratuito</span>
+							<div class="centrado-v-flex basico">
+								<div class="tarjeta-tarifa basico">
+									<div class="box-tit-tarjeta basico">
+										<span class="tit-tarjeta basico font-3">Plan Básico</span>
 									</div>
-									<span class="parr-tarjeta">Para probar</span> 
-									<span class="precio-tarjeta">0€</span>
-									<div class="lista-caract-tarifa">
-										<ul class="graf-ul">
-											<li>1 usuario</li>
-											<li>Tareas personales</li>
-											<li>Hasta 20 post-it</li>
-											<li>Hasta 10 avisos de cercanía</li>
-										</ul>
-									</div>
-									<div class="full center">
-									<button href="" class="boton colordest redondeado centrado">Suscríbete ahora</button>
+									<div class="box-basico">
+										<span class="parr-tarjeta basico">Para pequeños grupos</span> 
+										<span class="precio-tarjeta basico">29€</span>
+										<div class="lista-caract-tarifa">
+											<ul class="graf-ul basico">
+												<li>1 usuario</li>
+												<li>Tareas personales</li>
+												<li>Hasta 20 post-it</li>
+												<li>Hasta 10 avisos de cercanía</li>
+											</ul>
+										</div>
+										<div class="full center">
+										<button href="" class="boton basico redondeado centrado">Suscríbete ahora</button>
+										</div>
 									</div>
 								</div>	
 							</div>
@@ -464,7 +466,9 @@
 						<div class="col12">
 							<div class="tit-tarifas fix  full center">
 								<h2 class="tit-bloque font-graphic">Descárgate ahora la APP</h2>
-								<img src="images/AppStore.png">&nbsp&nbsp<img src="images/GooglePlay.png">
+								<div class="caja-bot-down">
+									<img src="images/AppStore.png"><img src="images/GooglePlay.png">
+								</div>
 							</div>	
 						</div>
 		        	</div>
@@ -477,9 +481,9 @@
 				<div class="contenedor">
 					<div class="fila">
 						<div class="col04">
-							<a href=""><img src="images/logotipo.svg"></a>
+							<a href=""><img src="images/logotipo-footer.svg"></a>
 							<div class="separa s-size"></div>
-							<h5 class="tit-h5 font-3">No olvides ninguna cita o compromiso por pequeños que sean.</h5>
+							<h5 class="parrafo font-3 blanco">No olvides ninguna cita o compromiso por pequeños que sean.</h5>
 							<div class="separa s-size"></div>
 							<ul class="list-rss">
 								<li><img src="images/ico-facebook.svg"></li>
@@ -505,14 +509,20 @@
 						<div class="col04">
 							<h4 class="tit-footer">Newsletter</h4>
 							<div class="separa"></div>
-							<h5 class="tit-h5 font-3">No olvides ninguna cita o compromiso por pequeños que sean.</h5>
+							<h5 class="parrafo font-3 blanco">Suscríbete a nuestro newslett</h5>
 							<div class="separa"></div>
 							<div class="input-group">
 								<input type="text" class="newsletter form-control formulario flex-izq redondo-left">
 								<span class="input-group-addico newsletter flex-der icono-input redondo-right"><img src="images/boton-formulario.svg"></span>
 							</div>
 
-						</div>						
+						</div>	
+						<div class="col12">
+							<div class="linea-footer"></div>
+							<div class="center">
+								<p class="parrafo gris"><img src="images/copyR.svg"> Copyright 2023. Task-it. All Right Reserved.</p>
+							</div>
+						</div>					
 		        	</div>
 		        </div>
 			</section>

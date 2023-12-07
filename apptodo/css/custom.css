@@ -885,15 +885,20 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   font-family: 'Roboto', sans-serif;
 }
 
+.boton.basico {
+  background-color: #525252;
+  color:#fff;
+}
 
 .hero {
   position: relative;
   overflow: hidden;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 
 @media (max-width: 991px) {
     .hero{
@@ -902,11 +907,17 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 
 }
 
+@media (max-width: 500px) {
+    .hero{
+      height: 840px;
+    }
+}
+
 .image-holder{
   background: url(../images/hero.svg);
   background-repeat: no-repeat;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background-size: cover !important;
   top: 0;
@@ -949,7 +960,9 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   padding-bottom: 48px;
 }
 
-
+.buttom-menu a { 
+  color: #EB6649;
+}
 
 @media (max-width: 991px) {
   .subtit-hero{
@@ -1008,8 +1021,10 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   padding: 8px 0 14px;
 }
 
-.parrafo-bloque {
-  font-size: 20px;
+.parrafo
+
+.parrafo {
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -1067,6 +1082,12 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   margin-bottom: 130px;
 }
 
+.tarjeta-tarifa.basico {
+  background: linear-gradient(256deg, #FDB74C 48.44%, #FFEB70 94.27%), rgba(255, 199, 0, 0.25);
+  height: 454px;
+  width: 286px;
+}
+
 .box-tit-tarjeta{
   display: flex;
   width: 100%;
@@ -1079,11 +1100,19 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   text-align: center;
 }
 
+.box-tit-tarjeta.basico {
+  background: #fff;
+}
+
 .tit-tarjeta {
   font-size: 24px;
   font-weight: 600;
   line-height: 160%;
   color: #ffffff;
+}
+
+.tit-tarjeta.basico{
+  color:#000000;
 }
 
 .parr-tarjeta{
@@ -1097,6 +1126,10 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   display: block;
 }
 
+.parr-tarjeta.basico {
+  color:#ffffff;
+}
+
 .precio-tarjeta {
   color: #000;
   text-align: center;
@@ -1106,6 +1139,18 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   font-weight: 600;
   line-height: 64px;
   display: block;
+}
+
+.precio-tarjeta.basico {
+  color:#ffffff;
+  text-shadow: 3px 6px 1px rgba(0, 0, 0, 0.06);
+}
+
+.box-basico {
+  display: flex;
+  flex-direction: column;
+  height: 356px;
+  justify-content: space-around;
 }
 
 .lista-caract-tarifa{
@@ -1126,8 +1171,17 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   line-height: 24px; 
 }
 
+.graf-ul.basico li{
+  color:#ffffff;
+}
+
 .centrado-v-flex {
-  display: flex; flex-direction: column; align-items: center
+  display: flex; flex-direction: column; align-items: center;
+  padding-top: 26px;
+}
+
+.centrado-v-flex.basico{
+  padding-top: 0;
 }
 
 .box-cabecera {
@@ -1137,14 +1191,30 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   background-color: #fff;
 }
 
-.cabecera {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  height: 80px;
+  .cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 80px;
+  }
 
+@media (max-width: 991px) {
+  .cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cabecera-izq a img{
+      width: 116px;
+  }
 }
 
 .cabecera-der {
@@ -1267,6 +1337,12 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   background: linear-gradient(102deg, #FDB74C 30.09%, #FFEA6F 99.31%);
 }
 
+.caja-bot-down {
+  display: flex;
+  justify-content: center;
+  gap:32px;
+}
+
 .tit-tarifas.fix { 
   padding: 132px 0;
 }
@@ -1301,7 +1377,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 
 .lista-quick{
   list-style: none;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -1328,4 +1404,15 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   width:46px !important;
   height: 46px !important;
   max-width: initial;
+}
+
+.gris{
+  color:#525252;
+}
+
+.linea-footer{
+  width: 100%;
+  height: 1px;
+  background-color: #525252;
+  margin: 16px 0;
 }
