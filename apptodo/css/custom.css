@@ -1236,7 +1236,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
     .menu-top {
       display: none;
       position: fixed;
-      top: 80px;
+      top: 60px;
       left: 0;
       width: 100%;
       background-color: #fff;
