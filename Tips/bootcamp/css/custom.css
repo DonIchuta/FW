@@ -1,0 +1,15 @@
+.cover-container{ 
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+ }
+
+.box{
+	width: 12px;
+	height: 12px;
+	background-color: #a6d22b;
+	display: inline-block; 
+	margin-right: 8px;
+}
