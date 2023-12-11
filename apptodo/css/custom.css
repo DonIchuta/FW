@@ -44,7 +44,7 @@ hr {background: #dddddd;}
 
 .mark, mark {background-color: #fcf8e3;}
 
-.scrolltop{color:#fff; background:#4e5bf2; bottom:80px; right:15px; border-radius:50%;}/*colordest*/
+.scrolltop{color:#ffffff00; background:#4e5bf200; bottom:80px; right:15px; border-radius:50%;}/*colordest*/
 a.scrolltop, a:hover .scrolltop , a:focus .scrolltop {color:white;}
 
 #dimensions {background:#000\9; background-color:rgba(0, 0, 0, 0.8); color: #fff;}
@@ -1291,6 +1291,20 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   line-height: 120%;
 }
 
+.buttom-menu:hover {
+  background-color: #f2f2f2;
+  border: 2px solid #525252;
+  border-radius: 8px;
+  color: #525252;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0px 20px;
+  line-height: 120%;
+}
+
 .bloque-opiniones{
   padding: 0 0 160PX 0;
   background-color: #ffffff;
@@ -1336,6 +1350,25 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   margin: 0 auto;
   border: 2px solid #EB6649;
   background-image: url(../images/face.jpg);
+  background-size: cover;
+}
+.avatar-testimonio2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 0 auto;
+  border: 2px solid #EB6649;
+  background-image: url(../images/face2.jpg);
+  background-size: cover;
+}
+
+.avatar-testimonio3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 0 auto;
+  border: 2px solid #EB6649;
+  background-image: url(../images/face3.jpg);
   background-size: cover;
 }
 
