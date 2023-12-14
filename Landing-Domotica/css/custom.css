@@ -909,7 +909,7 @@ body {
     body {
       background: url(../images/BackgroundHero.svg);
       background-repeat: no-repeat;
-      background-size: contain !important;
+      background-size: cover !important;
       background-position-x: center;
       height: 100vh;
     }
