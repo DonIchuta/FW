@@ -1,0 +1,58 @@
+﻿
+/*fuente print*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/*page[size="A4"] {width: 21cm; height: 29.7cm;}*/
+
+/*general*/
+*,*::before,*::after{text-shadow:none !important; box-shadow:none !important}
+body {font-family: "Inter", sans-serif; margin: 0;min-width:992px !important}
+
+a:not(.btn){text-decoration:underline}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre{white-space:pre-wrap !important}
+pre,blockquote{ border:1px solid #8091a7; page-break-inside:avoid}
+ul{list-style-type: none !important; padding-inline-start: 5px;}
+ul li{margin:8px 0;}
+.navbar{display:none}
+.badge{border:1px solid #000}
+hr{display:table; width:100%;}
+hr {margin-top: 1rem; margin-bottom: 1rem; border: 0; border-top: 1px solid rgba(0,0,0,.1);}
+
+/*Ocultamos los contenidos que no queremos imprimir (clases, id`s...)*/
+header, .page-breadcrumb, .overlay-modal, .zona-menus, .img100x100, aside, footer, #login, #dimensions, .zona-izquierda,.zona-oculta-derecha, .scrolltop, .invisible-print{
+	display: none !important; visibility:hidden !important;
+}
+
+/*galería*/
+.listado-galeria{display:inline-block;}
+
+/*factura*/
+.invoice-boton-der img, .invoice-boton-izq img{max-width:60px;}
+.invoice-logo {width: 150px; display: block; margin: 20px auto;}
+.invoice-reserva{padding: 1.2rem 0rem .6rem 0rem; display: table; border-bottom:1px dashed #ccc; width:100%}
+.invoice-datos{width:220px; float:right;}
+.invoice-cliente{float:left;}
+.invoice-condiciones{margin-top:20px; color:#526484;}
+.invoice-condiciones ul{list-style-type: square !important;padding-inline-start: 15px;}
+.invoice-condiciones p.txtmin{font-size:13px; font-style:italic;}
+
+/*tablas*/
+thead{display:table-header-group}
+tr,img{page-break-inside:avoid}
+table {width: 100%; border-collapse: collapse;}
+table, table th, table td {border: 1px solid silver;}
+.table{border-collapse:collapse !important}
+.table td,.table th{background-color:#fff !important; padding: 8px;}
+.table-bordered th,.table-bordered td{border:1px solid #dbdfea !important; padding:15px !important;}
+    
+    
+    
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+﻿/*
+ * Descripción: ADMINISTRACIÓN
+ * Copyright (c) 2022
+ *
+*/
+
+
+
+/*_____________PAGINA WEB_____________*/
+
+body {
+  margin: 0;
+  padding:0;
+  border:none;
+  outline:none;
+
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  /*font-family: 'Nunito', Arial, Helvetica, sans-serif;*/
+  font-size:1em; /*16px*/
+  line-height: 1.375em;
+  color: #364a63;
+  height:100%;
+  width:100%;
+  
+  background-color: #ffffff; /*#ecf0fa mas oscuro*/
+  
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+}
