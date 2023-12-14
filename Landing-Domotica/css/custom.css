@@ -905,7 +905,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain !important;
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     body {
       background: url(../images/BackgroundHero.svg);
       background-repeat: no-repeat;
