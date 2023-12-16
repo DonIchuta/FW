@@ -905,9 +905,10 @@ body {
   background-repeat: no-repeat;
   background-size: contain !important;
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1400px) {
     body {
-      background: url(../images/BackgroundHero.svg);
+      background: url(../images/BackgroundHero2.png);
       background-repeat: no-repeat;
       background-size: cover !important;
       background-position-x: center;
@@ -917,6 +918,42 @@ body {
 }
 
 
+
+@media (max-width: 1200px) {
+    body {
+      background: url(../images/BackgroundHero2.png);
+      background-repeat: no-repeat;
+      background-size: cover !important;
+      background-position-x: center;
+      height: 100vh;
+    }
+
+}
+
+@media (max-width: 991px) {
+    body {
+      background: url(../images/BackgroundHero2Movil.svg);
+      background-repeat: no-repeat;
+      background-size: cover !important;
+      background-position-x: center;
+      height: 120vh;
+    }
+
+}
+
+.box-imagen {
+  display: none;
+}
+
+@media (max-width: 991px){
+  .box-imagen {
+  	width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px
+  }
+}
 .hero {
   position: relative;
   overflow: hidden;
@@ -924,26 +961,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*background: url(../images/BackgroundHero.svg);
-  background-repeat: no-repeat;
-  background-size: cover !important;
-  background-position-y: -180px;*/
-
 }
 
 
 @media (max-width: 991px) {
     .hero{
-      height: 980px;
+      height: auto;
     }
 
 }
 
-@media (max-width: 500px) {
-    .hero{
-      height: 840px;
-    }
-}
+
 
 .image-holder{
   background: url(../images/BackgroundHero.svg);
@@ -969,6 +997,16 @@ body {
   padding-top: 160px;
 }
 
+@media (max-width: 991px) {
+	.box-text-hero {
+	  display: block;
+	  flex-direction: column;
+	  justify-content: center;
+	  height: 100%;
+	  padding-top: 32px;
+	}
+}
+
 .tit-hero {
   font-size: 61px;
   line-height: 120%;
@@ -981,13 +1019,20 @@ body {
     text-align: center;
   }
   .tit-hero {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 .pre-tit-hero{
   line-height: 120%;
   padding-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+	.pre-tit-hero{
+		font-size: 22px;
+    padding-bottom: 16px;
+	}
 }
 
 .subtit-hero{
@@ -1073,6 +1118,20 @@ body {
   padding-bottom: 32px;
 }
 
+@media (max-width: 991px){
+  .item-lista {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    align-items: center;
+  }
+  .item-lista div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .padding-lista{
   padding: 0 64px 0 138px;
 }
@@ -1083,6 +1142,13 @@ body {
   gap: 62px;
 }
 
+@media (max-width: 991px) {
+  .lista-hori{
+    display: flex;
+    padding-bottom: 32px;
+    gap: 32px;
+  }
+}
 
 .ico-lista {
   margin-right: 0;
@@ -1093,6 +1159,12 @@ body {
   flex-direction: row;
   align-items: center;
   height: 100%;
+}
+
+@media (max-width: 1200px) {
+	.bloque-lista{
+		 padding-top: 32px;
+	}
 }
 
 .pb64 { 
@@ -1107,12 +1179,32 @@ body {
   padding-bottom: 16px; 
 }
 
-
 .parrafo-bloque {
   color:#0f0f0f;
   line-height: 160%;
   font-size: 16px;
+}
 
+@media (max-width: 1200px){
+  .parrafo-bloque {
+    text-align: center;
+  }
+}
+
+.parrafo-bloque.testimonio {
+  color:#0f0f0f;
+  line-height: 160%;
+  font-size: 16px;
+
+}
+
+@media (max-width: 1200px) {
+  .parrafo-bloque.testimonio {
+  color:#0f0f0f;
+  line-height: 150%;
+  font-size: 12px;
+
+}
 }
 
 .bloque-descripcion{
@@ -1123,6 +1215,14 @@ body {
     padding: 80px 0;
 }
 
+@media (max-width: 991px) {
+	.bloque-descripcion{
+		display: block;
+		height: auto;
+	}
+}
+
+
 .bloque-descripcion-2{
     display: flex;
     flex-direction: row;
@@ -1132,6 +1232,13 @@ body {
     padding: 80px 0;
 }
 
+@media (max-width: 1200px) {
+	.bloque-descripcion-2{
+		display: block;
+		height: auto;
+	}
+}
+
 .bloque-tarifas{
   background-image: url(../images/Fondotarifas.svg);
   background-size: cover;
@@ -1139,10 +1246,16 @@ body {
 
 .tit-tarifas{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   height: 100%;
   text-align: left;
+}
+
+@media (max-width: 1200px){
+  .tit-tarifas{
+    text-align: center;
+  }
 }
 
 .tarjeta-tarifa{
@@ -1285,18 +1398,25 @@ body {
 
 @media (max-width: 991px) {
   .cabecera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #00000000;
     height: 60px;
+    padding: 0 16px;
+    background: rgb(159,90,246);
+    background: linear-gradient(180deg, rgba(159,90,246,1) 0%, rgba(212,29,254,0) 100%);
   }
 }
 
 @media (max-width: 991px) {
   .cabecera-izq a img{
-      width: 116px;
+      width: auto;
   }
 }
 
@@ -1312,6 +1432,17 @@ body {
   line-height: 120%;
   color: #fff;
   display: inline-block;
+}
+
+@media (max-width: 991px){
+  .opc-menu-top {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 120%;
+    color: #663399;
+    display: inline-block;
+    padding: 60px 0;
+  }
 }
 
 .menu-top{
@@ -1391,6 +1522,13 @@ body {
   background-color: #ffffff;
 }
 
+@media (max-width: 1200px) {
+  .bloque-opiniones{
+  padding: 64px 0 64px 0;
+  background-color: #ffffff;
+}
+}
+
 .box-testimonio {
   border-radius: 16px;
   padding: 32px 32px 32px 32px;
@@ -1403,6 +1541,13 @@ body {
   height: 396px;
 }
 
+@media (max-width: 768px) {
+  .box-testimonio {
+  background-image: url(../images/fon-texti.svg);
+  background-size: 100% 120%;
+  background-position: 0;
+}
+}
 
 .tit-testimonio{
   color: #3D3D3D;
@@ -1469,15 +1614,53 @@ body {
   height: 800px;
 }
 
+@media (max-width: 1200px) {
+  .bloque-descargar {
+    height: auto;
+    padding: 64px 0;
+    width: 100%;
+  }
+}
+
+.alto-descargas{
+  height: 800px; 
+  width: 100px;
+}
+
+@media (max-width: 1200px) {
+    .alto-descargas{
+      height: 0; 
+      width: 0;
+    }
+}
+
 .fondo-moviles{
   position: absolute;
   left: -15%;
   top: -25%;
 }
 
+@media (max-width: 1200px) {
+  .fondo-moviles{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    top: 0;
+    left: auto;
+    right: auto;
+  }
+}
+
 .caja-bot-down {
   display: flex;
   gap:32px;
+}
+
+@media (max-width: 1200px){
+  .caja-bot-down {
+    justify-content: center;
+  }
 }
 
 .tit-descarga{
@@ -1491,6 +1674,15 @@ body {
   background: #252525;
   padding: 80px 0;
 }
+
+@media (max-width: 1200px) {
+  .bloque-footer{
+    background: #252525;
+    padding: 80px 0;
+    text-align: center;
+  }
+}
+
 
 .tit-h5{
   font-size: 20px;
@@ -1506,6 +1698,12 @@ body {
   color: #ffffff;
   list-style: none;
   padding: 0;
+}
+
+@media (max-width: 1200px){
+  .list-rss{
+    justify-content: center; 
+  }
 }
 
 .tit-footer{
