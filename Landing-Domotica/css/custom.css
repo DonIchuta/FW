@@ -905,9 +905,10 @@ body {
   background-repeat: no-repeat;
   background-size: contain !important;
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1400px) {
     body {
-      background: url(../images/BackgroundHero.svg);
+      background: url(../images/BackgroundHero2.png);
       background-repeat: no-repeat;
       background-size: cover !important;
       background-position-x: center;
@@ -917,6 +918,37 @@ body {
 }
 
 
+
+@media (max-width: 1200px) {
+    body {
+      background: url(../images/BackgroundHero2.png);
+      background-repeat: no-repeat;
+      background-size: cover !important;
+      background-position-x: center;
+      height: 100vh;
+    }
+
+}
+
+@media (max-width: 991px) {
+    body {
+      background: url(../images/BackgroundHero2Movil.svg);
+      background-repeat: no-repeat;
+      background-size: cover !important;
+      background-position-x: center;
+      height: 120vh;
+    }
+
+}
+
+.box-imagen {
+	width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -924,26 +956,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*background: url(../images/BackgroundHero.svg);
-  background-repeat: no-repeat;
-  background-size: cover !important;
-  background-position-y: -180px;*/
-
 }
 
 
 @media (max-width: 991px) {
     .hero{
-      height: 980px;
+      height: auto;
     }
 
 }
 
-@media (max-width: 500px) {
-    .hero{
-      height: 840px;
-    }
-}
+
 
 .image-holder{
   background: url(../images/BackgroundHero.svg);
@@ -969,6 +992,16 @@ body {
   padding-top: 160px;
 }
 
+@media (max-width: 991px) {
+	.box-text-hero {
+	  display: block;
+	  flex-direction: column;
+	  justify-content: center;
+	  height: 100%;
+	  padding-top: 32px;
+	}
+}
+
 .tit-hero {
   font-size: 61px;
   line-height: 120%;
@@ -988,6 +1021,12 @@ body {
 .pre-tit-hero{
   line-height: 120%;
   padding-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+	.pre-tit-hero{
+		font-size: 22px;
+	}
 }
 
 .subtit-hero{
@@ -1095,6 +1134,12 @@ body {
   height: 100%;
 }
 
+@media (max-width: 1200px) {
+	.bloque-lista{
+		 padding-top: 32px;
+	}
+}
+
 .pb64 { 
   padding-bottom: 64px; 
 }
@@ -1108,11 +1153,20 @@ body {
 }
 
 
-.parrafo-bloque {
+.parrafo-bloque.testimonio {
   color:#0f0f0f;
   line-height: 160%;
   font-size: 16px;
 
+}
+
+@media (max-width: 1200px) {
+  .parrafo-bloque.testimonio {
+  color:#0f0f0f;
+  line-height: 150%;
+  font-size: 12px;
+
+}
 }
 
 .bloque-descripcion{
@@ -1123,6 +1177,14 @@ body {
     padding: 80px 0;
 }
 
+@media (max-width: 991px) {
+	.bloque-descripcion{
+		display: block;
+		height: auto;
+	}
+}
+
+
 .bloque-descripcion-2{
     display: flex;
     flex-direction: row;
@@ -1132,6 +1194,13 @@ body {
     padding: 80px 0;
 }
 
+@media (max-width: 1200px) {
+	.bloque-descripcion-2{
+		display: block;
+		height: auto;
+	}
+}
+
 .bloque-tarifas{
   background-image: url(../images/Fondotarifas.svg);
   background-size: cover;
@@ -1139,7 +1208,7 @@ body {
 
 .tit-tarifas{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   height: 100%;
   text-align: left;
@@ -1391,6 +1460,13 @@ body {
   background-color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .bloque-opiniones{
+  padding: 64px 0 64px 0;
+  background-color: #ffffff;
+}
+}
+
 .box-testimonio {
   border-radius: 16px;
   padding: 32px 32px 32px 32px;
@@ -1403,6 +1479,13 @@ body {
   height: 396px;
 }
 
+@media (max-width: 768px) {
+  .box-testimonio {
+  background-image: url(../images/fon-texti.svg);
+  background-size: 100% 120%;
+  background-position: 0;
+}
+}
 
 .tit-testimonio{
   color: #3D3D3D;
@@ -1469,10 +1552,42 @@ body {
   height: 800px;
 }
 
+@media (max-width: 1200px) {
+  .bloque-descargar {
+    height: auto;
+    padding: 64px 0;
+    width: 100%;
+  }
+}
+
+.alto-descargas{
+  height: 800px; 
+  width: 100px;
+}
+
+@media (max-width: 1200px) {
+    .alto-descargas{
+      height: 0; 
+      width: 0;
+    }
+}
+
 .fondo-moviles{
   position: absolute;
   left: -15%;
   top: -25%;
+}
+
+@media (max-width: 1200px) {
+  .fondo-moviles{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    top: 0;
+    left: auto;
+    right: auto;
+  }
 }
 
 .caja-bot-down {
@@ -1491,6 +1606,15 @@ body {
   background: #252525;
   padding: 80px 0;
 }
+
+@media (max-width: 1200px) {
+  .bloque-footer{
+    background: #252525;
+    padding: 80px 0;
+    text-align: center;
+  }
+}
+
 
 .tit-h5{
   font-size: 20px;
