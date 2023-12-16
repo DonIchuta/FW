@@ -2,18 +2,6 @@
 
 $(document).ready(function(){
 
-	// Cambiar color al hacer scroll
-	$(function() {
-		  var elemento = document.getElementById("box-cabecera");
-		  $(window).scroll(function() {
-		    if ($(this).scrollTop() > 0) {
-		      elemento.classList.add('color-en-scroll');
-		    } else {
-		      elemento.classList.remove('color-en-scroll');
-		    }
-		  })
-		});
-
 
 	/*----------------------------------------------------*/
     /* Zona oculta derecha 

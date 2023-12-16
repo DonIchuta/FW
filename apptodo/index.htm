@@ -5,7 +5,7 @@
 	
 	<meta charset="utf-8">
 	
-	<title>Domotika</title>
+	<title>Task-It</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
     <meta name="author" content="" />
@@ -32,7 +32,7 @@
 	<link rel="stylesheet" media="screen" type="text/css" href="css/formularios.css">
 	
 	<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css">
-	<!-- <link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css"> -->
+	<link rel="stylesheet" media="screen" type="text/css" href="fonts/flaticon.css">
 	
 	<link rel="stylesheet" media="screen" type="text/css" href="css/custom.css">
 	
@@ -50,51 +50,73 @@
 
 
 	<!-- Fuentes -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Raleway:wght@900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 	
 	<!-- Fav y touch icons-->
 	<link rel="icon" href="ico/favicon.ico" type="image/x-icon">
-
+	
+	<link rel="icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+	<link rel="icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+	<link rel="icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+	<link rel="icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+	<link rel="icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+	<link rel="icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+	<link rel="icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+	<link rel="icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+	
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+	
+	<meta name="msapplication-square70x70logo" content="ico/smalltile.png">
+	<meta name="msapplication-square150x150logo" content="ico/mediumtile.png">
+	<meta name="msapplication-wide310x150logo" content="ico/widetile.png">
+	<meta name="msapplication-square310x310logo" content="ico/largetile.png">
    	
 </head>
 
 <body class="wide">
 
 	<!-- Menu Top -->
-	<div class="box-cabecera" id="box-cabecera">
+	<div class="box-cabecera">
 		<div class="contenedor">
 			<div class="fila">
 				<div class="col12">
 					<div class="cabecera">
 						<div class="cabecera-izq">
-							<a href=""><img class="img-responsive" src="images/logotipo.svg"></a>
+							<a href=""><img src="images/logotipo.svg"></a>
 						</div>
 						<div class="cabecera-der">
 							<div class="menu-top" id="menu-movil">
 								<ul>
 									<li>
-										<a href="javascript:scroll_to('conoce')" class="opc-menu-top font-2">Conoce Task-it</a> 
+										<a href="javascript:scroll_to('conoce')" class="opc-menu-top font-3">Conoce Task-it</a> 
 									</li>
 									<li>
-										<a href="javascript:scroll_to('soluciones')" class="opc-menu-top font-2">Soluciones</a> 
+										<a href="javascript:scroll_to('soluciones')" class="opc-menu-top font-3">Soluciones</a> 
 									</li>
 									<li>
-										<a href="javascript:scroll_to('precios')" class="opc-menu-top font-2">Precios</a> 
+										<a href="javascript:scroll_to('precios')" class="opc-menu-top font-3">Precios</a> 
 									</li>
 									<li>
-										<a href="javascript:scroll_to('testimonios')" class="opc-menu-top font-2">Testimonios</a> 
+										<a href="javascript:scroll_to('testimonios')" class="opc-menu-top font-3">Testimonios</a> 
 									</li>
 									<li>
-										<a href="javascript:scroll_to('help')" class="opc-menu-top font-2">Help Center</a> 
+										<a href="javascript:scroll_to('help')" class="opc-menu-top font-3">Help Center</a> 
 									</li>
 									<li>
 										
 									</li>
 								</ul>
 							</div>
+							<a href="" class="buttom-menu font-3" href="" class="boton colordest redondeado centrado">Suscríbete</a>
 							<a href="javascript:muestra_oculta_id('menu-movil')"><img class="ico-menu" src="images/icon-menu.svg"></a>
+
 						</div>
 					</div>
 				</div>
@@ -107,26 +129,25 @@
 
 	<!-- Hero -->
 	<section class="hero">
-	 	<!-- <div class="image-holder" >
-	 	</div> -->
+	 	<div class="image-holder" >
+	 	</div>
 		<div class="contenedor fix-contendor-hero">
 			<div class="fila">
-			
-				<div class="col06">
-					<div class="box-imagen">
-						<img class="img-responsive" style="width: 300px" src="images/moviles-hero.png">
+				<div class="col06 col06-xl-push">
+					<div class="center">
+						<img class="img-responsive " src="images/moviles.png">
 					</div>
+				</div>				
+				<div class="col06 col06-xl-pull">
 					<div class="box-text-hero">
 						<div class="textos-hero">
-							<h4 class="font-2 pre-tit-hero">Domótica simplificada</h4>
-							<h1 class="tit-hero font-graphic">Control total <br class="escritorio">de tu hogar</h1>
-							<h5 class="font-2 subtit-hero">Convierte tu casa en un espacio conectado e inteligente con nuestra app: gestiona, controla y disfruta del confort a tu medida, donde sea que estés.</h5>
-							<a href=""><img class="img-responsive" src="images/AppStore.png"></a>&nbsp&nbsp<a href=""><img  class="img-responsive" src="images/GooglePlay.png"></a>
+							<h1 class="tit-hero font-graphic">Haz tu día a día<br>más sencillo</h1>
+							<h5 class="font-2 subtit-hero">No olvides ninguna cita o compromiso por pequeños que sean</h5>
+							<a href=""><img src="images/AppStore.png"></a>&nbsp&nbsp<a href=""><img src="images/GooglePlay.png"></a>
 						</div>
 					</div>
 				</div>
-				<div class="col06">
-				</div>				
+			
 			</div>
 		</div>
 
@@ -138,33 +159,38 @@
 		<div class="contenedor">
 			<div class="fila">
 
-				<div class="col06">
-					<div class="box-imagen">	
-						<img class="img-responsive" src="images/moviles1.png">
+				<div class="col06-xl">
+					<div class="center">	
+						<img class="img-responsive" src="images/Fotos-moviles-1.png">
 					</div>
 				</div>				
-				<div class="col06">
+				<div class="col06-xl">
 					<div class="bloque-lista">
 						<div>
-							<h3 class="tit-bloque font-2">Permanece conectado con tu casa y tu familia</h3>
-							<p class="parrafo-bloque font-2 pb64">Puedes conectar todos tus aparatos inteligentes y compartir tu hogar con el resto de miembros de la familia</p>
+							<span class="sobre-titulo font-3">ORGANIZA</span>
+							<h2 class="tit-bloque font-graphic">Tareas</h2>
 							
-							<div class="lista-hori">
-								<div class="item-lista">
-									<ico><img class="ico-lista" src="images/ico-conecta.svg"></ico>
-									<div>
-										<p class="smalltitle font-2 colordest">Tareas</p>
-										<p class="parrafo-bloque font-2">Crea tareas rápidamente con todos los detalles que necesitas. ¡Complétalas día a día!</p>
-									</div>
-								</div>
-								<div class="item-lista">
-									<ico><img class="ico-lista" src="images/ico-comparte.svg"></ico>
-									<div>
-										<p class="smalltitle font-2 colordest">Añade subtareas</p>
-										<p class="parrafo-bloque font-2">Añade tantas subtareas como necesites para personalizarlas al máximo</p>
-									</div>
+							<div class="item-lista">
+								<ico><img class="ico-lista" src="images/person-outline.svg"></ico>
+								<div>
+									<p class="smalltitle font-3">Tareas</p>
+									<p class="parrafo-bloque font-3">Crea tareas rápidamente con todos los detalles que necesitas. ¡Complétalas día a día!</p>
 								</div>
 							</div>
+							<div class="item-lista">
+								<ico><img class="ico-lista" src="images/star-of-life.svg"></ico>
+								<div>
+									<p class="smalltitle font-3">Añade subtareas</p>
+									<p class="parrafo-bloque font-3">Añade tantas subtareas como necesites para personalizarlas al máximo</p>
+								</div>
+							</div>
+							<div class="item-lista">
+								<ico><img class="ico-lista" src="images/time-outline.svg"></ico>
+								<div>
+									<p class="smalltitle font-3">Crea alarmas</p>
+									<p class="parrafo-bloque font-3">Usa las alarmas y notificaciones para llevarlo todo al día y que no te quede nada sin hacer a tiempo</p>
+								</div>
+							</div>	
 						</div>				
 					</div>
 				</div>
@@ -178,33 +204,30 @@
 		<section class="bloque-descripcion-2" id="soluciones">
 			<div class="contenedor">
 				<div class="fila">
-					<div class="col12">
-						<h3 class="tit-bloque font-2 center centrado">Se integra con todos los dispositivos</h3>
-							<p class="parrafo-bloque font-2 pb64 center centrado">Puedes enlazar cialquier dispositivo inteligente que tengas en tu hogar o negocio</p>
-							
-					</div>
-					<div class="col06 col06-push">
+					<div class="col06-xl col06-xl-push">
 						<div class="center">
-							<img class="img-responsive" src="images/moviles2.jpg">
+							<img class="img-responsive" src="images/Fotos-moviles-2.png">
 						</div>
 						
 					</div>	
-					<div class="col06 col06-pull">
+					<div class="col06-xl col06-xl-pull">
 						<div class="bloque-lista">
 							<div>
+								<span class="sobre-titulo font-3">COMPARTE</span>
+								<h2 class="tit-bloque font-graphic">Tareas en grupo</h2>
+								
 								<div class="item-lista">
-									<ico><img class="ico-lista" src="images/ico-micro.svg"></ico>
+									<ico><img class="ico-lista" src="images/people-outline.svg"></ico>
 									<div>
-										<p class="smalltitle font-2 colordest">Activación total por voz</p>
-										<p class="parrafo-bloque font-2">Usa comandos de voz para activar o desactivar dispositivos o escenas. 
-										Aprovecha su inteligencia artificial para activarlo diciendo ¨Oye Domotika”. </p>
+										<p class="smalltitle font-3">Reparte las tareas</p>
+										<p class="parrafo-bloque font-3">Crea los mejores eventos con la ayuda de tus amigos Reparte tareas para que nadie se olvide de su parte</p>
 									</div>
 								</div>
 								<div class="item-lista">
-									<ico><img class="ico-lista" src="images/ico-altavoz.svg"></ico>
+									<ico><img class="ico-lista" src="images/notifications-outline.svg"></ico>
 									<div>
-										<p class="smalltitle font-2 colordest">Envía mensajes a tus altavoces</p>
-										<p class="parrafo-bloque font-2">Puedes enviar un mensaje a modo de interfono a cualquiera de los altavoces que tengas vinculados.</p>
+										<p class="smalltitle font-3">Siempre alerta</p>
+										<p class="parrafo-bloque font-3">Recibe notificaciones cuando te agregan a una tarea en grupo para no perderte nada</p>
 									</div>
 								</div>
 							</div>				
@@ -218,31 +241,33 @@
 		<!-- Fin Bloque 2 -->
 
 		<!-- Bloque 3 -->
-		<section class="bloque-descripcion-2">
+		<section class="bloque-descripcion">
 			<div class="contenedor">
 				<div class="fila">
 
 					<div class="col06-xl">
 						<div class="center">	
-							<img class="img-responsive" src="images/moviles3.jpg">
+							<img class="img-responsive" src="images/Fotos-moviles-3.png">
 						</div>
 					</div>				
-					<div class="col06-xl ">
+					<div class="col06-xl">
 						<div class="bloque-lista">
 							<div>
+								<span class="sobre-titulo font-3">CAPTURA</span>
+								<h2 class="tit-bloque font-graphic">Post-it</h2>
+								
 								<div class="item-lista">
-									<ico><img class="ico-lista" src="images/ico-micro.svg"></ico>
+									<ico><img class="ico-lista" src="images/document-outline.svg"></ico>
 									<div>
-										<p class="smalltitle font-2 colordest">Activación total por voz</p>
-										<p class="parrafo-bloque font-2">Usa comandos de voz para activar o desactivar dispositivos o escenas. 
-										Aprovecha su inteligencia artificial para activarlo diciendo ¨Oye Domotika”. </p>
+										<p class="smalltitle font-3">Solo necesitas una foto</p>
+										<p class="parrafo-bloque font-3">Crea tareas rápidamente con una simple foto. Completa la información con título, categoría y ubicación</p>
 									</div>
 								</div>
 								<div class="item-lista">
-									<ico><img class="ico-lista" src="images/ico-altavoz.svg"></ico>
+									<ico><img class="ico-lista" src="images/document-outline.svg"></ico>
 									<div>
-										<p class="smalltitle font-2 colordest">Envía mensajes a tus altavoces</p>
-										<p class="parrafo-bloque font-2">Puedes enviar un mensaje a modo de interfono a cualquiera de los altavoces que tengas vinculados.</p>
+										<p class="smalltitle font-3">Clasifica tus imágenes</p>
+										<p class="parrafo-bloque font-3">Organiza tus capturas mediante categorías para acceder más facilmente a tus Pos-it</p>
 									</div>
 								</div>
 							</div>				
@@ -254,7 +279,132 @@
 		</section>
 		<!-- Fin Bloque 3  -->
 
- 
+		 <!-- Bloque 4 -->
+			<section class="bloque-descripcion-2">
+				<div class="contenedor">
+					<div class="fila">
+						<div class="col06-xl col06-xl-push">
+							<div class="center">	
+								<img class="img-responsive" src="images/Fotos-moviles-4.png">
+							</div>
+						</div>	
+						<div class="col06-xl col06-xl-pull">
+							<div class="bloque-lista">
+								<div>
+									<span class="sobre-titulo font-3">RECUERDA</span>
+									<h2 class="tit-bloque font-graphic">Avisos de cercanía</h2>
+									
+									<div class="item-lista">
+										<ico><img class="ico-lista" src="images/location-outline.svg"></ico>
+										<div>
+											<p class="smalltitle font-3">Recibe avisos</p>
+											<p class="parrafo-bloque font-3">Guarda la ubicación y recibe un aviso cuando pases cerca de ese lugar para no perdértelo</p>
+										</div>
+									</div>
+									<div class="item-lista">
+										<ico><img class="ico-lista" src="images/document-outline.svg"></ico>
+										<div>
+											<p class="smalltitle font-3">Solo necesitas una foto</p>
+											<p class="parrafo-bloque font-3">Añade una imagen y título para recordar más fácilmente el lugar</p>
+										</div>
+									</div>
+								</div>				
+							</div>
+						</div>
+
+			
+					</div>
+				</div>	
+			</section>
+			<!-- Fin Bloque 4 -->
+
+		 <!-- Bloque tarifas -->
+			<section class="bloque-tarifas" id="precios">
+				<div class="contenedor">
+					<div class="fila">
+						<div class="col12">
+							<div class="tit-tarifas full center">
+								<span class="sobre-titulo font-3">TARIFAS</span>
+								<h2 class="tit-bloque font-graphic">El plan que mejor se adapta a ti</h2>
+							</div>	
+						</div>
+
+						<div class="col04">
+							<div class="centrado-v-flex">
+								<div class="tarjeta-tarifa">
+									<div class="box-tit-tarjeta">
+										<span class="tit-tarjeta font-3">Plan Gratuito</span>
+									</div>
+									<span class="parr-tarjeta">Para probar</span> 
+									<span class="precio-tarjeta">0€</span>
+									<div class="lista-caract-tarifa">
+										<ul class="graf-ul">
+											<li>1 usuario</li>
+											<li>Tareas personales</li>
+											<li>Hasta 20 post-it</li>
+											<li>Hasta 10 avisos de cercanía</li>
+										</ul>
+									</div>
+									<div class="full center">
+									<button href="" class="boton colordest redondeado centrado">Suscríbete ahora</button>
+									</div>
+								</div>	
+							</div>
+
+						</div>	
+						<div class="col04">
+							<div class="centrado-v-flex basico">
+								<div class="tarjeta-tarifa basico">
+									<div class="box-tit-tarjeta basico">
+										<span class="tit-tarjeta basico font-3">Plan Básico</span>
+									</div>
+									<div class="box-basico">
+										<span class="parr-tarjeta basico">Para pequeños grupos</span> 
+										<span class="precio-tarjeta basico">29€</span>
+										<div class="lista-caract-tarifa">
+											<ul class="graf-ul basico">
+												<li>1 usuario</li>
+												<li>Tareas personales</li>
+												<li>Hasta 20 post-it</li>
+												<li>Hasta 10 avisos de cercanía</li>
+											</ul>
+										</div>
+										<div class="full center">
+										<button href="" class="boton basico redondeado centrado">Suscríbete ahora</button>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>	
+						<div class="col04">
+							<div class="centrado-v-flex">
+								<div class="tarjeta-tarifa">
+									<div class="box-tit-tarjeta">
+										<span class="tit-tarjeta font-3">Plan Gratuito</span>
+									</div>
+									<span class="parr-tarjeta">Para probar</span> 
+									<span class="precio-tarjeta">0€</span>
+									<div class="lista-caract-tarifa">
+										<ul class="graf-ul">
+											<li>1 usuario</li>
+											<li>Tareas personales</li>
+											<li>Hasta 20 post-it</li>
+											<li>Hasta 10 avisos de cercanía</li>
+										</ul>
+									</div>
+									<div class="full center">
+									<button href="" class="boton colordest redondeado centrado">Suscríbete ahora</button>
+									</div>
+								</div>	
+							</div>							
+						</div>	
+
+			
+					</div>
+				</div>	
+			</section>
+			<!-- Fin Bloque tarifas -->
+
 
 			<!-- Opiniones -->
 			<section class="bloque-opiniones" id="testimonios">
@@ -262,39 +412,40 @@
 					<div class="fila">
 						<div class="col12">
 							<div class="tit-tarifas full center">
-								<h4 class="font-2 pre-tit-hero colordest">TESTIMONIOS</h4>
+								<span class="sobre-titulo font-3">TESTIMONIOS</span>
+								<h2 class="tit-bloque font-graphic">Qué opinan de nosotros</h2>
 							</div>	
 						</div>
 						<div class="col12">
 							<div class="owl-carousel owl-imgbtn" style="position: relative;">
-					            <div class="item box-testimonio forma-irregular" >
+					            <div class="item box-testimonio" >
 					            	<div class="box-avatar-testimonio">
 					            		<div class="avatar-testimonio"></div>
 					            	</div>	
-					              <h4 class="tit-testimonio font-2">Hannah Schmitt</h4>
-					              <span class="subtit-testimonio font-2">Lead designer</span>
-					              <img src="images/comillas.svg" style="width: 28px; height: 18px; margin: 16px auto">
-					              <p class="parrafo-bloque testimonio font-2">Esta aplicación de gestión de tareas ha transformado mi vida. Su interfaz intuitiva, recordatorios y sincronización entre dispositivos me han vuelto más organizado y productivo. ¡Una herramienta esencial para mantener el caos a raya!</p>
+					              <h4 class="tit-testimonio font-3">Hannah Schmitt</h4>
+					              <span class="subtit-testimonio font-3">Lead designer</span>
+					              <img src="images/comillas.svg" style="width: 28px; height: 18px">
+					              <p class="parrafo-testimonio">Esta aplicación de gestión de tareas ha transformado mi vida. Su interfaz intuitiva, recordatorios y sincronización entre dispositivos me han vuelto más organizado y productivo. ¡Una herramienta esencial para mantener el caos a raya!</p>
 
 					            </div>
 					            <div class="item box-testimonio" >
 					            	<div class="box-avatar-testimonio">
 					            		<div class="avatar-testimonio2"></div>
 					            	</div>	
-					              <h4 class="tit-testimonio font-2">Dennis Schmitt</h4>
-					              <span class="subtit-testimonio font-2">Lead designer</span>
-					              <img src="images/comillas.svg" style="width: 28px; height: 18px; margin: 16px auto">
-					              <p class="parrafo-bloque testimonio font-2">Esta aplicación de gestión de tareas ha transformado mi vida. Su interfaz intuitiva, recordatorios y sincronización entre dispositivos me han vuelto más organizado y productivo. ¡Una herramienta esencial para mantener el caos a raya!</p>
+					              <h4 class="tit-testimonio font-3">Dennis Schmitt</h4>
+					              <span class="subtit-testimonio font-3">Lead designer</span>
+					              <img src="images/comillas.svg" style="width: 28px; height: 18px">
+					              <p class="parrafo-testimonio">Esta aplicación de gestión de tareas ha transformado mi vida. Su interfaz intuitiva, recordatorios y sincronización entre dispositivos me han vuelto más organizado y productivo. ¡Una herramienta esencial para mantener el caos a raya!</p>
 
 					            </div>
 					            <div class="item box-testimonio" >
 					            	<div class="box-avatar-testimonio">
 					            		<div class="avatar-testimonio3"></div>
 					            	</div>	
-					              <h4 class="tit-testimonio font-2">Noa Schmitt</h4>
-					              <span class="subtit-testimonio font-2">Lead designer</span>
-					              <img src="images/comillas.svg" style="width: 28px; height: 18px; margin: 16px auto">
-					              <p class="parrafo-bloque testimonio font-2">Esta aplicación de gestión de tareas ha transformado mi vida. Su interfaz intuitiva, recordatorios y sincronización entre dispositivos me han vuelto más organizado y productivo. ¡Una herramienta esencial para mantener el caos a raya!</p>
+					              <h4 class="tit-testimonio font-3">Noa Schmitt</h4>
+					              <span class="subtit-testimonio font-3">Lead designer</span>
+					              <img src="images/comillas.svg" style="width: 28px; height: 18px">
+					              <p class="parrafo-testimonio">Esta aplicación de gestión de tareas ha transformado mi vida. Su interfaz intuitiva, recordatorios y sincronización entre dispositivos me han vuelto más organizado y productivo. ¡Una herramienta esencial para mantener el caos a raya!</p>
 
 					            </div>
 					        </div>
@@ -308,20 +459,13 @@
 
 			<!-- Descargar -->
 			<section class="bloque-descargar">
-				<img class="fondo-moviles" src="images/moviles-descarga.png">
 				<div class="contenedor">
 					<div class="fila">
-						<div class="col06-xl"><div class="escritorio alto-descargas"></div>
-						</div>					
-						<div class="col06-xl">
-							<div class="tit-tarifas">
-								<div>
-									<h3 class="tit-descarga font-2 pb16 blanco">Empieza ahora</h3>
-									<p class="parrafo-bloque font-2 pb32 blanco">Descarga la app y comienza 	la revolución tecnológica en tu casa o negocio.
-										Conecta todos tus dispositivos y contrólalos desde un mismo lugar.</p>
-									<div class="caja-bot-down">
-										<a href=""><img src="images/AppStore.png"></a><a href=""><img src="images/GooglePlay.png"></a>
-									</div>
+						<div class="col12">
+							<div class="tit-tarifas fix  full center">
+								<h2 class="tit-bloque font-graphic">Descárgate ahora la APP</h2>
+								<div class="caja-bot-down">
+									<a href=""><img src="images/AppStore.png"></a><a href=""><img src="images/GooglePlay.png"></a>
 								</div>
 							</div>	
 						</div>
@@ -335,9 +479,9 @@
 				<div class="contenedor">
 					<div class="fila">
 						<div class="col04">
-							<a href=""><img src="images/logotipo-footer.svg" style="width: 120px"></a>
+							<a href=""><img src="images/logotipo-footer.svg"></a>
 							<div class="separa s-size"></div>
-							<h5 class="parrafo font-2 blanco">No olvides ninguna cita o compromiso por pequeños que sean.</h5>
+							<h5 class="parrafo font-3 blanco">No olvides ninguna cita o compromiso por pequeños que sean.</h5>
 							<div class="separa s-size"></div>
 							<ul class="list-rss">
 								<li><a href=""><img src="images/ico-facebook.svg"></a></li>
@@ -350,9 +494,9 @@
 							</ul>
 						</div>
 						<div class="col04">
-							<h4 class="tit-footer fuente-2">Quick links</h4>
+							<h4 class="tit-footer">Quick links</h4>
 							<div class="separa s-size"></div>
-							<ul class="lista-quick font-2">
+							<ul class="lista-quick">
 								<li><a class="blanco" href="">Conoce Task-it</a></li>
 								<li><a class="blanco"  href="">Soluciones</a></li>
 								<li><a class="blanco"  href="">Precios</a></li>
@@ -361,12 +505,12 @@
 							</ul>
 						</div>
 						<div class="col04">
-							<h4 class="tit-footer fuente-2 ">Newsletter</h4>
+							<h4 class="tit-footer">Newsletter</h4>
 							<div class="separa"></div>
-							<h5 class="parrafo font-2 blanco fuente-2">Suscríbete a nuestro newsletter</h5>
+							<h5 class="parrafo font-3 blanco">Suscríbete a nuestro newslett</h5>
 							<div class="separa"></div>
 							<div class="input-group">
-								<input type="text" placeholder="Escribe aquí tu email" class="newsletter form-control formulario flex-izq redondo-left">
+								<input type="text" class="newsletter form-control formulario flex-izq redondo-left">
 								<span class="input-group-addico newsletter flex-der icono-input redondo-right"><img src="images/boton-formulario.svg"></span>
 							</div>
 
@@ -415,6 +559,42 @@
 		     });
 		});
 
+		$('.owl-carousel.owl-estilo1').owlCarousel({
+			margin:10,
+		    nav:true,
+		    autoplayHoverPause:true,
+			loop: true,/*con false no duplica los items si son menos de los que se ponen*/
+			dots:true,
+			autoplay:true,
+			autoplayTimeout:5000,
+			autoHeight:false,
+			responsiveClass:true,
+			responsive:{
+				0:{items:1},
+				640:{items:2},
+				1000:{items:2},
+				1200:{items:4},
+				1500:{items:4}
+			}
+		})
+
+		$('.owl-carousel.owl-estilo2').owlCarousel({
+		    nav:true,
+		    autoplayHoverPause:true,
+			loop: true,/*con false no duplica los items si son menos de los que se ponen*/
+			dots:true,
+			autoplay:true,
+			autoplayTimeout:4000,
+			autoHeight:false,
+			responsiveClass:true,
+			responsive:{
+				0:{items:1},
+				640:{items:2},
+				1000:{items:2},
+				1200:{items:3},
+				1500:{items:3}
+			}
+		})
 
 		/*botones imagen*/
 		$('.owl-carousel.owl-imgbtn').owlCarousel({
@@ -429,14 +609,47 @@
 			responsiveClass:true,
 			responsive:{
 				0:{items:1},
-				640:{items:1},
+				640:{items:2},
 				1000:{items:2},
 				1200:{items:2},
-				1500:{items:3}
+				1500:{items:2}
 			}
 		})
 
-	
+		/*botones font*/
+		$('.owl-carousel.owl-fonbtn').owlCarousel({
+			items:1,
+		    nav:true,
+		    autoplayHoverPause:true,
+		    animateOut: 'fadeOut',
+		    navText:["<i class='flaticon-flecha-punta-izquierda'></i>", "<i class='flaticon-flecha-punta-derecha'></i>"],
+			loop: true,/*con false no duplica los items si son menos de los que se ponen*/
+			dots:true,
+			autoplay:true,
+			autoplayTimeout:5000,
+			autoHeight:false,
+			responsiveClass:true,
+			autoplayHoverPause:true,
+			lazyLoad: true,
+			lazyLoadEager:1
+		})
+
+		/*botones svg*/
+		$('.owl-carousel.owl-svgbtn').owlCarousel({
+			items:1,
+		    nav:true,
+		    animateOut: 'fadeOut',
+		    navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+			loop: true,/*con false no duplica los items si son menos de los que se ponen*/
+			dots:true,
+			autoplay:true,
+			autoplayTimeout:6000,
+			autoHeight:false,
+			responsiveClass:true,
+			autoplayHoverPause:true,
+			lazyLoad: true,
+			lazyLoadEager:1
+		})
 		
 	</script>
 

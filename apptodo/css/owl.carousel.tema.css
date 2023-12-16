@@ -14,7 +14,7 @@
 
 /*ESTILO 1*/
 /*dots*/
-.owl-estilo1 .owl-dots .owl-dot span {width: 37px; height: 2px; margin:5px 6px 5px 0px; background: #dd10fe; display: block; -webkit-backface-visibility: visible; transition: opacity 200ms ease; border-radius: 0px;}
+.owl-estilo1 .owl-dots .owl-dot span {width: 37px; height: 2px; margin:5px 6px 5px 0px; background: #dbdfea; display: block; -webkit-backface-visibility: visible; transition: opacity 200ms ease; border-radius: 0px;}
 .owl-estilo1 .owl-dots .owl-dot.active span, .owl-estilo1 .owl-dots .owl-dot:hover span {background: #6576ff; }
 
 /*otro estilo
@@ -59,7 +59,7 @@
 .owl-imgbtn .owl-dots{margin:0 auto; text-align:center} /*centrados*/
 .owl-imgbtn .owl-dots .owl-dot{display:inline-block;zoom:1;*display:inline; text-align:left; margin-top:0px}
 .owl-imgbtn .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 6px 5px 0px;background:transparent; border: 1px solid #dbdfea;display:block; border-radius:50%;}
-.owl-imgbtn .owl-dots .owl-dot.active span,.owl-imgbtn .owl-dots .owl-dot:hover span{background:#dd10fe; border: 1px solid #eb6649}
+.owl-imgbtn .owl-dots .owl-dot.active span,.owl-imgbtn .owl-dots .owl-dot:hover span{background:#eb6649; border: 1px solid #eb6649}
 
 /*nav*/
 .owl-imgbtn .owl-nav{overflow: hidden; height: 0px;}
