@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="437"
+   height="433"
+   viewBox="0 0 437 433"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="fon-texti.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="paint0_linear_323_84607"
+       x1="22.436501"
+       y1="8.6412601"
+       x2="101.461"
+       y2="399.84"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(55.870902,1.0704232)">
+      <stop
+         stop-color="#9F5AF6"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#E506FF"
+         id="stop2" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.96547272"
+     inkscape:cx="253.7617"
+     inkscape:cy="134.13118"
+     inkscape:window-width="1280"
+     inkscape:window-height="971"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 101.6381,1.0704232 C 81.475116,0.21751079 61.599462,17.474824 56.126761,37.145124 L 74.1744,379.07043 l 311.99645,0.77682 c 35.49761,-5.63125 52.73611,-35.58715 48.95606,-79.19982 -10.296,-102.067 -22.859,-160.248 -41.588,-263.502306 -9.444,-14.3144 -11.497,-23.8722 -48.65,-25.0954 z"
+     fill="url(#paint0_linear_323_84607)"
+     id="path1-7"
+     style="fill:url(#paint0_linear_323_84607)"
+     sodipodi:nodetypes="cccccccc" />
+  <path
+     d="M 3.7347322,337.60345 37.7758,55.5321 C 41.994037,33.514106 58.417272,18.084649 81.2989,13.5078 165.182,5.63801 234.77489,5.2402401 348.58789,1.2816901 374.99131,0.75486196 405.77626,21.425786 408.473,55.5321 c 3.483,113.8129 7.15,195.0419 6.753,269.4059 -1.198,33.04 -8.552,46.189 -34.518,59.284 C 223.353,413.091 75.874099,433.05699 64.325162,429.63377 19.728762,415.74777 1.1323538,383.02438 3.7347322,337.60345 Z"
+     fill="#faf6ff"
+     id="path1"
+     sodipodi:nodetypes="ccccccccc" />
+</svg>

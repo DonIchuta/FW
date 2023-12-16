@@ -1,11 +1,55 @@
-<svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" width="46" height="46" rx="23" fill="#EB6649"/>
-<g clip-path="url(#clip0_452_7655)">
-<path d="M17.5 24H23.5V22H17.5V12.846C17.5 12.7591 17.5227 12.6737 17.5657 12.5983C17.6088 12.5228 17.6708 12.4599 17.7456 12.4157C17.8204 12.3714 17.9054 12.3475 17.9923 12.3461C18.0791 12.3448 18.1649 12.3661 18.241 12.408L36.703 22.562C36.7814 22.6052 36.8468 22.6686 36.8923 22.7456C36.9378 22.8227 36.9618 22.9105 36.9618 23C36.9618 23.0895 36.9378 23.1773 36.8923 23.2544C36.8468 23.3314 36.7814 23.3948 36.703 23.438L18.241 33.592C18.1649 33.6339 18.0791 33.6552 17.9923 33.6539C17.9054 33.6525 17.8204 33.6286 17.7456 33.5843C17.6708 33.5401 17.6088 33.4772 17.5657 33.4017C17.5227 33.3263 17.5 33.2409 17.5 33.154V24Z" fill="white"/>
-</g>
-<defs>
-<clipPath id="clip0_452_7655">
-<rect width="24" height="24" fill="white" transform="translate(14.5 11)"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="47"
+   height="46"
+   viewBox="0 0 47 46"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="boton-formulario.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="8.5454607"
+     inkscape:cx="10.76595"
+     inkscape:cy="18.196795"
+     inkscape:window-width="1280"
+     inkscape:window-height="971"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <g
+     clip-path="url(#clip0_452_7655)"
+     id="g1">
+    <path
+       d="m 17.5,24 v -2 -9.154 c 0,-0.0869 0.0227,-0.1723 0.0657,-0.2477 0.0431,-0.0755 0.1051,-0.1384 0.1799,-0.1826 0.0748,-0.0443 0.1598,-0.0682 0.2467,-0.0696 0.0868,-0.0013 0.1726,0.02 0.2487,0.0619 l 18.462,10.154 c 0.0784,0.0432 0.1438,0.1066 0.1893,0.1836 0.0455,0.0771 0.0695,0.1649 0.0695,0.2544 0,0.0895 -0.024,0.1773 -0.0695,0.2544 -0.0455,0.077 -0.1109,0.1404 -0.1893,0.1836 L 18.241,33.592 c -0.0761,0.0419 -0.1619,0.0632 -0.2487,0.0619 C 17.9054,33.6525 17.8204,33.6286 17.7456,33.5843 17.6708,33.5401 17.6088,33.4772 17.5657,33.4017 17.5227,33.3263 17.5,33.2409 17.5,33.154 Z"
+       fill="white"
+       id="path1"
+       style="fill:#9f5af6;fill-opacity:1"
+       sodipodi:nodetypes="ccsccccccsccccccsc" />
+  </g>
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip0_452_7655">
+      <rect
+         width="24"
+         height="24"
+         fill="white"
+         transform="translate(14.5 11)"
+         id="rect2" />
+    </clipPath>
+  </defs>
 </svg>
