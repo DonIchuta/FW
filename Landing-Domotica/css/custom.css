@@ -1246,7 +1246,7 @@ body {
 
 .tit-tarifas{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   height: 100%;
   text-align: left;
