@@ -1043,7 +1043,7 @@ body {
 
 .pre-tit-hero{
   line-height: 120%;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
 }
 
 @media (max-width: 991px) {
@@ -1265,9 +1265,9 @@ body {
 .tit-tarifas{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   height: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 @media (max-width: 1200px){
@@ -1536,7 +1536,7 @@ body {
 }
 
 .bloque-opiniones{
-  padding: 0 0 160PX 0;
+  padding: 64px 0 160PX 0;
   background-color: #ffffff;
 }
 
