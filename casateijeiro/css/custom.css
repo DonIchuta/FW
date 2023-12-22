@@ -24,7 +24,7 @@ font-family: 'Nunito', sans-serif;
 */
 
 .font-display{
-  font-family: 'Livvic', sans-serif;
+  font-family: 'Cantora One', sans-serif;
 }
 .font-body{
   font-family: 'Inter', sans-serif;
@@ -961,8 +961,9 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   font-size: 4em;
   line-height: 120%;
   text-align: center;
-  font-weight: 700;
-  letter-spacing: -1px;
+  /*font-weight: 700;*/
+  /*letter-spacing: -1px;*/
+  padding-top: 16px;
 }
 
 
