@@ -893,7 +893,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 }
 
 .box-movil{
-  max-width: 360px;
+  max-width: 500px;
   background-image: url(../images/fondo-app.jpg);
   background-size: cover;
   height: 100vh;
