@@ -899,6 +899,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   height: 100vh;
   position: relative;
   z-index: 1;
+  margin: 0 auto;
 }
 
 /*Tab bottom*/
