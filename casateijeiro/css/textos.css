@@ -1,0 +1,86 @@
+﻿/*
+ * Descripción: ADMINISTRACIÓN
+ * Copyright (c) 2022
+*/
+
+.title {font-size:1.6875em; line-height:110%; color:#203247; position:relative; font-family:'Open Sans', sans-serif; font-weight:600}
+.title.normal{font-weight: 400; line-height: 1.2em;}
+.title a {text-decoration:none; color:#203247;}
+.title a:hover{text-decoration:none; color:#203247;}
+
+.title img, .title i{width:30px; vertical-align:top; font-weight:400; line-height:1em}
+
+.title.margin{margin:20px;}
+.title.s-marginbt{ margin-bottom:10px;}/*minmargin*/
+.title.xs-marginbt{ margin-bottom:5px;}/*peqmargin*/
+
+.title.xl-size{font-size:2em;}
+.title.l-size{font-size:1.875em;}
+.title.s-size{font-size:1.375em;}
+.title.xs-size{font-size:1.25em;}
+.title.xxs-size{font-size:1.125em;}
+
+.title.xl-size i, .title.l-size i, .title.s-size i, .title.xs-size i, .title.xxs-size i{vertical-align: middle !important}
+
+.title.maxsize{font-size:4em;font-weight: 700;}
+
+@media (max-width: 991px) {
+	.title, .title.maxsize {font-size:1.5em;}
+}
+
+.title.minheight{display:block; min-height:50px}
+
+/*.subtitle {font-size:1.25em; color:#203247; position:relative; font-weight:600;}
+.subtitle:before{position: absolute; content: ""; width: 36px; height: 2px; background-color: #b62247; left: 0; bottom: 0;}
+.subtitle:after {position: absolute; content: ''; left: 0px; bottom: -7px; width: 30px; height: 2px; background-color: #7f8dff;}*/
+
+.subtitle{font-size:1.25em; color:#203247; position:relative; font-weight:600; margin-bottom: 20px; padding-bottom:10px; width: 100%}
+.subtitle:before {position: absolute; content: ""; width: 30px; height: 4px; background-color: #7f8dff; left: 0; bottom: 0;}
+.subtitle:after {position: absolute; content: ""; width: 100%; height: 1px; background-color: #dbdfea; left: 0px; bottom: 0;}
+
+.txtmin{font-size: 0.875em; color: #364a63; /*line-height: 140%;*/ text-decoration: none;}
+.txtmin a, .txtmin a:hover, .txtmin a:focus {color: #364a63;}
+.txtmin.s-size{font-size:0.8125em;}
+.txtmin.xs-size{font-size:0.6875em;}
+
+.minitexto{padding: .5rem 0; white-space: nowrap; font-size: .75rem;}
+
+.titulo{font-weight:normal; font-size: 1.231em; /*18px*/ line-height:1.231em; color:#000; margin-bottom:5px}
+
+.titaba {font-size:1.125em; font-weight:600; line-height:110%; color:#fff; position:relative; margin:0px 0 15px 0;}
+.titaba a {text-decoration:none; color:#fff;}
+.titaba a:hover{text-decoration:none; color:#fff;}
+
+.abajo{font-size: 0.875em; color: #8094ae; text-decoration: none; font-weight:300;}
+.abajo a, .abajo a:focus{color: #8094ae; text-decoration: none;}
+.abajo a:hover, .abajo a:focus{color: #6576ff; text-decoration: none;}
+
+.txt404 {font-size: 7em; font-family: Arial, Helvetica, sans-serif; font-weight: 400; line-height:1em; color:#ad0000;}
+.txt404_msg{font-family: Arial, Helvetica, sans-serif; font-size:2.5em; color:#333; line-height:1.2em;}
+
+/*colores*/
+.colordest {color:#FDA14C !important;}
+.naranja{color:#ffae11 !important;}
+.rojo {color:#e02b1c !important;}
+.rosa{color: #ff63a5 !important;}
+.magenta{color: #dd2350 !important;}
+.verde {color:#19be92 !important;}
+.morado{color: #626ed4!important;}
+.purpura{color:#663399 !important;}
+.amarillo{color:#ffcf35 !important;}
+.azul{color:#3b7ddd !important;}
+.cian{color:#09c2de !important;}
+.light{color:#8094ae !important;}
+
+.gris {color:#999 !important;}
+.gris-oscuro {color:#666 !important;}
+.gris-claro {color:#b5b5c3 !important;}/*ccc*/
+.gris-clarito {color:#e3e6e6 !important}
+.negro {color:black !important;}
+.blanco {color:white !important;}
+
+.text-dark{color:#181c32!important}
+.text-dark-75{color:#3f4254!important}
+.text-dark-65{color:#5e6278!important}
+.text-dark-50{color:#7e8299!important}
+.text-dark-25{color:#d1d3e0!important}

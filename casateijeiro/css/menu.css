@@ -1,0 +1,123 @@
+﻿
+/*=========================
+      Menú top pegado
+=========================*/
+.top-menu {height:64px; padding-inline-start: 0px; margin:0px; display: -webkit-flex; display: -ms-flexbox; display: flex; flex-direction: row; align-items: center; position:relative; float:left; }
+.top-menu li {list-style: none;  border-right: 1px solid #e5e9f2; position: relative; color:#364a63; font-size:0.875em; /*height:64px; display: flex; align-items: center; padding:0 10px; cursor:pointer; */}
+.top-menu li:hover, .top-menu li.active{background-color:#fafbff;}
+.top-menu li > i.icon{font-size:1.5625em; color:#364a63;}
+
+.top-menu li a{height:64px; display: flex; align-items: center; padding:0 15px; border-bottom: 1px solid #e5e9f2;}
+.top-menu li.active a{border-bottom: 0px solid #e5e9f2;}
+.top-menu li a i{font-size:1.5625em; color:#364a63;}
+.top-menu li a img, .top-menu li img a{width:24px;}
+
+.top-menu.dere{float:right}
+.top-menu.dere li{border:0px; border-left: 1px solid #e5e9f2;}
+
+.top-menu li .submenu-top{position:absolute; right:-1px; top:64px; background:#fafbff; padding:10px; z-index:1; border: 1px solid #e5e9f2; border-top:0px; width:214px; max-height: 300px; overflow: hidden; overflow-y: auto}
+.top-menu li .submenu-top.s-size{width:162px;}
+.top-menu li:last-child .submenu-top{right:0px;}
+
+/*menú vertical top*/
+.menu-vertical-top {display: block; position:relative; width: 100%; padding: 5px 8px !important; padding-right:25px !important; clear: both; font-weight: 400; color: #212529; text-align: inherit; background-color: transparent; border: 0; line-height:1.025em; overflow:hidden;}
+.menu-vertical-top i{font-size:1.5em !important; margin-right:5px;}
+.menu-vertical-top i.s-size {font-size:1rem !important;}
+.menu-vertical-top i.xs-size {font-size:0.75rem !important;}
+.menu-vertical-top img{max-width:20px; margin-right:5px;}
+a.menu-vertical-top{height:40px !important; margin:4px 0px;}
+
+.menu-vertical-top:hover, .menu-vertical-top.active{background-color: rgba(235, 237, 246, 0.8); border-radius:4px; /*rgba(114, 124, 245, 0.1);*/}
+
+/*=========================
+   Menú vertical Sidebar
+=========================*/
+
+.verticalmenu,
+.verticalmenu ul,
+.verticalmenu ul li,
+.verticalmenu ul li a {
+    margin: 0; padding: 0; border: 0; list-style: none; font-family:'Open Sans', Arial, Helvetica, sans-serif; display: block; width:100%; position: relative; font-size:1em; line-height:130%;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.verticalmenu .cabecera {padding: 0 15px; color: #65768b; font-size: 0.6875em; text-transform: uppercase; margin-top:20px;}/*añadido*/
+
+.verticalmenu ul li {border-bottom:0px solid rgba(255,255,255,0.05);}
+.verticalmenu ul li i {font-size:1em; margin-right: 7px; vertical-align:top; color:#8094ae; object-fit: contain;  align-self: flex-start;}
+
+.textomenu {flex: 1 1 auto;}/*añadido*/
+
+.verticalmenu ul li.active > a, .verticalmenu ul li.active i, .verticalmenu ul li:hover i {color:#7f8dff;}/*8eb5ef -> mas tirando a azul*/
+
+.verticalmenu {width: 100%; color: #6e82a5;}
+.verticalmenu ul ul {display: none;}
+.verticalmenu > ul > li.active > ul {display: block;}
+
+.verticalmenu > ul > li > a {
+    padding: 11px 17px 11px 15px; cursor: pointer; z-index: 2; text-decoration: none; color: #8094ae; -webkit-transition: color .4s ease; -o-transition: color .4s ease; transition: color .4s ease;
+    border-left:0px solid #f9b10d; background: transparent;
+}
+
+.verticalmenu > ul > li > a{display: flex !important;}/*añadido*/
+.verticalmenu > ul > li > a:hover {color: #7f8dff; }
+
+.verticalmenu ul > li.has-sub > a:after {
+    position: absolute; z-index: 5; display: block; background: #6e82a5; content: "";
+
+    right: 23px; top: 18px; height: 7px; width: 1px;
+    
+    -webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -ms-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out;
+    -moz-transform: rotate(135deg); -o-transform: rotate(135deg); -webkit-transform: rotate(135deg); transform: rotate(135deg);/*-135*/
+}
+.verticalmenu ul > li.has-sub > a:before {
+    position: absolute; display: block; background: #6e82a5; content: "";
+
+    right: 15px; top: 21px; width: 7px; height: 1px;
+  
+    -webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -ms-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out;  
+    -moz-transform: rotate(135deg); -o-transform: rotate(135deg); -webkit-transform: rotate(135deg); transform: rotate(135deg);/*45*/
+}
+
+.verticalmenu ul > li.has-sub.open > a:after,
+.verticalmenu ul > li.has-sub.open > a:before {-webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg);}
+
+.verticalmenu ul > li:hover > a:after, .verticalmenu ul > li.has-sub.active > a:after{background: #7f8dff;}
+.verticalmenu ul > li:hover > a:before, .verticalmenu ul > li.has-sub.active > a:before{background: #7f8dff;}
+
+.verticalmenu ul li.has-sub{text-transform:none;}
+.verticalmenu ul li.has-sub ul{text-transform:none;}
+
+.verticalmenu ul ul > li.has-sub > a:after {right: 13px; top: 18px; background: #6e82a5;}
+.verticalmenu ul ul > li.has-sub > a:before {top: 21px; background: #6e82a5;}
+
+/*submenu*/
+.verticalmenu ul ul li a {padding: 10px 28px 10px 37px; background-color: #ccc;  cursor: pointer; z-index: 2; font-size: 0.875em; text-decoration: none; color: #6e82a5; background: transparent; -webkit-transition: color .4s ease; -o-transition: color .4s ease; transition: color .4s ease;}
+.verticalmenu ul ul li a:hover {color: #7f8dff;}
+.verticalmenu ul ul li:last-child{border-bottom:0px solid rgba(255,255,255,0.05);}
+
+.verticalmenu ul > li > ul > li.active > a {color:#6576ff;}
+
+/*tercera produndidad submenu*/
+.verticalmenu ul ul ul li a {color:#8094ae; font-size:0.80em; margin-left:10px !important}/*modificado*/
+
+.verticalmenu ul ul > li.has-sub > a:after {right: 22px; top: 16px; height: 7px; width: 1px; -moz-transform: rotate(135deg); -o-transform: rotate(135deg); -webkit-transform: rotate(135deg); transform: rotate(135deg);}/*añadido*/
+.verticalmenu ul ul > li.has-sub > a:before {right: 14px; top: 19px; width: 7px; height: 1px; -moz-transform: rotate(135px); -o-transform: rotate(135px); -webkit-transform: rotate(135px); transform: rotate(135px);}/*añadido*/
+
+.verticalmenu ul > li.has-sub.open > a:after{-webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg);}/*añadido*/
+.verticalmenu ul > li.has-sub.open > a:before {-webkit-transform: rotate(135px); -moz-transform: rotate(135px); -ms-transform: rotate(135px); -o-transform: rotate(135px); transform: rotate(135px);}/*añadido*/
+
+
+/*NUEVO*/
+.verticalmenu ul li.primera-profundidad i {line-height: 1.4;}
+.verticalmenu ul > li.primera-profundidad.has-sub > a:after {right: 12px;}
+.verticalmenu ul > li.primera-profundidad.has-sub > a:before{right: 5px;}
+
+.verticalmenu ul li.segunda-profundidad{padding: 0px 0px 0px 22px; cursor: pointer; z-index: 2;  text-decoration: none; color: #6e82a5; -webkit-transition: color .4s ease; -o-transition: color .4s ease; transition: color .4s ease;}
+.verticalmenu ul li.segunda-profundidad .textomenu{font-size: 0.875em;}
+
+.verticalmenu ul li.segunda-profundidad.has-sub > a:after {right: 12px; top: 16px; height: 7px; width: 1px; -moz-transform: rotate(135deg); -o-transform: rotate(135deg); -webkit-transform: rotate(135deg); transform: rotate(135deg);}/*añadido*/
+.verticalmenu ul li.segunda-profundidad.has-sub > a:before {right: 5px; top: 19px; width: 7px; height: 1px; -moz-transform: rotate(135px); -o-transform: rotate(135px); -webkit-transform: rotate(135px); transform: rotate(135px);}/*añadido*/
+.verticalmenu ul li.tercera-profundidad{padding: 0px 0px 0px 32px; cursor: pointer; z-index: 2; text-decoration: none; color: #6e82a5;}
+.verticalmenu ul li.tercera-profundidad .textomenu{font-size: 0.80em;}
+
