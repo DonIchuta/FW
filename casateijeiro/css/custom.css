@@ -906,7 +906,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 .tab-bottom{
    background-color: var(--destacado);
    height: 72px;
-   position: absolute;
+   position: fixed;
    bottom: 0;
    left: 0;
    width: 100%;
