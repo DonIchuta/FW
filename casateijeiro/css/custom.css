@@ -1101,3 +1101,15 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   height: 200px;
   z-index: 0;
 }
+
+
+/*Mapa*/
+.mapa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 60px;
+}
