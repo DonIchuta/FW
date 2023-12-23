@@ -74,10 +74,10 @@
 
 /*BOTONES FUENTE*/
 /*dots*/
-.owl-fonbtn .owl-dots{margin:0 auto; text-align:center} /*centrados*/
+.owl-fonbtn .owl-dots{margin:0 auto; text-align:center; bottom: 100px; position: absolute;left: 0; right: 0;z-index: 5} /*centrados*/
 .owl-fonbtn .owl-dots .owl-dot{display:inline-block;zoom:1;*display:inline; text-align:left; margin-top:0px}
 .owl-fonbtn .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 6px 5px 0px;background:#dbdfea;display:block; border-radius:50%; transform: scale(0.5);display:block; transition:.2s transform,.2s left}
-.owl-fonbtn .owl-dots .owl-dot.active span,.owl-fonbtn .owl-dots .owl-dot:hover span{background:#6576ff; transform: scale(1);}
+.owl-fonbtn .owl-dots .owl-dot.active span,.owl-fonbtn .owl-dots .owl-dot:hover span{background:#F76868; transform: scale(1);}
 
 /*rotar los botones 90º y posicionarlos a la derecha
 .owl-svgbtn .owl-dots{position: absolute; bottom:50%; right:10px; transform: rotate(90deg);}*/
@@ -86,7 +86,7 @@
 .owl-fonbtn .owl-nav .owl-prev, .owl-fonbtn .owl-nav .owl-next, .owl-fonbtn .owl-dot {font-family: "Flaticon";}
 .owl-fonbtn .owl-nav {margin-top: 0px; text-align: center; -webkit-tap-highlight-color: transparent; font-size: 1.75em; color:#fff;}
 .owl-fonbtn .owl-nav [class*='owl-']{margin:0 20px; display:inline-block; cursor:pointer; opacity: 0.5;}
-.owl-fonbtn .owl-nav [class*='owl-']:hover{color:#6576ff !important; opacity: 1;}
+.owl-fonbtn .owl-nav [class*='owl-']:hover{color:#F76868 !important; opacity: 1;}
 .owl-fonbtn .owl-nav .disabled {cursor: default;  color:#dbdfea !important;}
 
 .owl-fonbtn .owl-prev, .owl-fonbtn .owl-next {position: absolute; top: 45%; transform: translateY(-45%);}
@@ -99,7 +99,7 @@
 .owl-svgbtn .owl-dots{margin:0 auto; text-align:center} /*centrados*/
 .owl-svgbtn .owl-dots .owl-dot{display:inline-block;zoom:1;*display:inline; text-align:left; margin-top:0px}
 .owl-svgbtn .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 6px 5px 0px;background:#dbdfea;display:block; transform: scale(0.5);display:block; transition:.2s transform,.2s left}
-.owl-svgbtn .owl-dots .owl-dot.active span,.owl-svgbtn .owl-dots .owl-dot:hover span{background:#6576ff; transform: scale(1);}
+.owl-svgbtn .owl-dots .owl-dot.active span,.owl-svgbtn .owl-dots .owl-dot:hover span{background:#F76868; transform: scale(1);}
 
 /*rotar los botones 90º y posicionarlos a la derecha
 .owl-svgbtn .owl-dots{position: absolute; bottom:50%; right:10px; transform: rotate(90deg);}*/
