@@ -933,6 +933,9 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(107deg) brightness(107%) contrast(101%);
 }
 
+.pd-boton {
+  padding: 14px 32px !important;
+}
 
 /*Contenido página*/
 .content-page{
@@ -955,6 +958,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 
 .box-contenido-inicio div {
   margin-top: 30%;
+  text-align: center;
 }
 
 .parrafo{
@@ -1085,6 +1089,18 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   align-items: flex-start;
 }
 
+.boton-ir {
+  position: absolute;
+  top: -38px;
+  right: 16px;
+  background-color: #F76868;
+  border-radius: 50px;
+}
+
+.boton-ir img{
+  margin: 22px;
+}
+
 .tit-h3{
   color: #000;
   font-size: 1.5em;
@@ -1109,6 +1125,15 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   z-index: 0;
 }
 
+.sombra-degradada{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 96px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.00) 100%);
+  z-index: 1;
+}
 
 /*Mapa*/
 .mapa{
