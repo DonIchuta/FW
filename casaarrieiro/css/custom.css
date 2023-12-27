@@ -899,11 +899,23 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   /*max-width: 500px;*/
   background-image: url(../images/fondo-app.jpg);
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   height: 100vh;
   position: relative;
   z-index: 1;
   margin: 0 auto;
+  /*animation: shrink 5s infinite alternate;*/
 }
+
+/*@keyframes shrink {
+  0% {
+    background-size: 102% ;
+  }
+  100% {
+    background-size: 100% ;
+  }
+}*/
 
 /*Tab bottom*/
 .tab-bottom{
@@ -915,10 +927,24 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
    width: 100%;
    z-index: 5;
    border-radius: 16px 16px 0px 0px;
-   box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.27);
+   box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.3);
    padding: 8px 32px 16px 32px;
-
+   animation: move 6s infinite;
 }
+
+
+@keyframes move {
+  0% {
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+   box-shadow: 0px -4px 8px 0px rgba(247, 104, 104, 0.3);
+  }
+  100% {
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.3); 
+  }
+}
+
 
 .lista-tab{
    display: flex;
@@ -935,6 +961,29 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 
 .pd-boton {
   padding: 14px 32px !important;
+}
+
+
+/*Selector idioma*/
+.ventana-idioma{
+  background-color: #ffffff;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 16px 16px 0 0;
+  z-index: 4;
+  position: fixed;
+  bottom: 60px;
+  right: 16px;
+  display: none;
+}
+
+.select-idioma{
+  list-style: none;
+   padding: 16px;
+   margin: 0;
+}
+
+.select-idioma li{
+  padding: 8px;
 }
 
 /*Contenido página*/
