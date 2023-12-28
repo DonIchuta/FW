@@ -1035,7 +1035,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 }
 
 .box-contenido-inicio div {
-  margin-top: 30%;
+  /*margin-top: 30%;*/
   text-align: center;
 }
 
@@ -1053,6 +1053,12 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   /*font-weight: 700;*/
   /*letter-spacing: -1px;*/
   padding-top: 16px;
+}
+
+@media (min-width: 600px) {
+    .parrafo.display{
+          font-size: 5em;
+    }
 }
 
 
