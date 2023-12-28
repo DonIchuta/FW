@@ -1002,7 +1002,6 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   position: absolute;
   bottom: 60px;
   right: 16px;
-  z-index: 0;
   display: none;
 }
 
@@ -1116,6 +1115,8 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   display: flex;
   flex-direction: column;
   max-height: 100%;
+  z-index: 0;
+
 }
 
 ::-webkit-scrollbar {
