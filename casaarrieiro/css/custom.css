@@ -909,8 +909,24 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   position: relative;
   z-index: 1;
   margin: 0 auto;
-
+/*  animation: zoom 1s ease-in infinite;
+  transition: all 1s ease-in-out;*/
 }
+
+
+/*@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+   transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}*/
+
+
 
 @media (min-width: 500px) {
   .box-movil{
@@ -933,7 +949,6 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.3);
    padding: 8px 32px 16px 32px;
    animation: move 6s infinite;
-
 }
 
 
@@ -949,7 +964,9 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   }
 }
 
-
+.tab-bottom:after{
+  position: relative;
+}
 
 .lista-tab{
    display: flex;
@@ -970,6 +987,13 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
 
 
 /*Selector idioma*/
+.box-idioma{
+  position: fixed; 
+  z-index: 1; 
+  width: 100%; 
+  max-width: 834px; 
+  bottom: 0
+}
 .ventana-idioma{
   background-color: #ffffff;
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -978,6 +1002,7 @@ select.formcal {font-size: 0.846em; color: #364a63; background: #fff; border: 1p
   position: absolute;
   bottom: 60px;
   right: 16px;
+  z-index: 0;
   display: none;
 }
 
